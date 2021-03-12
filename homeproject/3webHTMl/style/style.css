@@ -35,4 +35,9 @@ body {
 }
 .content {
   padding-top: 10px;
+  margin-left: 100px;
+  margin-right: auto;
+}
+.content h1 {
+  color: #0e8c45;
 }
