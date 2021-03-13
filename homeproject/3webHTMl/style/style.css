@@ -7,7 +7,7 @@ body {
   background-size: cover;
 }
 #head {
-  background-color: #ededed;
+  background-color: #def8e8;
   width: 100%;
   padding: 20px 0;
   margin-bottom: 15px;
@@ -17,7 +17,7 @@ body {
   font-size: 32px;
   color: #555;
   font-weight: 700;
-  padding-left: 10pxg;
+  padding-left: 10px;
 }
 .menu_bar {
   overflow: hidden;
@@ -40,9 +40,6 @@ body {
   color: blue;
   position: relative;
 }
-.menu_bar p {
-  color: aqua;
-}
 .menu_bar a:hover {
   background-color: yellow;
 }
@@ -51,13 +48,16 @@ body {
   margin-left: 100px;
   margin-right: auto;
   background-color: rgba(222, 248, 232, 0.6);
-  height: 300px;
+  height: auto;
+  width: 100%;
 }
 .content #content_left {
   float: left;
-  display: block;
   padding-left: 10px;
   padding-top: 15px;
+}
+.content img {
+  height: 200px;
 }
 .content #content_right {
   padding-top: 5px;
@@ -68,4 +68,34 @@ body {
 }
 .content h1 {
   color: #0e8c45;
+}
+.content h2 {
+  font-size: 20px;
+  color: #555;
+  font-weight: 700;
+  padding: 10px 0px 10px 10px;
+}
+.line {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #555;
+  margin-left: 100px;
+  width: 100%;
+}
+#data_raica {
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 100%;
+}
+#data_raica h2 {
+  color: red;
+  font-size: 16px;
+  line-height: 1.5625;
+}
+#data_raica ul {
+  list-style: none;
+  background-color: rgba(222, 248, 232, 0.6);
+  padding-left: 10px;
+  padding-top: 1px;
 }
