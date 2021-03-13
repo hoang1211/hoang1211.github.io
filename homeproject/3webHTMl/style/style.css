@@ -6,16 +6,29 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#head {
+  background-color: #ededed;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+#head h1 {
+  font-size: 32px;
+  color: #555;
+  font-weight: 700;
+  padding-left: 10pxg;
+}
 .menu_bar {
   overflow: hidden;
   border: 0px solid black;
   background-color: #f8def2;
   opacity: 0.6;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 100px;
   margin-right: auto;
   max-height: 260px;
-  max-width: 600px;
+  width: 100%;
   height: auto;
 }
 .menu_bar a {
@@ -47,9 +60,11 @@ body {
   padding-top: 15px;
 }
 .content #content_right {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 400px;
   display: block;
+  font-size: 15px;
+  line-height: 1.5625;
 }
 .content h1 {
   color: #0e8c45;
