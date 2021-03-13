@@ -8,15 +8,14 @@ body {
 }
 .menu_bar {
   overflow: hidden;
-  border: 2px solid black;
-  background-color: #def8e8;
+  border: 0px solid black;
+  background-color: #f8def2;
   opacity: 0.6;
   margin-top: 50px;
   margin-left: 100px;
   margin-right: auto;
-  max-width: 500px;
   max-height: 260px;
-  width: 300px;
+  max-width: 600px;
   height: auto;
 }
 .menu_bar a {
@@ -26,6 +25,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   color: blue;
+  position: relative;
 }
 .menu_bar p {
   color: aqua;
@@ -34,9 +34,22 @@ body {
   background-color: yellow;
 }
 .content {
-  padding-top: 10px;
+  margin-top: 15px;
   margin-left: 100px;
   margin-right: auto;
+  background-color: rgba(222, 248, 232, 0.6);
+  height: 300px;
+}
+.content #content_left {
+  float: left;
+  display: block;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.content #content_right {
+  padding-top: 15px;
+  padding-left: 400px;
+  display: block;
 }
 .content h1 {
   color: #0e8c45;
