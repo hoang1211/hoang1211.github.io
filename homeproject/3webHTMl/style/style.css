@@ -6,12 +6,21 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+.wrap {
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1700px;
+}
 #head {
-  background-color: #def8e8;
+  background-color: #4caf50;
   width: 100%;
   padding: 20px 0;
   margin-bottom: 15px;
   margin-left: 100px;
+  position: fixed;
+  max-width: 1700px;
 }
 #head h1 {
   font-size: 32px;
@@ -24,7 +33,7 @@ body {
   border: 0px solid black;
   background-color: #f8def2;
   opacity: 0.6;
-  margin-top: 0px;
+  margin-top: 130px;
   margin-left: 100px;
   margin-right: auto;
   max-height: 260px;
@@ -98,4 +107,17 @@ body {
   background-color: rgba(222, 248, 232, 0.6);
   padding-left: 10px;
   padding-top: 1px;
+}
+#footer {
+  background-color: #014f1d;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  max-width: 1700px;
+}
+#footer p {
+  color: #6eca8f;
+  font-weight: 300;
+  padding-left: 10px;
 }
