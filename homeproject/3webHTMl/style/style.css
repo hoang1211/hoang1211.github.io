@@ -5,6 +5,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-sizing: border-box;
 }
 .wrap {
   width: 100%;
@@ -19,7 +20,6 @@ body {
   padding: 20px 0;
   margin-bottom: 15px;
   margin-left: 100px;
-  position: fixed;
   max-width: 1700px;
 }
 #head h1 {
@@ -33,7 +33,7 @@ body {
   border: 0px solid black;
   background-color: #f8def2;
   opacity: 0.6;
-  margin-top: 130px;
+  margin-top: 10px;
   margin-left: 100px;
   margin-right: auto;
   max-height: 260px;
