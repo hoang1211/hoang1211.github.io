@@ -24,7 +24,7 @@ a {
   color: black;
 }
 a:hover {
-  background-color: green;
+  background-color: #004e7f;
   color: white;
 }
 .wrap {
@@ -41,7 +41,10 @@ a:hover {
   display: inline-block;
   height: 130px;
   box-shadow: none;
-  border-bottom: 1px solid #004e7f;
+}
+.img_banner {
+  border: 1px solid #004e7f;
+  width: 1000px;
 }
 .left_head {
   float: left;
