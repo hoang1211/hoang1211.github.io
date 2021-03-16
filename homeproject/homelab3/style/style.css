@@ -162,8 +162,8 @@ sup {
   height: auto;
 }
 .item1_detail {
-  max-width: 90%;
-  height: auto;
+  max-width: 600px;
+  width: auto;
 }
 .title_item {
   font-family: Roboto;
