@@ -161,3 +161,18 @@ sup {
   width: auto;
   height: auto;
 }
+.item1_detail {
+  max-width: 90%;
+  height: auto;
+}
+.title_item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.0016em;
+  color: #c12f25;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
