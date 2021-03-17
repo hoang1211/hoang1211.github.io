@@ -1,0 +1,68 @@
+/* Chung chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.8;
+    background-color: aliceblue;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/* Class chung */
+.container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+.row {
+    word-spacing: -1ch;
+}
+
+.item {
+    word-spacing: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Navigation */
+.menu-link {
+    display: block;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.menu-link.active {
+    background-color: rgb(149, 126, 91);
+    color: #ffffff;
+}
+
+/* Main content */
+.main {
+    width: 75%;
+}
+
+.aside {
+    width: 25%;
+}
+
+/* Main */
+.section .item {
+    width: 25%;
+    height: 150px;
+}

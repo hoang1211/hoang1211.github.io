@@ -1,0 +1,89 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu chính */
+.menu {
+    word-spacing: -1ch;
+}
+
+.menu-item {
+    word-spacing: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link.active,
+.menu-item:hover .menu-link {
+    background-color: aqua;
+    color: black;
+}
+
+/* Menu cấp 2 */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150%;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-link {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: white;
+}
+
+.sub-item {
+    position: relative;
+}
+
+.sub-item:hover .sub-link {
+    background-color: aqua;
+    color: black;
+}
+
+/* Menu cấp 3 */
+.third-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.sub-item:hover .third-menu {
+    display: block;
+}
+
+.third-link {
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: white;
+}
+
+.third-link:hover {
+    background-color: aqua;
+    color: black;
+}
