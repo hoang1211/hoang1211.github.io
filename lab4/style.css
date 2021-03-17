@@ -1,4 +1,4 @@
-.static {
+/* .static {
   width: 200px;
   height: 200px;
   background-color: green;
@@ -20,4 +20,105 @@
   z-index: -1;
   top: 40px;
   left: 100px;
+} */
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  position: relative;
+  z-index: 10;
+}
+.menu {
+  word-spacing: -1ch;
+}
+.menu-item {
+  word-spacing: normal;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.menu-item:hover .items {
+  background-color: greenyellow;
+}
+.items {
+  display: block;
+  padding: 10px;
+  background-color: yellow;
+}
+.items:hover,
+.sub-links:hover .active-items {
+  background-color: greenyellow;
+}
+.sub-links {
+  display: block;
+  padding: 10px;
+  background-color: yellow;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 150%;
+}
+.sub-links:hover,
+.third-items:hover {
+  display: block;
+  padding: 10px;
+  background-color: yellowgreen;
+}
+.menu-item:hover .sub-menu {
+  display: block;
+}
+/* Menu cap 3 */
+.third {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+}
+.third-items {
+  background-color: yellow;
+}
+.third-items:hover {
+  background-color: greenyellow;
+}
+.quanao:hover .third {
+  display: block;
+}
+.call-link {
+  background-color: aqua;
+  color: black;
+  border-radius: 50%;
+  height: 50px;
+  line-height: 50px;
+}
+.call {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}
+img {
+  max-width: auto;
+}
+.wraper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+.wraper:hover .overlay {
+  display: block;
 }
