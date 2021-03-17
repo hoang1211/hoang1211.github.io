@@ -12,6 +12,7 @@ body {
   text-decoration-line: none;
   text-decoration-style: solid;
   text-rendering: optimizeLegibility;
+  overflow: auto;
 }
 ul {
   list-style: none;
@@ -103,6 +104,7 @@ sup {
   display: inline-block;
   width: 100%;
   padding: 10px;
+  overflow: auto;
 }
 .main_content {
   width: 75%;
@@ -144,9 +146,10 @@ sup {
   display: block;
   position: relative;
   margin-top: 100px;
-  background-color: #88c6ed;
   border-top: 1px solid #004e7f;
+  overflow: auto;
 }
+
 .footer_map {
   padding-top: 10px;
   float: left;
