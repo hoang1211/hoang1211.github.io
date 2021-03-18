@@ -16,13 +16,13 @@ li {
 /* code menu header lzd */
 .site-nav {
   height: 115px;
+  width: 100%;
   background-color: white;
   position: fixed;
 }
 .fix-nav {
   margin-right: auto;
   margin-left: auto;
-  width: 1188px;
 }
 .lzd-header-content {
   height: 25px;
