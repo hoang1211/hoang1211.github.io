@@ -11,6 +11,8 @@ a {
 ul,
 li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* code menu header lzd */
@@ -19,6 +21,7 @@ li {
   width: 100%;
   background-color: white;
   position: fixed;
+  z-index: 100;
 }
 .fix-nav {
   margin-right: auto;
@@ -46,6 +49,10 @@ li {
   word-spacing: normal;
   padding: 0px 17px 0px 17px;
   vertical-align: middle;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .links-item-orange:hover .item-orange {
   color: orange;
@@ -59,6 +66,10 @@ li {
   word-spacing: normal;
   padding: 0px 17px 0px 17px;
   vertical-align: middle;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .links-item-grey:hover .item-grey {
   color: orange;
@@ -162,11 +173,69 @@ li {
   background-color: white;
   vertical-align: top;
 }
-.list {
-  display: block;
-  padding: 0px 0px 12px 8px;
+.menu-list-main-category {
+  width: 200px;
+  line-height: 40px;
+  float: left;
+  height: 100%;
 }
-
+.menu-list-main-label {
+  width: 200px;
+  height: 344px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+  background-color: #fff;
+  position: relative;
+}
+.list,
+.list-lv2 {
+  padding: 8px 0 12px;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+}
+.items,
+.items-lv2 {
+  display: block;
+  padding-left: 8px;
+  height: 27px;
+  line-height: 27px;
+  text-decoration: none;
+}
+.items-link,
+.items-link-lv2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  width: 172px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 27px;
+  color: #757575;
+  cursor: pointer;
+}
+.items:hover .items-link {
+  display: block;
+  color: orange;
+}
+/* menu lv 2 */
+.menu-lv2-label {
+  width: 200px;
+  height: 344px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+}
+.items:hover .menu-lv2-label {
+  display: block;
+}
+.items-link-lv2:hover {
+  display: block;
+  color: orange;
+}
 /* Img cho header main */
 .img-ads {
   display: inline-block;
