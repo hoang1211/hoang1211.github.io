@@ -3,12 +3,138 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 100000px;
 }
 a {
   text-decoration: none;
-  color: black;
 }
 ul,
 li {
   list-style: none;
+}
+
+/* code menu header lzd */
+.site-nav {
+  height: 115px;
+  background-color: white;
+  position: fixed;
+}
+.fix-nav {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1188px;
+}
+.lzd-header-content {
+  height: 25px;
+  background-color: #00000008;
+}
+.lzd-links-bar {
+  line-height: 1.15;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  width: 1188px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-links-list {
+  text-align: right;
+  word-spacing: -1ch;
+}
+.links-item-orange {
+  display: inline-block;
+  word-spacing: normal;
+  padding: 0px 17px 0px 17px;
+  vertical-align: middle;
+}
+.links-item-orange:hover .item-orange {
+  color: orange;
+}
+.item-orange {
+  font-size: 12px;
+  color: #0f1568;
+}
+.links-item-grey {
+  display: inline-block;
+  word-spacing: normal;
+  padding: 0px 17px 0px 17px;
+  vertical-align: middle;
+}
+.links-item-grey:hover .item-grey {
+  color: orange;
+}
+.item-grey {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+/* logo bar */
+.logo-bar {
+  height: 75px;
+  padding-top: 11px;
+  color: #999999;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1188px;
+}
+.logo-bar-content {
+  height: 48px;
+  width: 1188px;
+  text-align: left;
+  word-spacing: -1ch;
+  vertical-align: middle;
+}
+.lzd-logo-content {
+  width: 200px;
+  height: 29px;
+  display: inline-block;
+  word-spacing: normal;
+}
+.logo-img {
+  max-width: 127px;
+  max-height: 40px;
+}
+.search-bar {
+  width: 688px;
+  height: 45px;
+  display: inline-block;
+  word-spacing: normal;
+  vertical-align: top;
+  position: relative;
+}
+.search-bar input#search-bar-content {
+  width: 688px;
+  height: 45px;
+  padding: 13px 19px;
+  background-color: #eff0f5;
+  border: 0px;
+}
+.button-search-icon {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+.cart-bar {
+  display: inline-block;
+  word-spacing: normal;
+  width: 40;
+  height: 38px;
+  margin-left: 20px;
+}
+.cart-bar-icon {
+  width: 29px;
+  max-height: 26px;
+}
+.momo-bar {
+  display: inline-block;
+  word-spacing: normal;
+  width: 188px;
+  height: 45px;
+  text-align: right;
+  margin-left: 53px;
+}
+.momo-bar-img {
+  max-width: 188px;
+  max-height: 45px;
 }
