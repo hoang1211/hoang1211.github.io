@@ -138,3 +138,42 @@ li {
   max-width: 188px;
   max-height: 45px;
 }
+/* header main */
+.header-main {
+  width: 100%;
+  background-color: #25bac0;
+  padding-top: 115px;
+  height: 344px;
+}
+.warp-menu-header-main {
+  width: 1188px;
+  margin-left: auto;
+  margin-right: auto;
+  word-spacing: -1ch;
+}
+/* menu main head */
+.menu-list-main {
+  display: inline-block;
+  word-spacing: normal;
+  width: 200px;
+  height: 344px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  vertical-align: top;
+}
+.list {
+  display: block;
+  padding: 0px 0px 12px 8px;
+}
+
+/* Img cho header main */
+.img-ads {
+  display: inline-block;
+  word-spacing: normal;
+  text-align: right;
+}
+.img-ads-detail {
+  max-width: 988px;
+  max-height: 344px;
+}
