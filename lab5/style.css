@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table,
+tr,
+th,
+td {
+  width: 100px;
+  border: 1px solid gray;
+}
+th,
+td {
+  padding: 10px;
+  vertical-align: top;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: green;
+  color: white;
+}
+tbody td:empty {
+  background-color: yellowgreen;
+}
+tfoot .bg {
+  background-color: blue;
+  color: white;
+}
+/* Form */
