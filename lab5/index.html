@@ -63,10 +63,22 @@
     <div class="form-main">
       <form action="" class="sigh-up">
         <div class="form-group">
-          <input type="text" name="user" />
+          <input
+            type="text"
+            name="user"
+            placeholder="nhap vao di doi gi "
+            required
+          />
         </div>
         <div class="form-group">
-          <input type="password" name="pw" id="" />
+          <label for="pw">password</label>
+          <input
+            type="password"
+            name="pw"
+            id="pw"
+            placeholder="nhap mat khau vao"
+            required
+          />
         </div>
         <div class="form-group">
           <input type="radio" name="gender" value="nam" />
@@ -81,6 +93,7 @@
           <input type="checkbox" name="gender" value="les" />
         </div>
         <div class="form-group">
+          <label for="select-box">Nam sinh</label>
           <select name="year" id="select-box">
             <option value="0"></option>
             <option value="1992">1992</option>
@@ -89,7 +102,13 @@
           </select>
         </div>
         <div class="form-group">
+          <textarea name="note" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
           <input type="submit" />
+        </div>
+        <div class="form-group">
+          <button type="submit">Gui di</button>
         </div>
       </form>
     </div>

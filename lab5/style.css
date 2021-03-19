@@ -26,3 +26,18 @@ tfoot .bg {
   color: white;
 }
 /* Form */
+input[type="radio"] {
+  width: 100px;
+}
+.form-group > label {
+  width: 150px;
+  display: inline-block;
+}
+textarea {
+  resize: none;
+  outline: none;
+}
+input:focus {
+  background-color: blue;
+  box-shadow: 0 0 0 2px grey;
+}
