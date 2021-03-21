@@ -1,0 +1,181 @@
+body {
+  overflow-y: scroll;
+}
+body,
+button,
+input,
+label,
+select,
+td,
+textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+input {
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+input:focus {
+  border: 1px solid blue;
+}
+.clearfix::after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+body {
+  background: #fff;
+  color: #1c1e21;
+  direction: ltr;
+  line-height: 1.34;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: embed;
+}
+.wrap {
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+  padding-bottom: 112px;
+  padding-top: 72px;
+  background: #f0f2f5;
+}
+.main {
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: auto;
+  background: #f0f2f5;
+}
+.content {
+  font-family: inherit;
+  padding-bottom: 112px;
+  padding-top: 72px;
+  min-width: 500px;
+  display: block;
+  font-size: 12px;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  width: 980px;
+  font-size: 12px;
+  word-spacing: -1ch;
+}
+.banner {
+  font-family: inherit;
+  box-sizing: border-box;
+  margin-right: 0;
+  padding-right: 32px;
+  width: 580px;
+  display: inline-block;
+  vertical-align: top;
+  word-spacing: normal;
+}
+.facebook-logo {
+  padding: 112px 0 16px;
+}
+.facebook-logo-img {
+  height: 106px;
+  margin: -28px;
+  border: 0;
+}
+.facebook-title {
+  color: #1c1e21;
+  color: #333;
+  display: inline-block;
+  font-family: "Freight Sans Bold", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 32px;
+  padding-bottom: 20px;
+  text-rendering: optimizelegibility;
+  width: 456px;
+  word-spacing: normal;
+}
+.log-form {
+  display: inline-block;
+  word-spacing: normal;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: inherit;
+}
+.log-form-clearfix {
+  height: 456px;
+  width: 396px;
+  display: block;
+}
+.log-form-content {
+  padding-bottom: 24px;
+  padding-top: 10px;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 10px 0 28px;
+  width: 396px;
+  text-align: center;
+  display: block;
+}
+.login-email-pw {
+  display: block;
+  font-family: inherit;
+  text-align: center;
+  margin-right: 30px;
+}
+.login-email {
+  font-family: inherit;
+  font-size: 17px;
+  width: 364px;
+  display: inline-block;
+  font-size: 14px;
+  margin: auto;
+  padding: 6px 0;
+  width: 302px;
+  text-align: center;
+}
+.inputtext-email {
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 310px;
+  background: #ffffff repeat-x;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 22px;
+  line-height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  font: 400 13.3333px Arial;
+  background-color: #fff;
+  color: #1c1e21;
+  margin: 0;
+}

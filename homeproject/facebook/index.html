@@ -12,7 +12,7 @@
     <div class="wrap">
       <div class="main">
         <div class="main-background">
-          <div class="content-clearfix">
+          <div class="content-clearfix clearfix">
             <div class="content">
               <div class="banner">
                 <div class="facebook-logo">
@@ -28,8 +28,71 @@
                 </h2>
               </div>
               <div class="log-form">
-                <div class="log-form-clearfix">
-                  <div class="log-form-content"></div>
+                <div class="log-form-clearfix clearfix">
+                  <div class="log-form-content">
+                    <div class="form-input">
+                      <form action="" class="login-content" id="login-form">
+                        <div class="login-email-pw">
+                          <div class="login-email">
+                            <input
+                              type="text"
+                              class="inputtext-email"
+                              name="email"
+                              id="email"
+                              data-testid="royal_email"
+                              placeholder="Email hoặc số điện thoại"
+                              autofocus="1"
+                              aria-label="Email hoặc số điện thoại"
+                            />
+                          </div>
+                          <div class="login-pw">
+                            <div class="login-pw-contener">
+                              <input
+                                type="password"
+                                class="inputtext-pw"
+                                name="pass"
+                                id="pass"
+                                data-testid="royal_pass"
+                                placeholder="Mật khẩu"
+                                aria-label="Mật khẩu"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="log-in-button">
+                          <button
+                            value="1"
+                            class="login-button-link"
+                            name="login"
+                            data-testid="royal_login_button"
+                            type="submit"
+                            id="login-link"
+                          >
+                            Đăng nhập
+                          </button>
+                        </div>
+                        <div class="forgot-pw">
+                          <a
+                            href="https://vi-vn.facebook.com/recover/initiate/?ars=facebook_login&amp;privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjE2MzE5ODUxLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"
+                            >Quên mật khẩu?</a
+                          >
+                        </div>
+                        <div class="under-line-login"></div>
+                        <div class="reg-acc">
+                          <a
+                            role="button"
+                            class="reg-acc-button"
+                            href="#"
+                            ajaxify="/reg/spotlight/"
+                            id="reg-acc-link"
+                            data-testid="open-registration-form-button"
+                            rel="async"
+                            >Tạo tài khoản mới</a
+                          >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                   <div class="bottom-log-form">
                     <a href="" class="bottom-log-form">Tạo Trang</a>dành cho
                     người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.

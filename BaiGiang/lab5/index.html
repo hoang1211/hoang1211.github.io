@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form name="signup">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required />
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input id="birthday" name="birthday" type="date" />
+            </div>
+
+            <div class="form-group">
+                <label for="number">Favourite Number</label>
+                <input
+                    id="number"
+                    name="number"
+                    type="number"
+                    min="100"
+                    max="1000"
+                    step="100"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Avatar</label>
+                <input id="avatar" name="avatar" type="file" accept="image/*" />
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <div class="input-group">
+                    <input
+                        checked
+                        id="male"
+                        name="gender"
+                        value="male"
+                        type="radio"
+                    />
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="input-group">
+                    <label>
+                        <input name="gender" value="fermale" type="radio" />
+                        Fermale</label
+                    >
+                </div>
+
+                <div class="input-group">
+                    <input name="gender" value="gay" id="gay" type="radio" />
+                    <label for="gay">Gay</label>
+                </div>
+
+                <div class="input-group">
+                    <input name="gender" value="les" id="les" type="radio" />
+                    <label for="les">Les</label>
+                </div>
+            </div>
+
+            <div class="form-group option-group">
+                <label>Tùy chọn</label>
+
+                <div class="options">
+                    <div class="input-group">
+                        <input
+                            checked
+                            name="option"
+                            value="email"
+                            id="email"
+                            type="checkbox"
+                        />
+                        <label for="email"
+                            >Nhận thông tin khuyến mãi qua email</label
+                        >
+                    </div>
+                    <div class="input-group">
+                        <input
+                            name="option"
+                            value="spam"
+                            id="spam"
+                            type="checkbox"
+                        />
+                        <label for="spam">Nhận email spam</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="city">From</label>
+                <select name="city" id="city">
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option selected value="nd">Nam Định</option>
+                </select>
+            </div>
+
+            <div class="form-group note-group">
+                <label for="note">Note</label>
+                <textarea name="note" id="note" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group button-group">
+                <button type="submit">Gửi em đi</button>
+                <button type="reset">Xóa em đi</button>
+            </div>
+        </form>
+    </body>
+</html>
