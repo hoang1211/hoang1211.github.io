@@ -1,5 +1,6 @@
 body {
   overflow-y: scroll;
+  box-sizing: border-box;
 }
 body,
 button,
@@ -178,4 +179,7 @@ body {
   background-color: #fff;
   color: #1c1e21;
   margin: 0;
+}
+::-webkit-input-placeholder {
+  color: #999;
 }

@@ -1,0 +1,18 @@
+.container {
+  background-color: yellow;
+  height: 450px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: yellowgreen;
+  order: 0;
+  flex-grow: 1;
+}
+.item1 {
+  order: 4;
+  flex-grow: 2;
+}
