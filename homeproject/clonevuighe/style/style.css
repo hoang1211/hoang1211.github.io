@@ -9,6 +9,10 @@ a {
   color: #333;
   background-color: transparent;
 }
+button {
+  background-color: white;
+  border: none;
+}
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
@@ -315,4 +319,263 @@ img {
   border: 1px solid;
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.5);
+}
+/* Tin Tong Hop */
+.tray-content .news-item {
+  flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+}
+.tray-content .news-item:not(:nth-child(4n)) {
+  margin-right: 10px;
+}
+.news-item-thumbnail {
+  width: 150px;
+  height: 89px;
+}
+.news-item-thumbnail {
+  transition: opacity 0.3s ease-in-out;
+}
+.news-item-thumbnail {
+  margin-right: 10px;
+}
+.news-item-thumbnail {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+img {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+.news-item-meta {
+  width: 160px;
+  height: 89px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.news-item-genre {
+  margin-bottom: 5px;
+  padding: 2px 8px;
+  background: #d80f16;
+  display: table;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  user-select: none;
+}
+.genre-6 {
+  background-color: rgba(63, 81, 181, 0.7);
+}
+.genre-3 {
+  background-color: rgba(233, 30, 99, 0.7);
+}
+.genre-1 {
+  background-color: rgba(243, 56, 74, 0.7);
+}
+/* Phim hoat hinh */
+.tray-content .tray-item {
+  flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+}
+.tray-content .tray-item:not(:nth-child(4n)) {
+  margin-right: 10px;
+}
+.tray-item {
+  position: relative;
+}
+.tray-item-description {
+  height: 81px;
+  padding: 30px 15px 10px;
+}
+.tray-item-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  color: #eee;
+  background: transparent;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+/* Bo suu tap */
+.tray-content .collection-item {
+  flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+}
+.tray-content .collection-item:not(:nth-child(4n)) {
+  margin-right: 10px;
+}
+/* Bang xep hang */
+.tray-content .ranking-item {
+  flex-basis: calc(100% / 6 - 50px / 6);
+  margin-bottom: 10px;
+}
+.tray-content .ranking-item:not(:nth-child(6n)) {
+  margin-right: 10px;
+}
+.ranking-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+.ranking-item .ranking-item-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.ranking-item .ranking-item-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.ranking-item-top {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  line-height: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 100%;
+  background: none;
+}
+.ranking-item-title {
+  color: #fff;
+}
+.background-2.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(244, 67, 54, 0.9),
+    rgba(244, 67, 54, 0.7)
+  );
+}
+.background-4.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(156, 39, 176, 0.9),
+    rgba(156, 39, 176, 0.7)
+  );
+}
+.background-6.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(63, 81, 181, 0.9),
+    rgba(63, 81, 181, 0.7)
+  );
+}
+.background-8.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 150, 136, 0.9),
+    rgba(0, 150, 136, 0.7)
+  );
+}
+.background-10.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(255, 193, 7, 0.9),
+    rgba(255, 193, 7, 0.7)
+  );
+}
+.background-12.l90 {
+  background: linear-gradient(
+    -180deg,
+    rgba(140, 106, 73, 0.9),
+    rgba(140, 106, 73, 0.7)
+  );
+}
+.ranking-item-update,
+.ranking-item-views {
+  font-size: 12px;
+  color: #fff;
+}
+.ranking-item-update,
+.ranking-item-views {
+  font-size: 12px;
+  color: #fff;
+}
+/* All anime */
+.tray-item-complete,
+.tray-item-upcoming {
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  padding-top: 16px;
+  font-size: 14px;
+}
+.tray-item-complete,
+.tray-item-upcoming {
+  position: absolute;
+  background: rgba(216, 15, 22, 0.6);
+  color: #eee;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 100%;
+}
+.tray-film-genres,
+.tray-film-update {
+  position: absolute;
+  left: 90px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.tray-more {
+  clear: both;
+  width: 100px;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 2px;
+  background: #d80f16;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* footer */
+.notification-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 8888;
+}
+.footer,
+.footer a {
+  color: #888;
+}
+.footer {
+  padding: 10px;
+  font-size: 14px;
 }
