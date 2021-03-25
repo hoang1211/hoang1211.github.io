@@ -13,6 +13,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +96,7 @@ section {
   background-color: #fff9f8;
 }
 
-.btn {
+.btn-normal {
   background-color: #ff817e;
   border-radius: 0;
   color: #fff;
@@ -108,37 +109,37 @@ section {
   padding: 20px 15px;
 }
 
-.btn-round {
+.btn-normal-round {
   border-radius: 50px;
 }
 
-.btn-outline {
+.btn-normal-outline {
   background-color: transparent;
   border: 1px solid #fff;
 }
 
-.btn:focus {
+.btn-normal:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.btn.icon-left i {
+.btn-normal.icon-left i {
   font-size: 20px;
   line-height: 0.8;
   margin-right: 10px;
 }
 
-.video-btn {
+.video-btn-normal {
   color: #555;
   font-size: 15px;
   font-weight: 400;
 }
 
-.video-btn:hover {
+.video-btn-normal:hover {
   color: #ff817e;
 }
 
-.video-btn i {
+.video-btn-normal i {
   border-radius: 50%;
   background-color: #fcf5ee;
   color: #ff817e;
@@ -316,13 +317,13 @@ section {
 }
 
 @media screen and (min-width: 480px) {
-  .banner .video-btn {
+  .banner .video-btn-normal {
     margin-left: 15px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .banner .video-btn {
+  .banner .video-btn-normal {
     display: block;
     margin-top: 30px;
   }
@@ -466,7 +467,7 @@ section {
   margin-bottom: 39px;
 }
 
-.post .btn {
+.post .btn-normal {
   background-color: #30383b;
   margin-bottom: 30px;
   padding: 15px;
@@ -477,7 +478,7 @@ section {
   box-shadow: 0 5px 20px #f0f0f0;
 }
 
-.post:hover .btn {
+.post:hover .btn-normal {
   background-color: #ff817e;
   color: #fff;
 }
@@ -1055,4 +1056,41 @@ section {
 
 .footer .copyright a {
   color: #ff817e;
+}
+/* owl class */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  touch-action: manipulation;
+}
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-touch-callout: none;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
 }
