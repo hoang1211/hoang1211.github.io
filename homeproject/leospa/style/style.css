@@ -1094,3 +1094,6 @@ section {
   -webkit-tap-highlight-color: transparent;
   position: relative;
 }
+.owl-dots-commend {
+  border: 0;
+}
