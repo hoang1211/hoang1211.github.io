@@ -1094,6 +1094,7 @@ section {
   -webkit-tap-highlight-color: transparent;
   position: relative;
 }
+<<<<<<< HEAD
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
@@ -1126,4 +1127,8 @@ section {
   position: relative;
   text-align: center;
   margin-bottom: 30px;
+=======
+.owl-dots-commend {
+  border: 0;
+>>>>>>> b76250595ec1c1cc9206379eaf6b411d9716dee3
 }
