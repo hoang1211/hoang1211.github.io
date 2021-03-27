@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeStyle - Webflow Ecommerce website template</title>
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
@@ -24,15 +27,11 @@
             class="logo-image"
           />
         </a>
-
-        <nav
-          role="navigation"
-          class="nav-menu w-nav-menu col-8 row flex a-center"
-        >
+        <nav role="navigation" class="nav-menu w-nav-menu col-9 flex a-end">
           <a
             href="/"
             aria-current="page"
-            class="menu-item-wrap w-inline-block w--current col-2"
+            class="menu-item-wrap w-inline-block w--current"
             ><div class="menu-item">Home</div>
             <div
               class="menu-item-deco-line"
@@ -43,7 +42,7 @@
                 opacity: 0;
               "
             ></div></a
-          ><a href="/products" class="menu-item-wrap w-inline-block col-2"
+          ><a href="/products" class="menu-item-wrap w-inline-block"
             ><div class="menu-item">Our Products</div>
             <div
               class="menu-item-deco-line"
@@ -54,7 +53,7 @@
                 opacity: 0;
               "
             ></div></a
-          ><a href="/blog" class="menu-item-wrap w-inline-block col-2"
+          ><a href="/blog" class="menu-item-wrap w-inline-block"
             ><div class="menu-item">Blog</div>
             <div
               class="menu-item-deco-line"
@@ -65,7 +64,7 @@
                 opacity: 0;
               "
             ></div></a
-          ><a href="/about" class="menu-item-wrap w-inline-block col-2"
+          ><a href="/about" class="menu-item-wrap w-inline-block"
             ><div class="menu-item">About</div>
             <div
               class="menu-item-deco-line"
@@ -76,7 +75,7 @@
                 opacity: 0;
               "
             ></div></a
-          ><a href="/contact" class="menu-item-wrap w-inline-block col-2"
+          ><a href="/contact" class="menu-item-wrap w-inline-block"
             ><div class="menu-item">Contact</div>
             <div
               class="menu-item-deco-line"
@@ -87,7 +86,7 @@
                 opacity: 0;
               "
             ></div></a
-          ><a href="/styleguide" class="menu-item-wrap w-inline-block col-2"
+          ><a href="/styleguide" class="menu-item-wrap w-inline-block"
             ><div class="menu-item">Styleguide</div>
             <div
               class="menu-item-deco-line"
@@ -100,6 +99,19 @@
             ></div
           ></a>
         </nav>
+        <a
+          href="#"
+          data-node-type="commerce-cart-open-link"
+          class="w-commerce-commercecartopenlink cart-button w-inline-block"
+          ><img
+            src="images/5be96251aaba7a3450ecdfb5_Cart Icon.png"
+            width="16"
+            alt=""
+            class="cart-icon" />
+          <div class="uppercase-text w-inline-block">Cart</div>
+          <div class="w-commerce-commercecartopenlinkcount item-count">0</div>
+          <div class="menu-item-deco-line"></div
+        ></a>
       </div>
     </div>
     <div class="header-section">
@@ -142,6 +154,7 @@
         </div>
         <div
           class="label-featermugs .subheadline-wrap.cc-separate-subheadline .subheadline-wrap"
+          style="margin-bottom: 100px; margin-top: 100px"
         >
           <div class="subheadline-deco-line"></div>
           <div class="label cc-subheadline w-inline-block">Featured Mugs</div>
@@ -150,13 +163,422 @@
         <section class="featured-mugs w-dyn-list">
           <div class="featured-collection w-dyn-items row">
             <div class="feature-item w-dyn-item col-6">
-              <div class="link-wrap-category">
-                <img src="images/product1.jpg" alt="" />
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
               </div>
             </div>
             <div class="feature-item w-dyn-item col-6">
-              <div class="link-wrap-category">
-                <img src="images/product1.jpg" alt="" />
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product2.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="label-featermugs .subheadline-wrap.cc-separate-subheadline .subheadline-wrap"
+          style="margin-bottom: 100px; margin-top: 100px"
+        >
+          <div class="subheadline-deco-line"></div>
+          <div class="label cc-subheadline w-inline-block">More Products</div>
+          <div class="subheadline-deco-line"></div>
+        </div>
+        <section class="featured-mugs w-dyn-list">
+          <div class="featured-collection w-dyn-items row">
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-mugs w-dyn-list">
+          <div class="featured-collection w-dyn-items row">
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="featured-mugs w-dyn-list">
+          <div class="featured-collection w-dyn-items row">
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <img src="images/product1.jpg" alt="" />
+                    <div class="cc-product-button feature-button">
+                      <div>Explore Mug</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category"
+                  >Pink Premium Ceramic</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category">$&nbsp;99.00&nbsp;USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="label-featermugs .subheadline-wrap.cc-separate-subheadline .subheadline-wrap"
+          style="margin-bottom: 100px; margin-top: 100px"
+        >
+          <div class="subheadline-deco-line"></div>
+          <div class="label cc-subheadline w-inline-block">
+            BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE
+          </div>
+          <div class="subheadline-deco-line"></div>
+        </div>
+        <section class="2mugs-getcoffe">
+          <div class="wrap-2mug-getcoffe row">
+            <div class="anh-coffe col-6">
+              <div class="grid-container">
+                <div class="anh-to"></div>
+                <div class="anh-be">
+                  <div class="grid-container-anhbe">
+                    <div class="anh-be-1"></div>
+                    <div class="anh-be-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="noi-dung-offer col-6">
+              <div
+                id="w-node-_2d2e750c-a2a7-4379-71a8-dcf95aece3c3-5cecdf68"
+                class="magazine-content-wrap"
+              >
+                <div class="magazine-text-wrap">
+                  <div class="label cc-footer-section-headline w-inline-block">
+                    Premium Offer
+                  </div>
+                  <h2 class="magazine-headline">Get our Coffee Magazine</h2>
+                  <p
+                    id="w-node-_2d2e750c-a2a7-4379-71a8-dcf95aece3c7-5cecdf68"
+                    class="paragraph"
+                  >
+                    The most versatile furniture system ever created. Designed
+                    to fit your life.
+                  </p>
+                </div>
+                <a href="/products" class="dark-button w-inline-block"
+                  ><div>Start Shopping</div></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="parallax-section"></div>
+      <div class="wrap">
+        <div
+          class="label-featermugs .subheadline-wrap.cc-separate-subheadline .subheadline-wrap"
+          style="margin-bottom: 100px; margin-top: 100px"
+        >
+          <div class="subheadline-deco-line"></div>
+          <div class="label cc-subheadline w-inline-block">
+            BEHIND THE MUGS, LIFESTYLE STORIES
+          </div>
+          <div class="subheadline-deco-line"></div>
+        </div>
+        <section class="featured-mugs w-dyn-list">
+          <div class="featured-collection w-dyn-items row">
+            <div class="feature-item-footer w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <div class="background-footer"></div>
+                    <div class="cc-product-button feature-button">
+                      <div>Read the full story</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category feature-item-footer"
+                  >Health Check: why do I get a headache when I haven’t had my
+                  coffee?</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category feature-item-footer">
+                    It is a paradisematic country, in which roasted parts of
+                    sentences fly into your mouth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item-footer w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <div class="background-footer"></div>
+                    <div class="cc-product-button feature-button">
+                      <div>Read the full story</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category feature-item-footer"
+                  >Health Check: why do I get a headache when I haven’t had my
+                  coffee?</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category feature-item-footer">
+                    It is a paradisematic country, in which roasted parts of
+                    sentences fly into your mouth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-item-footer w-dyn-item col-4">
+              <div class="link-wrap-category w-inline-block">
+                <div class="feature-item-1 link-wrap-category">
+                  <div class="wrap-feature item-overlay">
+                    <div class="background-footer"></div>
+                    <div class="cc-product-button feature-button">
+                      <div>Read the full story</div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="/product/pink-premium-ceramic"
+                  class="pic-description cc-product-category feature-item-footer"
+                  >Health Check: why do I get a headache when I haven’t had my
+                  coffee?</a
+                >
+                <div class="category-price-wrap">
+                  <p
+                    class="discounted-price-category w-condition-invisible w-dyn-bind-empty"
+                  ></p>
+                  <p class="product-price-category feature-item-footer">
+                    It is a paradisematic country, in which roasted parts of
+                    sentences fly into your mouth.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
