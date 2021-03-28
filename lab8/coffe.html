@@ -18,8 +18,8 @@
   </head>
   <body>
     <div class="w-nope container">
-      <div class="wrap cc-menu w-nav row flex a-start">
-        <a href="" class="brand w-nav-brand w--current col-2">
+      <div class="wrap cc-menu w-nav">
+        <a href="" class="brand w-nav-brand w--current">
           <img
             src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png"
             width="112"
@@ -27,7 +27,7 @@
             class="logo-image"
           />
         </a>
-        <nav role="navigation" class="nav-menu w-nav-menu col-9 flex a-end">
+        <nav role="navigation" class="nav-menu w-nav-menu">
           <a
             href="/"
             aria-current="page"
@@ -99,19 +99,21 @@
             ></div
           ></a>
         </nav>
-        <a
-          href="#"
-          data-node-type="commerce-cart-open-link"
-          class="w-commerce-commercecartopenlink cart-button w-inline-block"
-          ><img
-            src="images/5be96251aaba7a3450ecdfb5_Cart Icon.png"
-            width="16"
-            alt=""
-            class="cart-icon" />
-          <div class="uppercase-text w-inline-block">Cart</div>
-          <div class="w-commerce-commercecartopenlinkcount item-count">0</div>
-          <div class="menu-item-deco-line"></div
-        ></a>
+        <div class="wrap-cart-icon">
+          <a
+            href="#"
+            data-node-type="commerce-cart-open-link"
+            class="w-commerce-commercecartopenlink cart-button w-inline-block"
+            ><img
+              src="images/5be96251aaba7a3450ecdfb5_Cart Icon.png"
+              width="16"
+              alt=""
+              class="cart-icon" />
+            <div class="uppercase-text w-inline-block">Cart</div>
+            <div class="w-commerce-commercecartopenlinkcount item-count">0</div>
+            <div class="menu-item-deco-line"></div
+          ></a>
+        </div>
       </div>
     </div>
     <div class="header-section">
@@ -583,6 +585,53 @@
             </div>
           </div>
         </section>
+      </div>
+    </div>
+    <div
+      data-w-id="2137cadc-f27c-f8b8-d4bf-ae8d48effbd1"
+      class="content cc-subscribe-form"
+      style="
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+      "
+    >
+      <div class="subscribe-wrap">
+        <div class="wrap cc-subscribe-form">
+          <div class="footer-subheadline">
+            <div class="subscribe-form-deco-line"></div>
+            <div class="label cc-subheadline w-inline-block">
+              Sign up and get free coffee bags
+            </div>
+            <div class="subscribe-form-deco-line"></div>
+          </div>
+          <div class="subscribe-headline">Coffee Updates</div>
+          <div class="form-block w-form">
+            <form
+              id="wf-form-Subscribe-Form"
+              name="wf-form-Subscribe-Form"
+              data-name="Subscribe Form"
+              class="form"
+            >
+              <input
+                type="text"
+                class="text-field-dark cc-subscribe-input w-input"
+                maxlength="256"
+                name="Customer-s-Name"
+                data-name="Customer's Name"
+                placeholder="customer@coffeestyle.io"
+                id="Customer-s-Name"
+                style="background-color: #1d1f2e"
+              /><input
+                type="submit"
+                value="Subscribe"
+                data-wait="Please wait..."
+                class="white-button w-button"
+              />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>
