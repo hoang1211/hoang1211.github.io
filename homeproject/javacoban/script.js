@@ -36,3 +36,15 @@
 // Viết chương trình nhập thời gian hiện tại tính theo số giây từ 0h, tính và in ra giá trị
 // giờ/phút/giây tương ứng theo định dạng h:m:s
 // ------Loi Giai------------
+// let today = new Date();
+// let soGiay =
+//   today.getHours() * 3600 + today.getMinutes() * 60 + today.getSeconds();
+// let times =
+//   " Gio hien tai theo h:m:s : " +
+//   today.getHours() +
+//   ":" +
+//   today.getMinutes() +
+//   ":" +
+//   today.getSeconds();
+// console.log("thời gian hiện tại tính theo số giây từ 0h : " + soGiay);
+// console.log(times);
