@@ -48,3 +48,9 @@
 //   today.getSeconds();
 // console.log("thời gian hiện tại tính theo số giây từ 0h : " + soGiay);
 // console.log(times);
+// ----------Nguoi dung nhap so giay------------
+// let soGiayNhapVao = Number(prompt("Nhap so giay: "));
+// let soGio = parseInt(soGiayNhapVao / 3600);
+// let soPhut = parseInt((soGiayNhapVao % 3600) / 60);
+// let soGiay = (soGiayNhapVao % 3600) % 60;
+// console.log("Thoi gian la: " + soGio + "h:" + soPhut + "m:" + soGiay);
