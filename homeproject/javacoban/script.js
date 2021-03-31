@@ -10,7 +10,7 @@
 //   return m * 0.01;
 // }
 // function donViKm(km) {
-//   return km * 0.001;
+//   return km * 0.001*0.01;
 // }
 // console.log(
 //   "So Mm : " +
