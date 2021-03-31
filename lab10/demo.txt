@@ -1,0 +1,9 @@
+a = false ;
+b = !!a = false;
+c = a || (!b&&0) = 0;
+a && b && c = false;
+a || b || c = 0;
+!a  || ( b &&  ! c) = true;
+!!(!a&&!b)||c = 0;
+!( !a  || !b) || c = 0;
+ 
