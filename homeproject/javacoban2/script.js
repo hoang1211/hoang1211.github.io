@@ -40,6 +40,9 @@
 //   console.log(
 //     "ba so : " + a + "," + b + "," + c + " khong la canh cua 1 tam giac"
 //   );
+// a <= 0 && b <= 0 && c <=0 && console.log(
+//     "ba so : " + a + "," + b + "," + c + " khong la canh cua 1 tam giac"
+//   );
 
 // 1. VCT nhập ba số a, b, c, kiểm tra và in ra số lớn nhất
 
