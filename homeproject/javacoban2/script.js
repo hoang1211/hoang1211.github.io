@@ -23,20 +23,12 @@
 // let b = Number(prompt("nhap so b: "));
 // let c = Number(prompt("nhap so c: "));
 // a + b > c &&
-//   console.log("ba so : " + a + "," + b + "," + c + " la canh cua 1 tam giac");
-// b + c > a &&
-//   console.log("ba so : " + a + "," + b + "," + c + " la canh cua 1 tam giac");
-// c + a > b &&
+//   b + c > a &&
+//   c + a > b &&
 //   console.log("ba so : " + a + "," + b + "," + c + " la canh cua 1 tam giac");
 // a + b <= c &&
-//   console.log(
-//     "ba so : " + a + "," + b + "," + c + " khong la canh cua 1 tam giac"
-//   );
-// b + c <= a &&
-//   console.log(
-//     "ba so : " + a + "," + b + "," + c + " khong la canh cua 1 tam giac"
-//   );
-// c + a <= b &&
+//   b + c <= a &&
+//   c + a <= b &&
 //   console.log(
 //     "ba so : " + a + "," + b + "," + c + " khong la canh cua 1 tam giac"
 //   );
