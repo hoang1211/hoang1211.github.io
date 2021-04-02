@@ -123,7 +123,7 @@
 // - point < 4.0 => F
 
 // let a = Number(prompt("Nhap so diem point : "));
-// if (a < 0 && a > 10) {
+// if (a < 0 || a > 10) {
 //   console.log("Nhap sai diem.Diem chi nam trong thang diem 10");
 // } else if (a < 4) {
 //   console.log("Diem cua ban la F ");
