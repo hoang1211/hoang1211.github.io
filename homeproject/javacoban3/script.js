@@ -15,27 +15,100 @@
 // 2. VCT in ra nếu số chia hết cho 3 thì in Fizz, chia hết cho 5 thì in Buzz, chia hết cho cả 3 và 5
 // thì in FizzBuzz, không chia hết cho cả 3 và 5 thì in BizzFuzz, trong khoảng 0 -> 50
 
-for (let i = 0; i < 51; i++) {
-  let fizz = "Fizz";
-  let buzz = "Buzz";
-  let fizzBuzz = "FizzBuzz";
-  let bizzFuzz = "BizzFuzz";
-  if (i % 3 != 0 && i % 5 != 0) {
-    console.log(bizzFuzz);
-  } else if (i % 3 == 0 && i % 5 == 0) {
-    console.log(fizzBuzz);
-  } else if (i % 3 == 0) {
-    console.log(fizz);
-  } else {
-    console.log(buzz);
-  }
-}
+// for (let i = 0; i < 51; i++) {
+//   let fizz = "Fizz";
+//   let buzz = "Buzz";
+//   let fizzBuzz = "FizzBuzz";
+//   let bizzFuzz = "BizzFuzz";
+//   if (i % 3 != 0 && i % 5 != 0) {
+//     console.log(bizzFuzz);
+//   } else if (i % 3 == 0 && i % 5 == 0) {
+//     console.log(fizzBuzz);
+//   } else if (i % 3 == 0) {
+//     console.log(fizz);
+//   } else {
+//     console.log(buzz);
+//   }
+// }
 
 // 3. VCT tính và in ra tổng bội chung của 3 và 5 trong khoảng 0 -> 100
+
+// let tong = 0;
+// for (let i = 0; i < 101; i++) {
+//   if ((i % 3 == 0) & (i % 5 == 0)) {
+//     tong = tong + i;
+//   }
+// }
+// console.log(tong);
+
 // 4. VCT nhập vào một số n, kiểm tra số đó có phải số nguyên tố hay không và in ra kết quả
+
+// let prime = Number(prompt("nhap mot so: "));
+
+// function isPrime(n) {
+//   if (n < 2) {
+//     console.log(n + " khong phai la so nguyen to");
+//   } else {
+//     for (let i = 2; i < n; i++) {
+//       if (n % i == 0) {
+//         console.log(n + " khong phai la so nguyen to");
+//         break;
+//       } else {
+//         console.log(n + " la so nguyen to");
+//       }
+//     }
+//   }
+// }
+// isPrime(prime);
+
 // 5. VCT nhập vào 2 số a, b kiểm tra và in ra các số nguyên tố trong khoảng a -> b
+
+// let a = Number(prompt("nhap mot so a: "));
+// let b = Number(prompt("nhap mot so b: "));
+
+// function isPrime(n) {
+//   let flag = false;
+//   if (n < 2) {
+//     return false;
+//   } else {
+//     for (let i = 2; i < n; i++) {
+//       if (n % i == 0) {
+//         return false;
+//       } else {
+//         flag = true;
+//       }
+//     }
+//   }
+//   return flag;
+// }
+// if (a < 0 || b < 0 || isNaN(a) == true || isNaN(b) == true || a == b) {
+//   console.log("Nhap sai, a va b phai lon hon 0, a khac b va la 1 so");
+// } else if (a < b) {
+//   for (let count = a; count < b + 1; count++) {
+//     if (isPrime(count) == true) {
+//       console.log(count);
+//     }
+//   }
+// } else {
+//   for (let count = b; count < a + 1; count++) {
+//     if (isPrime(count) == true) {
+//       console.log(count);
+//     }
+//   }
+// }
+
 // 6. VCT in ra bảng cửu chương ngược (từ 10 -> 1)
+
+// for (let i = 10; i > 0; i--) {
+//   let ketQua = "";
+//   for (let j = 10; j > 0; j--) {
+//     ketQua = ketQua + "    " + i + " x " + j + " = " + i * j;
+//   }
+//   console.log(ketQua);
+// }
+
 // 1. VCT in ra chữ số đầu và cuối của một số. VD 12345 -> 15
+
 // 2. VCT kiểm tra và in ra một số có phải số Palindrome hay không
 // 3. VCT kiểm tra và in ra một số có phải số Armstrong hay không
 // 4. VCT tính và in ra giai thừa Factorial của một số
