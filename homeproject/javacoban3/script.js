@@ -70,6 +70,8 @@
 //   let flag = false;
 //   if (n < 2) {
 //     return false;
+//   } else if (n == 2) {
+//     return true;
 //   } else {
 //     for (let i = 2; i < n; i++) {
 //       if (n % i == 0) {
@@ -109,17 +111,279 @@
 
 // 1. VCT in ra chữ số đầu và cuối của một số. VD 12345 -> 15
 
+// let a = prompt("Nhap 1 so: ");
+// if (a == "") {
+//   console.log("Ban chua nhap so");
+// } else {
+//   a = Number(a);
+//   if (isNaN(a) == true) {
+//     console.log("Ban vua nhap ky tu khong phai la so");
+//   } else if (a >= -9 && a <= 9) {
+//     console.log("so dau va so cuoi deu la: " + Math.sqrt(a * a));
+//   } else {
+//     let demSo = 10;
+//     let soCuoi = a % 10;
+//     let soDau;
+//     let count;
+//     for (let i = 0; true; i++) {
+//       count = a % demSo;
+//       soDau = (a - count) / demSo;
+//       demSo = demSo * 10;
+//       if (demSo > a) {
+//         break;
+//       }
+//     }
+//     console.log("so cuoi la : " + soCuoi);
+//     console.log("so dau la : " + soDau);
+//   }
+// }
+
 // 2. VCT kiểm tra và in ra một số có phải số Palindrome hay không
+
+// let a = Number(prompt("nhap so: "));
+// function daoNguocSo(n) {
+//   let soNguoc = 0;
+//   let soCuoi = 0;
+//   let soConLai;
+//   let demSo = 10;
+//   let count = n;
+//   for (let i = 0; true; i++) {
+//     soCuoi = count % 10;
+//     count = (count - soCuoi) / 10;
+//     if (i == 0) {
+//       soNguoc = soCuoi;
+//     } else {
+//       soNguoc = soNguoc * 10 + soCuoi;
+//     }
+//     if (count < 10) {
+//       soNguoc = soNguoc * 10 + count;
+//     }
+//     demSo = demSo * 10;
+//     if (demSo > n) {
+//       break;
+//     }
+//   }
+//   return soNguoc;
+// }
+// if (daoNguocSo(a) == a) {
+//   console.log(a + " la so Palindrome");
+// } else {
+//   console.log(a + " khong la so Palindrome");
+// }
+
 // 3. VCT kiểm tra và in ra một số có phải số Armstrong hay không
+
+// let a = Number(prompt("Nhap vao 1 so : "));
+
+// function demSo(n) {
+//   let count = 10;
+//   let soChuSo = 1;
+//   for (let i = 0; true; i++) {
+//     count = count * 10;
+//     soChuSo++;
+//     if (count > n) {
+//       break;
+//     }
+//   }
+//   return soChuSo;
+// }
+
+// function sumChuSo(s, m) {
+//   let sum = 0;
+//   let count = 10;
+//   let soCuoi;
+//   let cloneS = s;
+//   for (let i = 0; true; i++) {
+//     soCuoi = cloneS % 10;
+//     cloneS = (cloneS - soCuoi) / 10;
+//     if (i == 0) {
+//       sum = Math.pow(soCuoi, m);
+//     } else {
+//       sum = sum + Math.pow(soCuoi, m);
+//     }
+//     if (cloneS < 10) {
+//       sum = sum + Math.pow(cloneS, m);
+//     }
+//     count = count * 10;
+//     if (count > s) {
+//       break;
+//     }
+//   }
+//   return sum;
+// }
+// let test = demSo(a);
+// if (sumChuSo(a, test) == a) {
+//   console.log(a + " la so armstrong");
+// } else {
+//   console.log(a + " khong la so armstrong");
+// }
+
 // 4. VCT tính và in ra giai thừa Factorial của một số
+
+// let a = Number(prompt("Nhap vao 1 so : "));
+// let giaiThua = 1;
+// if (a == 0) {
+//   console.log("giai thua factorial cua " + a + " la 1");
+// } else {
+//   for (let i = 1; i < a + 1; i++) {
+//     giaiThua = giaiThua * i;
+//   }
+//   console.log("giai thua factorial cua " + a + " la : " + giaiThua);
+// }
+
 // 5. VCT kiểm tra và in ra một số có phải số Perfect hay không
+
+// let a = Number(prompt("Nhap vao 1 so : "));
+// let sum = 0;
+// for (let i = 0; i < a; i++) {
+//   if (a % i == 0) {
+//     sum = sum + i;
+//   }
+// }
+// if (sum == a) {
+//   console.log(a + " la so hoan hao");
+// } else {
+//   console.log(a + " khong la so hoan hao");
+// }
 // 6. VCT kiểm tra và in ra một số có phải số Strong hay không
+
+// let a = Number(prompt("Nhap vao 1 so : "));
+
+// function demSo(n) {
+//   let count = 10;
+//   let soChuSo = 1;
+//   if (a > -10 && a < 10) {
+//     soChuSo = 1;
+//   } else {
+//     for (let i = 0; true; i++) {
+//       count = count * 10;
+//       soChuSo++;
+//       if (count > n) {
+//         break;
+//       }
+//     }
+//   }
+//   return soChuSo;
+// }
+// function giaiThua(soA) {
+//   let giaiThuaSo = 1;
+//   if (soA == 0) {
+//     giaiThuaSo = 1;
+//   } else {
+//     for (let i = 1; i < soA + 1; i++) {
+//       giaiThuaSo = giaiThuaSo * i;
+//     }
+//   }
+//   return giaiThuaSo;
+// }
+// function test(so, soCs) {
+//   let strong = 0;
+//   let soCuoi = 0;
+//   for (let i = 0; i < soCs; i++) {
+//     if (so > 9) {
+//       soCuoi = so % 10;
+//       strong = strong + giaiThua(soCuoi);
+//       so = (so - soCuoi) / 10;
+//     } else {
+//       strong = strong + giaiThua(so);
+//     }
+//   }
+//   return strong;
+// }
+
+// let testStrong = test(a, demSo(a));
+// if (testStrong == a) {
+//   console.log(a + " la so strong");
+// } else {
+//   console.log(a + " khong la so strong");
+// }
+
 // 1. Viết hàm printPrime(n) in ra các số nguyên tố trong khoảng từ 0 -> n
+
+// function isPrime(a) {
+//   if (a < 2) {
+//     return false;
+//   } else {
+//     for (let i = 2; i < a; i++) {
+//       if (a % i == 0) {
+//         return false;
+//         break;
+//       } else {
+//         return true;
+//       }
+//     }
+//   }
+// }
+// function printPrime(n) {
+//   for (let i = 0; i < n + 1; i++) {
+//     if (isPrime(i) == true) {
+//       console.log(i);
+//     }
+//   }
+// }
+// let soNhap = Number(prompt("Nhap 1 so n : "));
+// printPrime(soNhap);
+
 // 2. Viết hàm convertTemperature(temp, to) chuyển đổi nhiệt độ từ Celsius sang Farenheit
+
+// let nhietDo = Number(prompt("Nhap nhiet do :  "));
+// function convertTemperature(temp, to) {
+//   if (to == "F" || to == "f") {
+//     console.log("C sang F la: " + (temp * 1.8 + 32));
+//   } else if (to === "k" || to == "K") {
+//     console.log("C sang K la: " + (temp + 273.15));
+//   } else {
+//     console.log(
+//       "do ban chon sai hoac khong chon gi nen mac dinh tra ve C sang K la: " +
+//         (temp + 273.15)
+//     );
+//   }
+// }
+// let toTemp = prompt("Ban muon chuyen sang Farenheit hay Kevin (F/K): ");
+// convertTemperature(nhietDo, toTemp);
+
 // hoặc Kevin, mặc định sẽ chuyển từ Celsius sang Kevin và trả về kết quả
 // 3. Viết hàm nearest(a, b) nhận vào 2 số, kiểm tra số nào gần với 100 nhất và trả về kết quả
+
+// let a1 = Number(prompt("Nhap so A: "));
+// let b1 = Number(prompt("Nhap so B: "));
+// function nearest(a, b) {
+//   if (100 - a == 100 - b) {
+//     console.log(a + " va " + b + " deu gan 100");
+//   } else if (100 - a > 100 - b) {
+//     console.log(b + " gan 100 nhat");
+//   } else {
+//     console.log(a + " gan 100 nhat");
+//   }
+// }
+// nearest(a1, b1);
+
 // 1. Viết hàm cube(n) tính và trả về giá trị lập phương của một số n
 // 2. Viết hàm sumFibo(n) tính và trả về tổng dãy số Fibonacci từ 0 -> n
+
+// let a = Number(prompt("nhap so n: "));
+
+// function sumFibo(n) {
+//   let s0 = 0;
+//   let s1 = 1;
+//   let sTg = 1;
+//   let sum = 2;
+//   if (n == 0) {
+//     return (sum = 0);
+//   }
+//   if (n == 1) {
+//     return (sum = 1);
+//   }
+//   for (i = 2; i < n; i++) {
+//     s0 = s1;
+//     s1 = sTg;
+//     sTg = s0 + s1;
+//     sum = sum + sTg;
+//   }
+//   return sum;
+// }
+// console.log(sumFibo(a));
+
 // 3. Viết hàm isPrime(n) kiểm tra ncó phải số Prime, kết quả trả về true hoặc false
 // 4. Viết hàm isArmstrong(n) kiểm tra n có phải số Armstrong, kết quả trả về true hoặc false
 // 5. Viết hàm isPerfetc(n) kiểm tra n có phải số Perfect, kết quả trả về true hoặc false
@@ -127,6 +391,8 @@
 // 7. Viết hàm factorial(n) tính và trả về giai thừa của n
 // 8. Viết hàm isExpo(a, b) kiểm tra số a có phải lũy thừa của b hay không, kết quả trả về true
 // hoặc false
+
+
 // 9. Viết hàm subByMultiAndSum(n) tính và trả về kết quả biểu thức hiệu giữa tích và tổng của
 // các chữ số trong số n.
 // 10. Viết hàm expo(x, y) tính và trả về kết lũy thừa bậc y của x, (y có thể âm)
