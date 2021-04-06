@@ -392,10 +392,45 @@
 // 8. Viết hàm isExpo(a, b) kiểm tra số a có phải lũy thừa của b hay không, kết quả trả về true
 // hoặc false
 
+// let a1 = Number(prompt("Nhap so A: "));
+// let b1 = Number(prompt("Nhap so B: "));
+
+// function isExpo(a, b) {
+//   let test = b;
+//   if ((a != 0) & (b != 0) & (a % b != 0)) {
+//     return false;
+//   }
+//   if (b == 0) {
+//     if (a == 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   } else if (a == 0 && b != 0) {
+//     return false;
+//   } else if (a == 1 && b == 1) {
+//     return true;
+//   } else {
+//     do {
+//       test = test * b;
+//     } while (test < a);
+//     if (test == a) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+// if (isExpo(a1, b1) == true) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
 
 // 9. Viết hàm subByMultiAndSum(n) tính và trả về kết quả biểu thức hiệu giữa tích và tổng của
 // các chữ số trong số n.
 // 10. Viết hàm expo(x, y) tính và trả về kết lũy thừa bậc y của x, (y có thể âm)
+
 // 1. Viết hàm random(a, b), trả về số ngẫu nhiên trong khoảng a - b
 // 2. Viết hàm isTriangle(a, b, c) nhận vào 3 tham số là cạnh của tam giác, kiểm tra 3 cạnh có phải
 // tam giác hợp lệ hay không?
