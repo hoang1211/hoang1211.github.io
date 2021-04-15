@@ -438,6 +438,8 @@
 // bảng cho phép người dùng đoán giá trị. Nếu đoán đúng hiển thị "Â mây zing, gút chóp" và
 // dừng hàm, nếu sai hiển thị "Không khớp" và cho phép nhập lại. Số lần nhập tối đa là 3 lần,
 // hoặc người dùng có thể bấm cancel để dừng hàm.
+
+
 // 4. Viết hàm nearest(a, b) kiểm tra và trả về số gần với 100 nhất. VD: nearest(90, 105) // 105,
 // hoặc rearest(80, 90) // 90
 // 5. Viết hàm sequense(a, b, c) kiểm tra xem a, b, c có có phải tăng dần (hoặc giảm dần) hay
