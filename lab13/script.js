@@ -86,7 +86,7 @@
 // }
 
 // let cal = new Calculator1();
-// cal.get(4, 5).add();
+// cal.get(4, 5).add().sub();
 // console.log(cal.get(4, 5).add());
 // cal.add();
 // cal.sub();

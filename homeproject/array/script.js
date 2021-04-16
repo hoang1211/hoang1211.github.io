@@ -78,6 +78,17 @@ let arrayAvg = [1, 2, 3];
 // }
 // let a = secondValue([1, 3, 2, 4, 0, 4]);
 // console.log(a);
+
+// function secondValue(arraySort) {
+//   arraySort.sort((a, b) => b - a);
+//   let max = arraySort[0];
+//   for (let i of arr) {
+//     if (i < max) {
+//       return i;
+//     }
+//   }
+// }
+
 // #### 4. Viết hàm chuyển đổi một chuỗi thành dạng capitalize.
 
 // ```js
@@ -94,6 +105,7 @@ let arrayAvg = [1, 2, 3];
 //     .join(" ");
 // }
 // console.log(cap("hello world"));
+
 // #### 5. Viết hàm tìm số phần tử xuất hiện nhiều lần nhất trong mảng
 
 // ```js
@@ -115,12 +127,25 @@ let arrayAvg = [1, 2, 3];
 // breakWord("dog"); // ["d", "do", "dog", "og", "g"]
 // ```
 
+function breakWord(str) {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+      result.push(str.slice(i, j));
+    }
+  }
+}
+
 // #### 8. Viết hàm loại bỏ các giá trị “false” khỏi mảng.
 
 // ```js
 // // Ví dụ
 // removeFalsy([null, "", 0, false, 1]); // [1]
 // ```
+
+function removeFalsy(arr) {
+  return arr.filter(Boolean);
+}
 
 // #### 9. Viết hàm lấy một phần tử ngẫu nhiên trong mảng
 
@@ -135,3 +160,15 @@ let arrayAvg = [1, 2, 3];
 // // Ví dụ
 // shuffle([1, 2, 3, 4]); // [1, 3, 4, 2]
 // ```
+
+// function shuffle(array) {
+//   const shuffleArray = (array) => {
+//     for (let i = array.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       const temp = array[i];
+//       array[i] = array[j];
+//       array[j] = temp;
+//     }
+//   };
+//   return shuffleArray;
+// }
