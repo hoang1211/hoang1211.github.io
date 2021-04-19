@@ -39,13 +39,14 @@ function celTo(from, value) {
   if (from == "dok") {
     return value + 273.15;
   } else if (from == "dof") {
-    return value * 18 + 32;
+    return value * 1.8 + 32;
   } else {
     return value;
   }
 }
-
-btn.onclick = function () {
+function convertTemp() {
   let c = toCel(from.value, Number(temp.value));
   result.value = celTo(to.value, c);
-};
+}
+btn.onclick = convertTemp;
+btn.onclick();
