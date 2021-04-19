@@ -21,3 +21,9 @@ trs.forEach(function (tr) {
     }
   });
 });
+
+document.querySelector("tr:last-child td:first-child").style.backgroundColor =
+  "yellow";
+
+let demo = document.querySelector("#demo");
+demo.innerHTML += "<h1>Day la the h1</h1>";
