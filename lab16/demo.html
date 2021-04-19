@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .classP {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="converter" id="formTemp">
+      <div class="form-row">
+        <label>
+          <input type="radio" name="from" id="doc" value="doc" checked /> C
+        </label>
+        <label>
+          <input type="radio" name="from" id="dof" value="dof" />F
+        </label>
+        <label>
+          <input type="radio" name="from" id="dok" value="dok" />K
+        </label>
+        <input type="text" name="temp" />
+      </div>
+      <div class="form-row">
+        <label>
+          <input type="radio" name="to" id="doc" value="doc" checked /> C
+        </label>
+        <label> <input type="radio" name="to" id="dof" value="dof" />F </label>
+        <label> <input type="radio" name="to" id="dok" value="dok" />K </label>
+        <input type="text" name="result" />
+      </div>
+      <button name="btnConvert" type="button">Convert</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
