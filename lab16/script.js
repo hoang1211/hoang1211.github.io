@@ -44,9 +44,21 @@ function celTo(from, value) {
     return value;
   }
 }
-function convertTemp() {
+function convertTemp(event) {
+  event.stopPropagation(); // chi xu ly event trong button
+  event.preventDefault();
   let c = toCel(from.value, Number(temp.value));
   result.value = celTo(to.value, c);
 }
-btn.onclick = convertTemp;
-btn.onclick();
+// btn.onclick = convertTemp;
+// btn.onclick();
+function showTemp() {
+  let c = toCel(from.value, Number(temp.value));
+  result.value = celTo(to.value, c);
+  console.log(result.value);
+}
+btn.addEventListener("click", convertTemp);
+btn.addEventListener("click", showTemp);
+form.addEventListener("click", function () {
+  console.log("hello world");
+});
