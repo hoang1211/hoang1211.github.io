@@ -51,17 +51,16 @@ for (let i = 0; i < table.rows.length; i++) {
       drawXO(rIndex, cIndex);
       if (checkWin(rIndex, cIndex) == true) {
         alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
+        temp.replaceWith(temp.cloneNode(true));
       }
       // console.log(rIndex, cIndex);
     };
   }
 }
-if (checkWin(rIndex, cIndex) == true) {
-  alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
-}
 // Check win
 function checkWin(a, b) {
   //check chieu doc
+  let check;
   let countD = 0;
   let countA = 0;
   for (let i = 1; i < 5; i++) {
@@ -82,10 +81,36 @@ function checkWin(a, b) {
       }
     }
   }
-  // console.log(countD + countA);
-  if (countA + countD == 4) {
-    return true;
-  } else {
-    return false;
+  let countL = 0;
+  let countR = 0;
+  for (let j = 1; j < 5; j++) {
+    if (b + j < table.rows[a].cells.length) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a].cells[b + j].getAttribute("value")
+      ) {
+        countR++;
+      }
+    }
+    if (b - j >= 0) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a].cells[b - j].getAttribute("value")
+      ) {
+        countL++;
+      }
+    }
   }
+  if (countA + countD == 4) {
+    check = true;
+  } else {
+    check = false;
+  }
+  if (countL + countR == 4) {
+    check = true;
+  } else {
+    check = false;
+  }
+  return check;
+  //check chieu ngang
 }
