@@ -63,6 +63,8 @@ let students = [
  * Thêm bảng vào div#app
  */
 
+const tbLength = students.length;
+
 /**
  * Thêm event cho các hàng, highlight hàng khi di chuột qua
  * Sử dụng event: mouseover, mouseout, mousein, ...

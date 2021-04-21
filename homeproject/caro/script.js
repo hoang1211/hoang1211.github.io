@@ -82,6 +82,7 @@ function checkWin(a, b) {
       }
     }
   }
+  console.log(countD + countA);
   if (countA + countD == 4) {
     return true;
   } else {
@@ -114,29 +115,60 @@ function checkWin(a, b) {
   } else {
     check = false;
   }
-  // check duong cheo
+  // check duong cheo trai qua phai
   let countUp = 0;
-  let countDown = 0;
-  let x = 0;
-  for (let z = 0, x = 0; z < 5; z++, x++) {
-    if (a + z < table.rows.length && b + x < table.rows[a].cells.length) {
+  let countDn = 0;
+  for (let z = 0; z < 5; z++) {
+    if (a + z < table.rows.length && b + z < table.rows[a].cells.length) {
       if (
         table.rows[a].cells[b].getAttribute("value") ==
-        table.rows[a + z].cells[b + x].getAttribute("value")
+        table.rows[a + z].cells[b + z].getAttribute("value")
       ) {
+        // console.log(countUp);
         countUp++;
       }
     }
-    if (a - z >= 0 && b - x >= 0) {
+    if (a - z >= 0 && b - z >= 0) {
       if (
         table.rows[a].cells[b].getAttribute("value") ==
-        table.rows[a - z].cells[b - x].getAttribute("value")
+        table.rows[a - z].cells[b - z].getAttribute("value")
       ) {
-        countDown++;
+        // console.log(countDn);
+        countDn++;
       }
     }
   }
-  if (countUp + countDown == 6) {
+
+  if (countUp + countDn == 6) {
+    return true;
+  } else {
+    check = false;
+  }
+  // check duong cheo phai qua trai
+  let countUpRL = 0;
+  let countDnRL = 0;
+  for (let z = 0; z < 5; z++) {
+    if (a + z < table.rows.length && b - z >= 0) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a + z].cells[b - z].getAttribute("value")
+      ) {
+        // console.log(countUp);
+        countUpRL++;
+      }
+    }
+    if (a - z >= 0 && b + z < table.rows[a].cells.length) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a - z].cells[b + z].getAttribute("value")
+      ) {
+        // console.log(countDn);
+        countDnRL++;
+      }
+    }
+  }
+
+  if (countUpRL + countDnRL == 6) {
     return true;
   } else {
     check = false;
