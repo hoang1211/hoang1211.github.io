@@ -21,7 +21,6 @@ function drawXO(x, y) {
           td.style.backgroundSize = "100%";
           td.setAttribute("value", "x");
           turn.style.backgroundImage = "url('o.png')";
-          // console.log(td.getAttribute("value"));
         }
       });
     });
@@ -34,7 +33,6 @@ function drawXO(x, y) {
           td.style.backgroundSize = "100%";
           td.setAttribute("value", "o");
           turn.style.backgroundImage = "url('x.png')";
-          // console.log(td.getAttribute("value"));
         }
       });
     });
@@ -56,7 +54,7 @@ for (let i = 0; i < table.rows.length; i++) {
         alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
         temp.replaceWith(temp.cloneNode(true));
       }
-      // console.log(rIndex, cIndex);
+      console.log(checkWin(rIndex, cIndex));
     };
   }
 }
@@ -85,7 +83,7 @@ function checkWin(a, b) {
     }
   }
   if (countA + countD == 4) {
-    check = true;
+    return true;
   } else {
     check = false;
   }
@@ -112,7 +110,7 @@ function checkWin(a, b) {
   }
 
   if (countL + countR == 4) {
-    check = true;
+    return true;
   } else {
     check = false;
   }
@@ -120,7 +118,7 @@ function checkWin(a, b) {
   let countUp = 0;
   let countDown = 0;
   let x = 0;
-  for (let z = 0; z < 5; z++) {
+  for (let z = 0, x = 0; z < 5; z++, x++) {
     if (a + z < table.rows.length && b + x < table.rows[a].cells.length) {
       if (
         table.rows[a].cells[b].getAttribute("value") ==
@@ -137,10 +135,9 @@ function checkWin(a, b) {
         countDown++;
       }
     }
-    x++;
   }
   if (countUp + countDown == 6) {
-    check = true;
+    return true;
   } else {
     check = false;
   }
