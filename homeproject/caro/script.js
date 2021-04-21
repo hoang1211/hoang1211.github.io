@@ -50,13 +50,14 @@ for (let i = 0; i < table.rows.length; i++) {
       cIndex = this.cellIndex;
       drawXO(rIndex, cIndex);
       if (checkWin(rIndex, cIndex) == true) {
-        console.log(
-          table.rows[rIndex].cells[cIndex].getAttribute("value") + " win"
-        );
+        alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
       }
       // console.log(rIndex, cIndex);
     };
   }
+}
+if (checkWin(rIndex, cIndex) == true) {
+  alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
 }
 // Check win
 function checkWin(a, b) {
