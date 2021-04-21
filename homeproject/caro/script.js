@@ -81,6 +81,12 @@ function checkWin(a, b) {
       }
     }
   }
+  if (countA + countD == 4) {
+    check = true;
+  } else {
+    check = false;
+  }
+  //Check chieu ngang
   let countL = 0;
   let countR = 0;
   for (let j = 1; j < 5; j++) {
@@ -101,16 +107,11 @@ function checkWin(a, b) {
       }
     }
   }
-  if (countA + countD == 4) {
-    check = true;
-  } else {
-    check = false;
-  }
+
   if (countL + countR == 4) {
     check = true;
   } else {
     check = false;
   }
   return check;
-  //check chieu ngang
 }
