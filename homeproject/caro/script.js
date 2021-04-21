@@ -1,6 +1,7 @@
 let temp = document.querySelector("#table");
 let tbody = temp.firstElementChild;
 let trs = Array.from(tbody.rows);
+let turn = document.getElementById("turnImg");
 //count clicks
 
 let clickCount = 0;
@@ -19,6 +20,7 @@ function drawXO(x, y) {
           td.style.backgroundImage = "url('x.png')";
           td.style.backgroundSize = "100%";
           td.setAttribute("value", "x");
+          turn.style.backgroundImage = "url('o.png')";
           // console.log(td.getAttribute("value"));
         }
       });
@@ -31,6 +33,7 @@ function drawXO(x, y) {
           td.style.backgroundImage = "url('o.png')";
           td.style.backgroundSize = "100%";
           td.setAttribute("value", "o");
+          turn.style.backgroundImage = "url('x.png')";
           // console.log(td.getAttribute("value"));
         }
       });
@@ -109,6 +112,34 @@ function checkWin(a, b) {
   }
 
   if (countL + countR == 4) {
+    check = true;
+  } else {
+    check = false;
+  }
+  // check duong cheo
+  let countUp = 0;
+  let countDown = 0;
+  let x = 0;
+  for (let z = 0; z < 5; z++) {
+    if (a + z < table.rows.length && b + x < table.rows[a].cells.length) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a + z].cells[b + x].getAttribute("value")
+      ) {
+        countUp++;
+      }
+    }
+    if (a - z >= 0 && b - x >= 0) {
+      if (
+        table.rows[a].cells[b].getAttribute("value") ==
+        table.rows[a - z].cells[b - x].getAttribute("value")
+      ) {
+        countDown++;
+      }
+    }
+    x++;
+  }
+  if (countUp + countDown == 6) {
     check = true;
   } else {
     check = false;

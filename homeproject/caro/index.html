@@ -30,13 +30,46 @@
       #table {
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
       }
       body {
         background-image: url(nfyuquihrbmpsws8c9br.png);
+        position: relative;
+      }
+      #menu {
+        width: 117px;
+        height: 160px;
+        position: absolute;
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-left: 20px;
+        left: 390px;
+        z-index: 1;
+      }
+      #playBtn {
+        margin-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        cursor: pointer;
+      }
+      #turnImg {
+        position: absolute;
+        z-index: 1000;
+        width: 100px;
+        height: 100px;
       }
     </style>
   </head>
   <body>
+    <div id="menu">
+      <button id="playBtn" name="playBtn" onClick="window.location.reload();">
+        Play
+      </button>
+      <div id="turn">
+        <label>Turn</label>
+        <div id="turnImg"></div>
+      </div>
+    </div>
     <div id="main">
       <table id="table">
         <tbody id="tbody" onclick="countClick()">
