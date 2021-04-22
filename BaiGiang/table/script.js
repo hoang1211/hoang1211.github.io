@@ -64,7 +64,37 @@ let students = [
  */
 
 const tbLength = students.length;
-
+function creatTable() {
+  //creat table
+  const table = document.createElement("TABLE");
+  table.setAttribute("id", "table");
+  document.getElementById("app").appendChild(table);
+  //creat th
+  let trh = document.createElement("TR");
+  trh.setAttribute("id", "th");
+  trh.setAttribute("class", "tr");
+  document.getElementById("table").appendChild(trh);
+  for (let ith in students[0]) {
+    const th = document.createElement("TH");
+    let textTh = document.createTextNode(ith);
+    th.appendChild(textTh);
+    document.getElementById("th").appendChild(th);
+  }
+  // creat tbody
+  for (let i = 0; i < tbLength; i++) {
+    let tr = document.createElement("TR");
+    tr.setAttribute("id", "tr" + i);
+    tr.setAttribute("class", "tr");
+    document.getElementById("table").appendChild(tr);
+    for (let j in students[i]) {
+      const td = document.createElement("TD");
+      let textTd = document.createTextNode(students[i][j]);
+      td.appendChild(textTd);
+      document.getElementById("tr" + i).appendChild(td);
+    }
+  }
+}
+creatTable();
 /**
  * Thêm event cho các hàng, highlight hàng khi di chuột qua
  * Sử dụng event: mouseover, mouseout, mousein, ...
