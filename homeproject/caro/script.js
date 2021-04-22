@@ -42,6 +42,11 @@ function drawXO(x, y) {
 let table = document.getElementById("table"),
   rIndex,
   cIndex;
+//delay alert
+function alertWin(a, b) {
+  alert(table.rows[a].cells[b].getAttribute("value") + " win");
+  temp.replaceWith(temp.cloneNode(true));
+}
 //table rows
 for (let i = 0; i < table.rows.length; i++) {
   //row cells
@@ -51,8 +56,7 @@ for (let i = 0; i < table.rows.length; i++) {
       cIndex = this.cellIndex;
       drawXO(rIndex, cIndex);
       if (checkWin(rIndex, cIndex) == true) {
-        alert(table.rows[rIndex].cells[cIndex].getAttribute("value") + " win");
-        temp.replaceWith(temp.cloneNode(true));
+        setTimeout(alertWin(rIndex, cIndex), 1000);
       }
       console.log(checkWin(rIndex, cIndex));
     };

@@ -100,33 +100,28 @@ creatTable();
  * Sử dụng event: mouseover, mouseout, mousein, ...
  */
 
-// function mouseColor() {
-//   for (let i = 0; i <= tbLength; i++) {
-//     let temp = document.getElementById("tr" + i);
-//     temp.addEventListener(
-//       "mouseover",
-//       mouveOverColor(document.getElementById("tr" + i))
-//     );
-//     temp.addEventListener("mouseout", mouveOutColor);
-//     temp.addEventListener("mousein", mouveInColor);
+// table.onmouseover = table.onmouseout = handler;
+
+// function handler(event) {
+//   if (event.type == "mouseover") {
+//     event.target.style.background = "pink";
+//     console.log(event.target.parrentNode);
+//   }
+//   if (event.type == "mouseout") {
+//     event.target.style.background = "";
+//     console.log(event.target);
 //   }
 // }
-// function mouseOverColor(el) {
-//   el.style.backgroundColor = "pink";
-// }
-// function mouseInColor(el) {
-//   el.style.backgroundColor = "pink";
-// }
-// mouseColor();
 
-table.onmouseover = table.onmouseout = handler;
-
-function handler(event) {
-  if (event.type == "mouseover") {
-    event.target.parrentNode.style.background = "pink";
+for (let i = 0; i < tbLength + 1; i++) {
+  let x = document.getElementById("tr" + i);
+  x.addEventListener("mouseover", mOver);
+  x.addEventListener("mouseout", mOut);
+  function mOver() {
+    document.getElementById("tr" + i).style.background = "pink";
   }
-  if (event.type == "mouseout") {
-    event.target.parrentNode.style.background = "";
+  function mOut() {
+    document.getElementById("tr" + i).style.background = "";
   }
 }
 
