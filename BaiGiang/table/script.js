@@ -122,15 +122,11 @@ creatTable();
 table.onmouseover = table.onmouseout = handler;
 
 function handler(event) {
-  function str(el) {
-    if (!el) return "null";
-    return el.className || el.tagName;
-  }
   if (event.type == "mouseover") {
-    event.target.style.background = "pink";
+    event.target.parrentNode.style.background = "pink";
   }
   if (event.type == "mouseout") {
-    event.target.style.background = "";
+    event.target.parrentNode.style.background = "";
   }
 }
 
