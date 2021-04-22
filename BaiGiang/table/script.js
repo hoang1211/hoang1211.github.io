@@ -71,17 +71,17 @@ function creatTable() {
   document.getElementById("app").appendChild(table);
   //creat th
   let trh = document.createElement("TR");
-  trh.setAttribute("id", "th");
+  trh.setAttribute("id", "tr0");
   trh.setAttribute("class", "tr");
   document.getElementById("table").appendChild(trh);
   for (let ith in students[0]) {
     const th = document.createElement("TH");
     let textTh = document.createTextNode(ith);
     th.appendChild(textTh);
-    document.getElementById("th").appendChild(th);
+    document.getElementById("tr0").appendChild(th);
   }
   // creat tbody
-  for (let i = 0; i < tbLength; i++) {
+  for (let i = 1; i <= tbLength; i++) {
     let tr = document.createElement("TR");
     tr.setAttribute("id", "tr" + i);
     tr.setAttribute("class", "tr");
@@ -99,6 +99,40 @@ creatTable();
  * Thêm event cho các hàng, highlight hàng khi di chuột qua
  * Sử dụng event: mouseover, mouseout, mousein, ...
  */
+
+// function mouseColor() {
+//   for (let i = 0; i <= tbLength; i++) {
+//     let temp = document.getElementById("tr" + i);
+//     temp.addEventListener(
+//       "mouseover",
+//       mouveOverColor(document.getElementById("tr" + i))
+//     );
+//     temp.addEventListener("mouseout", mouveOutColor);
+//     temp.addEventListener("mousein", mouveInColor);
+//   }
+// }
+// function mouseOverColor(el) {
+//   el.style.backgroundColor = "pink";
+// }
+// function mouseInColor(el) {
+//   el.style.backgroundColor = "pink";
+// }
+// mouseColor();
+
+table.onmouseover = table.onmouseout = handler;
+
+function handler(event) {
+  function str(el) {
+    if (!el) return "null";
+    return el.className || el.tagName;
+  }
+  if (event.type == "mouseover") {
+    event.target.style.background = "pink";
+  }
+  if (event.type == "mouseout") {
+    event.target.style.background = "";
+  }
+}
 
 /**
  * Thêm event click cho cột tuổi (thẻ <th>), sắp xếp bảng theo độ tuổi

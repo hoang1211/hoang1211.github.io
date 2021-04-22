@@ -10,6 +10,7 @@ td,
 th,
 tr {
   border: 1px solid black;
+  cursor: pointer;
 }
 table {
   border-collapse: collapse;
