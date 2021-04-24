@@ -193,8 +193,38 @@ function sortAge() {
  * Thêm form, ô input và nút tìm kiếm
  * Cho phép nhập tên học viên, tìm kiếm và highlight học viên có tên trùng khớp (sử dụng thẻ <mark>)
  */
-
-
+function creatForm() {
+  let forms = document.createElement("FORM");
+  forms.setAttribute("action", "");
+  forms.setAttribute("name", "search");
+  forms.setAttribute("id", "formInputName");
+  document.getElementById("formInput").appendChild(forms);
+  // Form title
+  let h2 = document.createElement("H2");
+  h2.setAttribute("id", "titleForm");
+  h2.appendChild(document.createTextNode("Tìm kiếm thông tin học viên"));
+  document.getElementById("formInputName").appendChild(h2);
+  //Label input name
+  let labelName = document.createElement("LABEL");
+  labelName.setAttribute("for", "fname");
+  labelName.setAttribute("id", "lableFname");
+  labelName.appendChild(document.createTextNode("Tên học viên "));
+  document.getElementById("titleForm").after(labelName);
+  //Input text
+  let inputText = document.createElement("INPUT");
+  inputText.setAttribute("type", "text");
+  inputText.setAttribute("value", "Search Name");
+  inputText.setAttribute("name", "searchText");
+  document.getElementById("lableFname").after(inputText);
+  //Submit button
+  let btnSubmit = document.createElement("BUTTON");
+  btnSubmit.setAttribute("type", "button");
+  btnSubmit.setAttribute("value", "Search");
+  btnSubmit.setAttribute("id", "btnSubmit");
+  btnSubmit.appendChild(document.createTextNode("Search"));
+  document.getElementById("formInputName").appendChild(btnSubmit);
+}
+creatForm();
 
 /**
  * Thêm form, các ô input tên, tuổi, giới tính, và nút thêm
