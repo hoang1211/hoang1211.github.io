@@ -134,7 +134,6 @@ let rows = table2.rows;
 //     this.style.backgroundColor = null;
 //   };
 // }
-
 /**
  * Thêm event click cho cột tuổi (thẻ <th>), sắp xếp bảng theo độ tuổi
  * Có thay đổi thứ tự (click 1 lần sx tăng dần, click 2 lần giảm,
@@ -213,8 +212,8 @@ function creatForm() {
   //Input text
   let inputText = document.createElement("INPUT");
   inputText.setAttribute("type", "text");
-  inputText.setAttribute("value", "Search Name");
   inputText.setAttribute("name", "searchText");
+  inputText.setAttribute("id", "inputText");
   document.getElementById("lableFname").after(inputText);
   //Submit button
   let btnSubmit = document.createElement("BUTTON");
@@ -225,6 +224,21 @@ function creatForm() {
   document.getElementById("formInputName").appendChild(btnSubmit);
 }
 creatForm();
+//Search
+function searchName() {
+  let nameSearch = document.getElementById("inputText").value;
+  for (let i = 0; i < rows.length - 1; i++) {
+    if (rows[i].cells[0].innerHTML != null) {
+      if (nameSearch == rows[i].cells[0].innerHTML) {
+        rows[i].style.background = "yellow";
+      }
+    }
+  }
+  console.log(nameSearch);
+}
+//Add event onclick
+let btn = document.getElementById("btnSubmit");
+btn.setAttribute("onclick", "searchName()");
 
 /**
  * Thêm form, các ô input tên, tuổi, giới tính, và nút thêm
