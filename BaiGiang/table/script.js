@@ -226,11 +226,14 @@ function creatForm() {
 creatForm();
 //Search
 function searchName() {
-  let nameSearch = document.getElementById("inputText").value;
+  let nameSearch = document.getElementById("inputText").value.toLowerCase();
+  document.getElementById("app").innerHTML.reload;
   for (let i = 0; i < rows.length - 1; i++) {
-    if (rows[i].cells[0].innerHTML != null) {
-      if (nameSearch == rows[i].cells[0].innerHTML) {
+    if (nameSearch != null) {
+      if (rows[i].cells[0].innerHTML.toLowerCase().indexOf(nameSearch) > -1) {
         rows[i].style.background = "yellow";
+      } else {
+        rows[i].style.background = "";
       }
     }
   }
@@ -244,3 +247,12 @@ btn.setAttribute("onclick", "searchName()");
  * Thêm form, các ô input tên, tuổi, giới tính, và nút thêm
  * Cho phép nhập thông tin học viên, tạo mới phần tử và thêm vào bảng
  */
+
+function creatFormAdd() {
+  let insertRow =
+    '<form ><label>Name: <input type="text" name="name" id="name"></label><br><label>Age: <input type="text" id="age"></label><br><label>Gender: <input type="radio" name="gender" id="woman" value="woman">Woman</label><input type="radio" name="gender" id="man" value="man">Man</label></form>';
+  let formAddName = document.getElementById("formAddName");
+  formAddName.insertAdjacentHTML("afterbegin", insertRow);
+}
+
+creatFormAdd();
