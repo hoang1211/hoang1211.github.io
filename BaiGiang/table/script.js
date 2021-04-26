@@ -142,7 +142,8 @@ let rows = table2.rows;
 rows[0].cells[1].setAttribute("id", "th_Age");
 let thClick = document.getElementById("th_Age");
 
-thClick.setAttribute("onclick", "sortAge()");
+// thClick.setAttribute("onclick", "sortAge()");
+thClick.addEventListener("click", sortAge);
 
 function sortAge() {
   let haveSwap = true;
@@ -226,10 +227,13 @@ function creatForm() {
 creatForm();
 //Search
 function searchName() {
-  let nameSearch = document.getElementById("inputText").value.toLowerCase();
+  let nameSearch = document
+    .getElementById("inputText")
+    .value.toLowerCase()
+    .trim();
   document.getElementById("app").innerHTML.reload;
   for (let i = 0; i < rows.length - 1; i++) {
-    if (nameSearch != null) {
+    if (nameSearch != "") {
       if (rows[i].cells[0].innerHTML.toLowerCase().indexOf(nameSearch) > -1) {
         rows[i].style.background = "yellow";
       } else {
