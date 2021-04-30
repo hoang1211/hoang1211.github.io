@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .line {
+        background-color: white;
+        width: 20px;
+        height: 2px;
+      }
+      .line:not(:last-child) {
+        margin-bottom: 2px;
+      }
+      .menu {
+        list-style: none;
+        margin-bottom: 15px;
+        padding-left: 0px;
+      }
+      .menu.show {
+        display: none;
+      }
+      .item {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        border-collapse: collapse;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      .item:last-child {
+        border-bottom: 1px solid black;
+      }
+      .toggle-button {
+        background-color: blue;
+      }
+      .main {
+        background-color: burlywood;
+        height: 300px;
+      }
+      .logo {
+        display: none;
+      }
+      @media (min-width: 992px) {
+        .toggle-button {
+          display: none;
+        }
+        .logo {
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-image: url(lgo.png);
+          overflow: hidden;
+        }
+        .header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .d-hidden {
+          display: none;
+        }
+        .menu,
+        .menu.show {
+          display: flex;
+        }
+        .item {
+          border-right: 0px;
+          border-bottom: 1px solid black;
+        }
+        .item:last-child {
+          border-right: 1px solid black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"></div>
+        <button type="button" class="toggle-button" id="btn">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <nav class="nav">
+          <ul class="menu show" id="menu-id">
+            <li class="item d-hidden">Trang chu</li>
+            <li class="item">Menu 1</li>
+            <li class="item">Menu 2</li>
+            <li class="item">Menu 3</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="main_content"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

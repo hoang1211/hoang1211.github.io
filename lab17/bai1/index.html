@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .line {
+        background-color: white;
+        width: 20px;
+        height: 2px;
+      }
+      .line:not(:last-child) {
+        margin-bottom: 2px;
+      }
+      .header {
+        background-color: burlywood;
+      }
+      .menu {
+        list-style: none;
+        padding-left: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
+      .menu.show {
+        display: none;
+      }
+      .item {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        border-collapse: collapse;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      .item:last-child {
+        border-bottom: 1px solid black;
+      }
+      .toggle-button {
+        background-color: blue;
+      }
+      .main {
+        margin-top: 15px;
+        background-color: gainsboro;
+        height: 300px;
+      }
+      .logo-wrap {
+        display: flex;
+        flex-direction: row;
+      }
+      .logo-mobile {
+        width: 80px;
+        height: 20px;
+        background-color: pink;
+        margin-left: 15px;
+      }
+      .logo {
+        display: none;
+      }
+      .login {
+        display: none;
+      }
+      @media (min-width: 992px) {
+        .toggle-button {
+          display: none;
+        }
+        .logo {
+          margin-top: 15px;
+          margin-left: 15px;
+          display: block;
+          width: 100px;
+          height: 30px;
+          background-color: blue;
+        }
+        .header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .d-hidden {
+          display: none;
+        }
+        .nav {
+          width: 60%;
+        }
+        .menu,
+        .menu.show {
+          display: flex;
+          width: 100%;
+        }
+        .item {
+          border-right: 0px;
+          border-bottom: 1px solid black;
+        }
+        .item:last-child {
+          border-right: 1px solid black;
+        }
+        .logo-mobile {
+          display: none;
+        }
+        .login {
+          display: flex;
+        }
+        .login-ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          margin-right: 15px;
+        }
+        .login-ul li {
+          border: 1px solid black;
+          background-color: pink;
+        }
+        .login-ul li:last-child {
+          border-left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"></div>
+        <div class="logo-wrap">
+          <button type="button" class="toggle-button" id="btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+          <div class="logo-mobile"></div>
+        </div>
+        <nav class="nav">
+          <ul class="menu show" id="menu-id">
+            <li class="item">Menu 1</li>
+            <li class="item">Menu 2</li>
+            <li class="item">Menu 3</li>
+            <li class="item d-hidden">Register</li>
+            <li class="item d-hidden">Login</li>
+          </ul>
+        </nav>
+        <div class="login">
+          <ul class="login-ul">
+            <li>Login</li>
+            <li>Register</li>
+          </ul>
+        </div>
+      </header>
+      <div class="main">
+        <div class="main_content"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
