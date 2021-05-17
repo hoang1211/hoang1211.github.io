@@ -254,3 +254,12 @@
   text-transform: uppercase;
   line-height: 1.2;
 }
+.slide-bar {
+  margin-top: 70px;
+}
+.img-aboutme img {
+  width: 100%;
+}
+.bio {
+  margin-top: 20px;
+}
