@@ -263,3 +263,58 @@
 .bio {
   margin-top: 20px;
 }
+.comments-count {
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.popular-item-title {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.popular-post-wrap ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.popular-list li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+.popular-list h5::before {
+  border-radius: 50%;
+  background-color: rgb(180, 173, 158);
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  height: 10px;
+  width: 10px;
+}
+.banner-spot {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  background-image: url(image/banner-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.size-250 {
+  font-size: 48px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+.banner-spot-in {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
