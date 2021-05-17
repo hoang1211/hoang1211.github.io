@@ -108,6 +108,11 @@
   background-repeat: no-repeat;
   text-align: center;
 }
+.letter-bg {
+  background-image: url(image/background-letter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .sign-up {
   font-size: 30px;
   font-family: "Playfair Display", serif;
@@ -158,4 +163,94 @@
   font-family: "Playfair Display", serif;
   line-height: 1.714;
   height: 100px;
+}
+.post1-photo {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+.quotes {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: rgb(98, 98, 98);
+  font-style: italic;
+  line-height: 1.714;
+}
+.share-post1 {
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.846;
+  text-align: end;
+}
+.also-like img {
+  width: 100%;
+}
+.also-like-title {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.comment-item {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.title-comment {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.content-comment {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+}
+.reply {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.form__input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  border: 1px solid rgb(200, 200, 200);
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+.form__input::placeholder {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(200, 200, 200);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.connected-with {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
 }
