@@ -475,4 +475,5 @@ li {
   line-height: 150%;
   /* or 18px */
   color: #101010;
+  vertical-align: top;
 }
