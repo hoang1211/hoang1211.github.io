@@ -12,7 +12,11 @@ label {
   cursor: pointer;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+ul,
+li {
+  list-style: none !important;
 }
 .wrap-header {
   position: relative;
@@ -383,7 +387,7 @@ a {
 .questions {
   padding-top: 53px;
   padding-left: 0px !important;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -396,4 +400,79 @@ a {
   margin-left: 125px;
   width: 540px;
   height: 305px;
+}
+#validationService:invalid {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+#validationFirstName::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+#validationLastName::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+#validationPhoneNumber::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+.btn-submit-now {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ed4c5c !important;
+  border: 1.5px solid #ed4c5c !important;
+  box-sizing: border-box !important;
+  border-radius: 6px !important;
+}
+.footer {
+  width: 1440px;
+  height: 435px;
+  background: #fafafa;
+}
+.wrap-footer {
+  padding-left: 165px;
+  padding-top: 85px;
+  padding-bottom: 86px;
+  padding-right: 165px;
+}
+.title-footer {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #101010;
+  padding-bottom: 33px !important;
+}
+.content-footer {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
+  color: #101010;
 }

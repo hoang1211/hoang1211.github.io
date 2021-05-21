@@ -281,11 +281,120 @@
               </div>
             </div>
             <div class="form-submit">
-              
+              <form class="row nead-validation" novalidate>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationFirstName"
+                    value=""
+                    placeholder="First Name"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationLastName"
+                    value=""
+                    placeholder="Last Name"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-12" style="padding-top: 24px">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationPhoneNumber"
+                    value=""
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-12" style="padding-top: 24px">
+                  <select class="form-select" id="validationService" required>
+                    <option selected disabled selected hidden value="">
+                      Select Service
+                    </option>
+                    <option>Cloud storage</option>
+                    <option>Secure</option>
+                    <option>PDF download</option>
+                    <option>CSV download</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-12" style="padding-top: 24px">
+                  <button class="btn btn-primary btn-submit-now" type="submit">
+                    Submit now
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="wrap-footer">
+          <div class="row footer-items">
+            <div class="col-3" style="padding-left: 0px">
+              <ul class="address">
+                <li class="title-footer">Address</li>
+                <li class="content-footer">
+                  Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor
+                  1090 Picosia USA
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li class="title-footer">Services</li>
+                <li class=""><a href="" class="content-footer">Overview</a></li>
+                <li class=""><a href="" class="content-footer">Features</a></li>
+                <li class="">
+                  <a href="" class="content-footer">Technology</a>
+                </li>
+                <li class="">
+                  <a href="" class="content-footer">Term & Conditions</a>
+                </li>
+                <li class=""><a href="" class="content-footer">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li class="title-footer">Get in Touch</li>
+                <li class="content-footer">info@cloudbudget.com</li>
+                <li class="content-footer">+1 844-721-7120</li>
+                <li class="content-footer row">
+                  <div class="col-1">
+                    <img src="images/feather-facebook.png" alt="" />
+                  </div>
+                  <div class="col-1">
+                    <img src="images/feather-linkedin.png" alt="" />
+                  </div>
+                  <div class="col-1">
+                    <img src="images/feather-twitter.png" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li class="title-footer">We support</li>
+                <li class="content-footer row">
+                  <img src="images/secure-p-11.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <!-- JavaScript Bundle with Popper -->
     <script
