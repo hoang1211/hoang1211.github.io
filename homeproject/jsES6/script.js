@@ -100,7 +100,7 @@ var saveChanges = () => {
 };
 // delete
 let deleteFunc = (index) => {
-  delete students[index];
+  students.splice(index, 1);
   render();
 };
 // add students
