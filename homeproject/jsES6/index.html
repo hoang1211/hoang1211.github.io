@@ -21,6 +21,16 @@
   <body>
     <div class="container">
       <div id="app"></div>
+      <div id="add" style="margin-top: 50px">
+        <button
+          type="button"
+          class="btn btn-info"
+          data-bs-toggle="modal"
+          data-bs-target="#addModal"
+        >
+          Add Student
+        </button>
+      </div>
     </div>
     <!-- Modal -->
     <div
@@ -43,7 +53,40 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form action="" class="row g-3">
+              <div class="col-md-4">
+                <label for="nameStudent" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameStudent"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="col-md-2">
+                <label for="ageStudent" class="form-label">Age</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ageStudent"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="col-md-8">
+                <label for="emailStudent" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="emailStudent"
+                  value=""
+                  required
+                />
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -52,7 +95,83 @@
             >
               Đóng
             </button>
-            <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="saveChanges()"
+            >
+              Lưu thay đổi
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal add -->
+    <div
+      class="modal fade"
+      id="addModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Thông tin học viên
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="row g-3">
+              <div class="col-md-4">
+                <label for="nameStudent" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addNameStudent"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="col-md-2">
+                <label for="ageStudent" class="form-label">Age</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addAgeStudent"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="col-md-8">
+                <label for="emailStudent" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addEmailStudent"
+                  value=""
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary" onclick="addInfo()">
+              Thêm
+            </button>
           </div>
         </div>
       </div>

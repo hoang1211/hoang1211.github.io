@@ -43,14 +43,15 @@ let students = [
   },
 ];
 // creat row
-var createRow = (student) => {
+var createRow = (student, stt) => {
   let tr = document.createElement("tr");
   tr.innerHTML = `
+        <td>${stt + 1}</td>
         <td>${student.name}</td>
         <td>${student.age}</td>
         <td>${student.email}</td>
-        <td><button type="button" class="btn btn-success" id="btn-edit" onclick="editFunc" data-bs-toggle="modal"  data-bs-target="#exampleModal"><i class="bi bi-pencil"></i></button></td>
-        <td><button type="button" class="btn btn-warning" id="btn-delete" onclick="deleteFunc" data-bs-toggle="modal"  data-bs-target="#exampleModal"><i class="bi bi-trash"></i></button></td>
+        <td><button type="button" class="btn btn-success" id="btn-edit" onclick="editFunc(${stt})" data-bs-toggle="modal"  data-bs-target="#exampleModal"><i class="bi bi-pencil"></i></button></td>
+        <td><button type="button" class="btn btn-warning" id="btn-delete" onclick="deleteFunc(${stt})" ><i class="bi bi-trash"></i></button></td>
     `;
   return tr;
 };
@@ -72,8 +73,9 @@ var creatTable = (student) => {
         <tbody>
         </tbody>
     `;
-  students.forEach((student) => {
-    table.tBodies[0].append(createRow(student));
+  students.forEach((student, i) => {
+    table.tBodies[0].append(createRow(student, i));
+    i++;
   });
   return table;
 };
@@ -84,3 +86,27 @@ var render = () => {
   app.append(table);
 };
 render();
+// edit
+currentIndex = -1;
+var editFunc = (index) => {
+  currentIndex = index;
+  let studentEdit = students[index];
+  document.getElementById("nameStudent").value = studentEdit.name;
+  document.getElementById("ageStudent").value = studentEdit.age;
+  document.getElementById("emailStudent").value = studentEdit.email;
+};
+// save changes
+var saveChanges = () => {
+  let thaydoi = currentIndex;
+  students[thaydoi].name = document.getElementById("nameStudent").value;
+  students[thaydoi].age = document.getElementById("ageStudent").value;
+  students[thaydoi].email = document.getElementById("emailStudent").value;
+  currentIndex = -1;
+  render();
+};
+// delete
+let deleteFunc = (index) => {
+  delete students[index];
+  render();
+};
+// add students
