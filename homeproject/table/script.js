@@ -1,60 +1,60 @@
 // Cho mảng các object chứa các thông tin về học viên
 let students = [
-    {
-        name: "Bùi Thanh Hà",
-        age: 35,
-        gender: "M",
-    },
-    {
-        name: "Nguyễn Trường Giang",
-        age: 27,
-        gender: "M",
-    },
-    {
-        name: "Phạm Minh Tuấn",
-        age: 26,
-        gender: "M",
-    },
-    {
-        name: "Cung Bùi Tuấn Anh",
-        age: 28,
-        gender: "M",
-    },
-    {
-        name: "Trịnh Bá Hưng",
-        age: 27,
-        gender: "M",
-    },
-    {
-        name: "Đỗ Phương Thảo",
-        age: 22,
-        gender: "F",
-    },
-    {
-        name: "Đặng Vũ Lam Mai",
-        age: 22,
-        gender: "F",
-    },
-    {
-        name: "Đỗ Thanh Lam",
-        age: 24,
-        gender: "F",
-    },
-    {
-        name: "Nguyễn Phương Hà",
-        age: 25,
-        gender: "F",
-    },
-    {
-        name: "Nguyễn Đỗ Tuệ Minh",
-        age: 19,
-        gender: "F",
-    },
-    {
-        name: "Nguyễn Đỗ Anh Minh",
-        age: 18,
-        gender: "M",
-    },
+  {
+    name: "Bùi Thanh Hà",
+    age: 35,
+    gender: "M",
+  },
+  {
+    name: "Nguyễn Trường Giang",
+    age: 27,
+    gender: "M",
+  },
+  {
+    name: "Phạm Minh Tuấn",
+    age: 26,
+    gender: "M",
+  },
+  {
+    name: "Cung Bùi Tuấn Anh",
+    age: 28,
+    gender: "M",
+  },
+  {
+    name: "Trịnh Bá Hưng",
+    age: 27,
+    gender: "M",
+  },
+  {
+    name: "Đỗ Phương Thảo",
+    age: 22,
+    gender: "F",
+  },
+  {
+    name: "Đặng Vũ Lam Mai",
+    age: 22,
+    gender: "F",
+  },
+  {
+    name: "Đỗ Thanh Lam",
+    age: 24,
+    gender: "F",
+  },
+  {
+    name: "Nguyễn Phương Hà",
+    age: 25,
+    gender: "F",
+  },
+  {
+    name: "Nguyễn Đỗ Tuệ Minh",
+    age: 19,
+    gender: "F",
+  },
+  {
+    name: "Nguyễn Đỗ Anh Minh",
+    age: 18,
+    gender: "M",
+  },
 ];
 
 /**
@@ -63,25 +63,25 @@ let students = [
  * Thêm bảng vào div#app
  */
 function createRow(student) {
-    let tr = document.createElement("tr");
-    tr.innerHTML = `
+  let tr = document.createElement("tr");
+  tr.innerHTML = `
         <td>${student.name}</td>
         <td>${student.age}</td>
         <td>${student.gender}</td>
     `;
-    tr.addEventListener("mouseover", function (ev) {
-        this.classList.add("hover");
-    });
-    tr.addEventListener("mouseout", function (ev) {
-        this.classList.remove("hover");
-    });
+  tr.addEventListener("mouseover", function (ev) {
+    this.classList.add("hover");
+  });
+  tr.addEventListener("mouseout", function (ev) {
+    this.classList.remove("hover");
+  });
 
-    return tr;
+  return tr;
 }
 
 function createTable(students) {
-    let table = document.createElement("table");
-    table.innerHTML = `
+  let table = document.createElement("table");
+  table.innerHTML = `
         <thead>
             <tr>
                 <th onclick="sortBy(this)" data-sortby="name">Tên</th>
@@ -93,19 +93,19 @@ function createTable(students) {
         </tbody>
     `;
 
-    students.forEach(function (student) {
-        table.tBodies[0].append(createRow(student));
-    });
+  students.forEach(function (student) {
+    table.tBodies[0].append(createRow(student));
+  });
 
-    return table;
+  return table;
 }
 
 let app = document.getElementById("app");
 
 function render() {
-    app.innerHTML = "";
-    let table = createTable(students);
-    app.append(table);
+  app.innerHTML = "";
+  let table = createTable(students);
+  app.append(table);
 }
 
 render();
@@ -124,27 +124,27 @@ render();
 let current = null;
 
 function sortBy(el) {
-    let prop = el.dataset.sortby;
+  let prop = el.dataset.sortby;
 
-    if (!current || current != prop) {
-        current = prop;
+  if (!current || current != prop) {
+    current = prop;
 
-        students.sort(function (s1, s2) {
-            if (prop == "name" || prop == "gender") {
-                if (s1[prop] >= s2[prop]) {
-                    return 1;
-                } else {
-                    return -1;
-                }
-            } else {
-                return s1[prop] - s2[prop];
-            }
-        });
-    } else {
-        students.reverse();
-    }
+    students.sort(function (s1, s2) {
+      if (prop == "name" || prop == "gender") {
+        if (s1[prop] >= s2[prop]) {
+          return 1;
+        } else {
+          return -1;
+        }
+      } else {
+        return s1[prop] - s2[prop];
+      }
+    });
+  } else {
+    students.reverse();
+  }
 
-    render();
+  render();
 }
 
 /**
@@ -157,22 +157,22 @@ let text = form.elements.text;
 let btn = form.elements.btn;
 
 text.addEventListener("input", function (ev) {
-    ev.preventDefault();
+  ev.preventDefault();
 
-    let searchText = text.value.trim();
-    let trs = Array.from(document.querySelector("table").tBodies[0].rows);
-    trs.forEach(function (tr) {
-        let name = tr.cells[0].textContent;
-        if (name.includes(searchText)) {
-            tr.cells[0].innerHTML = name.replace(
-                searchText,
-                "<mark>" + searchText + "</mark>"
-            );
-        } else {
-            let name = tr.cells[0].textContent;
-            tr.cells[0].innerHTML = name;
-        }
-    });
+  let searchText = text.value.trim();
+  let trs = Array.from(document.querySelector("table").tBodies[0].rows);
+  trs.forEach(function (tr) {
+    let name = tr.cells[0].textContent;
+    if (name.includes(searchText)) {
+      tr.cells[0].innerHTML = name.replace(
+        searchText,
+        "<mark>" + searchText + "</mark>"
+      );
+    } else {
+      let name = tr.cells[0].textContent;
+      tr.cells[0].innerHTML = name;
+    }
+  });
 });
 
 /**
