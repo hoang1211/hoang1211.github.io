@@ -1,42 +1,35 @@
 let students = [
   {
-    numberStu: 1,
     name: "Tú Anh",
     age: 21,
     email: "tuanh@techmaster.vn",
   },
   {
-    numberStu: 2,
     name: "Chị Hạnh",
     age: 30,
     email: "hanh@techmaster.vn",
   },
   {
-    numberStu: 3,
     name: "Quang",
     age: 24,
     email: "quang@techmaster.vn",
   },
   {
-    numberStu: 4,
     name: "Cường",
     age: 25,
     email: "cuong@techmaster.vn",
   },
   {
-    numberStu: 5,
     name: "Hoàng",
     age: 29,
     email: "hoang@techmaster.vn",
   },
   {
-    numberStu: 6,
     name: "Ngọc",
     age: 27,
     email: "ngoc@techmaster.vn",
   },
   {
-    numberStu: 7,
     name: "Huy",
     age: 19,
     email: "huy@techmaster.vn",
@@ -60,6 +53,7 @@ var creatTable = (student) => {
   let table = document.createElement("table");
   table.classList.add("table");
   table.classList.add("table-striped");
+  table.setAttribute("id", "table_id");
   table.innerHTML = `
         <thead>
             <tr>
@@ -70,7 +64,7 @@ var creatTable = (student) => {
               <th scope="col" colspan="2">Action</th>
             </tr>
           </thead>
-        <tbody>
+        <tbody id="dataListTag">
         </tbody>
     `;
   students.forEach((student, i) => {
@@ -110,3 +104,12 @@ let deleteFunc = (index) => {
   render();
 };
 // add students
+let addInfo = () => {
+  let newStu = {
+    name: document.getElementById("addNameStudent").value,
+    age: document.getElementById("addAgeStudent").value,
+    email: document.getElementById("addEmailStudent").value,
+  };
+  students.push(newStu);
+  render();
+};
