@@ -57,10 +57,10 @@ var creatTable = (student) => {
   table.innerHTML = `
         <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Age</th>
-              <th scope="col">Email</th>
+              <th scope="col" >#</th>
+              <th scope="col" onclick ="sortBy(this)" data-sortby="name" class="cursorTr">Name</th>
+              <th scope="col" onclick ="sortBy(this)" data-sortby="age" class="cursorTr">Age</th>
+              <th scope="col" onclick ="sortBy(this)" data-sortby="email" class="cursorTr">Email</th>
               <th scope="col" colspan="2">Action</th>
             </tr>
           </thead>
@@ -111,5 +111,32 @@ let addInfo = () => {
     email: document.getElementById("addEmailStudent").value,
   };
   students.push(newStu);
+  document.getElementById("addNameStudent").value = "";
+  document.getElementById("addAgeStudent").value = "";
+  document.getElementById("addEmailStudent").value = "";
+  render();
+};
+//Sort
+let temp = null;
+let sortBy = (el) => {
+  let prop = el.dataset.sortby;
+  if (!temp || temp != prop) {
+    temp = prop;
+    students.sort((a, b) => {
+      if (prop == "name" || prop == "email") {
+        let aString = a[prop].toUpperCase();
+        let bString = b[prop].toUpperCase();
+        if (aString < bString) {
+          return -1;
+        } else {
+          return 1;
+        }
+      } else {
+        return a[prop] - b[prop];
+      }
+    });
+  } else {
+    students.reverse();
+  }
   render();
 };
