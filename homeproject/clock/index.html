@@ -26,19 +26,39 @@
         <button
           type="button"
           class="btn btn-success col-3"
-          onclick="start()"
+          onclick="stopWatch.start()"
           id="startButton"
         >
           Start
         </button>
-        <button type="button" class="btn btn-info col-3" onclick="lapFunc()">
+        <button
+          type="button"
+          class="btn btn-warning col-3 hide"
+          onclick="stopWatch.pause()"
+          id="stopButton"
+        >
+          Stop
+        </button>
+        <button
+          type="button"
+          class="btn btn-info col-3"
+          onclick="stopWatch.lapFunc()"
+        >
           Lap
         </button>
-        <button type="button" class="btn btn-danger col-3" onclick="reset()">
+        <button
+          type="button"
+          class="btn btn-danger col-3"
+          onclick="stopWatch.reset()"
+        >
           Reset
         </button>
       </div>
-      <div id="thoi_gian"></div>
+      <div id="thoi_gian">
+        <div><span id="gio">00</span><span>Giờ</span></div>
+        <div><span id="phut">00</span><span>Phút</span></div>
+        <div><span id="giay">00</span><span>Giây</span></div>
+      </div>
       <div id="lap" class="lap-res"></div>
     </div>
     <!-- JavaScript Bundle with Popper -->
