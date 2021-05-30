@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>posts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-5 mt-5 posts"></div>
+    </div>
+    <script>
+      const url = new URL(window.location.href);
+      console.log(url);
+
+      console.log(url.searchParams);
+      const postId = url.searchParams.get("userId");
+
+      let xhr = new XMLHttpRequest();
+      xhr.responseType = "json";
+      uri = `https://reqres.in/api/users/${postId}`;
+      let method = "GET";
+      xhr.open(method, uri);
+      xhr.onload = () => {
+        let p = xhr.response.data;
+        p = `<a href="posts.html?userId=${p.id}">
+          <h4 class="user-name"> ${p.first_name}  ${p.last_name}
+          </h4>
+          <p class="user-email">${p.email}</p>
+          <img src="${p.avatar}" alt="userImg">
+        </a>`;
+        document.querySelector(".posts").innerHTML = p;
+      };
+      xhr.send(null);
+    </script>
+  </body>
+</html>
