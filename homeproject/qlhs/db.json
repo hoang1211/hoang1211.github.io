@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "f_name": "Hoang",
+      "l_name": "Nguyen Ba"
+    },
+    {
+      "id": 2,
+      "f_name": "Hoang 2",
+      "l_name": "Nguyen Ba2"
+    },
+    {
+      "id": 3,
+      "f_name": "Hoang 3",
+      "l_name": "Nguyen Ba 3"
+    }
+  ]
+}
