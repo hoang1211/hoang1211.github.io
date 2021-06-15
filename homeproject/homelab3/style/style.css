@@ -117,17 +117,9 @@ sup {
   padding: 10px;
   overflow: auto;
 }
-.main_content {
-  width: 75%;
-  float: left;
-}
 .img_main {
   max-height: 240px;
   max-width: 240px;
-}
-.aside_content {
-  width: 25%;
-  float: right;
 }
 .aside_title {
   padding: 10px 0 10px 10px;
@@ -149,10 +141,6 @@ sup {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.section .item {
-  width: 25%;
-  height: 200px;
-}
 .footer_content {
   margin-top: 100px;
   border-top: 1px solid #004e7f;
@@ -163,7 +151,7 @@ sup {
   padding-top: 10px;
 }
 .box_footer {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
