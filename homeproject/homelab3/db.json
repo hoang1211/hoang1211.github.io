@@ -1,0 +1,58 @@
+{
+  "house": [
+    {
+      "id": 1,
+      "ten": "NHÀ NGÕ 2 HỮU LÊ",
+      "diachi": "Xã Thanh Liệt",
+      "giatien": "2.65 tỷ",
+      "dientich": 95,
+      "chitiet": "Chủ đầu tư: công ty cổ phần đầu tư và pt đô thị hoàng mai",
+      "hinhanh": "ngo2huulematien.jpg"
+    },
+    {
+      "id": 2,
+      "ten": "NHÀ CẦU BƯƠU",
+      "diachi": "Xã Thanh Liệt",
+      "giatien": "3 tỷ",
+      "dientich": 102,
+      "chitiet": "Chủ đầu tư: công ty cổ phần đầu tư và pt đô thị Hà Nội",
+      "hinhanh": "nhacaubuou.jpg"
+    },
+    {
+      "id": 3,
+      "ten": "NHÀ NGÕ 13",
+      "diachi": "Xã Tả Thanh Oai",
+      "giatien": "2 tỷ",
+      "dientich": 60,
+      "chitiet": "Chủ đầu tư: công ty cổ phần xây dưng Thanh Trì",
+      "hinhanh": "nhango13tathanhoai.jpg"
+    },
+    {
+      "id": 4,
+      "ten": "NHÀ NGÕ 2 HỮU LÊ",
+      "diachi": "Xã Thanh Liệt",
+      "giatien": "2.65 tỷ",
+      "dientich": 95,
+      "chitiet": "Chủ đầu tư: công ty cổ phần đầu tư và pt đô thị hoàng mai",
+      "hinhanh": "ngo2huulematien.jpg"
+    },
+    {
+      "id": 5,
+      "ten": "NHÀ CẦU BƯƠU",
+      "diachi": "Xã Thanh Liệt",
+      "giatien": "3 tỷ",
+      "dientich": 102,
+      "chitiet": "Chủ đầu tư: công ty cổ phần đầu tư và pt đô thị Hà Nội",
+      "hinhanh": "nhacaubuou.jpg"
+    },
+    {
+      "id": 6,
+      "ten": "NHÀ NGÕ 13",
+      "diachi": "Xã Tả Thanh Oai",
+      "giatien": "2 tỷ",
+      "dientich": 60,
+      "chitiet": "Chủ đầu tư: công ty cổ phần xây dưng Thanh Trì",
+      "hinhanh": "nhango13tathanhoai.jpg"
+    }
+  ]
+}
