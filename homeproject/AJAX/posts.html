@@ -30,6 +30,7 @@
       xhr.open(method, uri);
       xhr.onload = () => {
         let p = xhr.response.data;
+        console.log(p);
         p = `<a href="posts.html?userId=${p.id}">
           <h4 class="user-name"> ${p.first_name}  ${p.last_name}
           </h4>

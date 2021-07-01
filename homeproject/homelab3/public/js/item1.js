@@ -25,6 +25,7 @@ xhr.onload = () => {
                 <h3 class="item1_detail2">
                 Diện tích sử dụng: ${p.dientich}m2
                 </h3>
+                ${p.chitiet}
               </pre>
                     <p>Vị trí trên bản đồ:</p>
                     <iframe
