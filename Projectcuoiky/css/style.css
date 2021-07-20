@@ -1,4 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
+/* Font list */
+.header1{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contentfont{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.linkfont{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration-line: underline !important;
+}
+.containerdesk{
+  margin: 0px auto;
+  max-width: 1170px;
+}
+/* <!-- Start Header Desktop --> */
+.logo {
+  display: flex;
+  flex-wrap: row wrap;
+  align-items: center;
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+}
+.logo__branch{
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 16px;
+  color: #f5f5f5;
+}
+.logo__slogan{
+  padding-top: 3px;
+  opacity: 0.7;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f5f5f5;
+}
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 10px 10px;
+  transition: all 0.5s ease-in-out;
+}
+.header--fixMenu{
+  background-color: #fff;
+  opacity: 0.9;
+}
+.header--fixMenu a{
+  color: black;
+}
+.header--fixMenu .logo__branch{
+  color: black;
+}
+.header--fixMenu .logo__slogan{
+  color: black;
+}
+.wrap__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap__nav{
+  display: flex;
+  align-items: center;
+}
+.nav__menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+.nav__menu__items{
+  list-style: none;
+}
+.nav__menu__item__link{
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.nav__menu__item__hotline{
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.nav__menu__hotline{
+  list-style: none;
+  background: #FFDE5D;
+  border-radius: 3px;
+}
+.nav__menu__item__link:hover{
+  color: #FFDE5D;
+}
+.nav__menu__item__hotline:hover{
+  color: blue;
+}
+.banner{
+  background-image: url(../assest/logobackground/background/indexbg1.jpg);
+  background-size: cover;
+  height: 680px;
+  width: 100%;
+}
+.banner__wrap__searchbar{
+  padding-top: 516px;
+}
+.banner__searchbar{
+  background-color: white;
+  width: 940px;
+  height: 84px;
+}
+.banner__searchbar__items{
+  padding-top: 19px;
+  padding-left: 35px !important;
+  border: 1px solid #D3D3D3;
+}
+.banner__searchbar__item__title{
+  margin-bottom: 2px;
+  color: #707070;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.banner__searchbar__item__select{
+  border:0px; 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+}
+#banner__searchbar__btn{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 40px;
+  margin-left: 9px;
+}
+/* <!-- End Header Desktop -->
