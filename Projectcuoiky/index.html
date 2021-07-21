@@ -16,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Nhà Đất Xanh</title>
   </head>
   <body>
@@ -26,7 +27,9 @@
           <div class="container--desktop wrap__header">
             <div class="logo">
               <div class="logo__text">
-                <div class="logo__branch">Greenland</div>
+                <a href="index.html"
+                  ><div class="logo__branch">Greenland</div></a
+                >
                 <div class="logo__slogan">Nơi hạnh phúc ngập tràn</div>
               </div>
             </div>
@@ -111,7 +114,11 @@
         <div class="about--desktop container--desktop">
           <div class="title-section-font">Giới Thiệu</div>
           <div class="about--desktop__content row">
-            <div class="about--desktop__content__wrap col-3">
+            <div
+              class="about--desktop__content__wrap col-3"
+              data-aos="fade-up-right"
+              data-aos-delay="300"
+            >
               <div class="about--desktop__content__item">
                 <div class="about--desktop__content__item__icon">
                   <img
@@ -133,7 +140,11 @@
                 <a href="about.html" class="link-font">Xem thêm</a>
               </div>
             </div>
-            <div class="about--desktop__content__wrap col-3">
+            <div
+              class="about--desktop__content__wrap col-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <div class="about--desktop__content__item">
                 <div class="about--desktop__content__item__icon">
                   <img
@@ -155,7 +166,11 @@
                 <a href="about.html" class="link-font">Xem thêm</a>
               </div>
             </div>
-            <div class="about--desktop__content__wrap col-3">
+            <div
+              class="about--desktop__content__wrap col-3"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
               <div class="about--desktop__content__item">
                 <div class="about--desktop__content__item__icon">
                   <img
@@ -177,7 +192,11 @@
                 <a href="about.html" class="link-font">Xem thêm</a>
               </div>
             </div>
-            <div class="about--desktop__content__wrap col-3">
+            <div
+              class="about--desktop__content__wrap col-3"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+            >
               <div class="about--desktop__content__item">
                 <div class="about--desktop__content__item__icon">
                   <img
@@ -204,12 +223,17 @@
       </div>
       <!-- End about desktop -->
     </div>
+    <!-- Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

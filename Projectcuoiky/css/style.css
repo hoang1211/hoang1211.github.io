@@ -5,7 +5,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
+body {
+  height: 10000px;
+}
 /* Font list */
 
 .content-header {
@@ -44,7 +46,6 @@
 }
 /* Animation  */
 
-
 /* <!-- Start Header Desktop --> */
 
 .logo {
@@ -55,6 +56,9 @@
 .logo__text {
   display: flex;
   flex-direction: column;
+}
+.logo__text a {
+  text-decoration: none;
 }
 .logo__branch {
   text-transform: uppercase;
