@@ -127,6 +127,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 .nav__menu__item__hotline {
   text-decoration: none;
@@ -138,6 +139,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 .nav__menu__hotline {
   list-style: none;
@@ -148,7 +150,7 @@ body {
   color: #ffde5d;
 }
 .nav__menu__item__hotline:hover {
-  color: blue;
+  color: silver;
 }
 .banner {
   background-image: url(../assest/logobackground/background/indexbg1.jpg);
@@ -191,6 +193,14 @@ body {
   line-height: 16px;
   padding: 15px 40px;
   margin-left: 9px;
+}
+.btn__searchbar {
+  transition: 0.5s !important;
+  background-color: #ffde5d !important;
+}
+#banner__searchbar__btn:hover {
+  background-color: #548ca8 !important;
+  color: silver;
 }
 
 /* <!-- End Header Desktop --> */
