@@ -5,6 +5,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+body {
+  height: 5000px;
+}
 
 /* Font list */
 
@@ -20,6 +23,7 @@
   font-size: 36px;
   line-height: 54px;
   color: #1c1c1c;
+  text-align: center;
 }
 .content-font {
   font-style: normal;
@@ -305,7 +309,7 @@
   height: 50px;
   background-color: #ffde5d;
   border-radius: 3px;
-  padding-top: 20px;
+  padding-top: 14px;
   transition: all 0.5s ease-in-out !important;
   cursor: pointer;
 }
@@ -319,6 +323,89 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 /* End Product Desktop */
+
+/* Start partner desktop */
+.wrap__partner--desktop {
+  width: 100%;
+  height: 320px;
+  margin-top: 80px;
+  background-image: url("../assest/logobackground/background/product.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrap__partner--desktop--background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 222, 93, 0.8);
+}
+.partner--desktop {
+  padding-top: 80px;
+}
+.partner--desktop__list {
+  margin-top: 30px;
+  height: 85px;
+  width: 100%;
+  background-color: white;
+}
+.partner--desktop__list__wrap {
+  padding: 10px 9px;
+}
+.partner--desktop__item:not(:last-child) {
+  border: 0.5px solid #bbbbbb;
+  width: 223px;
+  height: 66px;
+  margin-right: 9px !important;
+}
+.partner--desktop__item:last-child {
+  border: 0.5px solid #bbbbbb;
+  box-shadow: none !important;
+  width: 223px;
+  height: 66px;
+}
+
+.partner--desktop__item__img {
+  width: 223px;
+  height: 66px;
+  object-fit: cover;
+}
+
+/* End partner desktop */
+
+/* Start new desktop */
+
+.wrap__news--desktop {
+  margin-top: 80px;
+}
+.news--desktop__list {
+  margin-top: 30px;
+}
+.news--desktop__item {
+  width: 370px;
+  height: 420px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.news--desktop__item:nth-child(3n + 0) {
+  width: 370px;
+  height: 420px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+.news--desktop__item__img {
+  width: 370px;
+  height: 280px;
+  object-fit: cover;
+}
+.news--desktop__item__content {
+  text-align: start !important;
+  padding-left: 18.5px;
+  padding-top: 18px;
+}
+
+/* End new desktop */
