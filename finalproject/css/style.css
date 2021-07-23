@@ -5,9 +5,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body {
-  height: 5000px;
-}
 
 /* Font list */
 
@@ -409,3 +406,92 @@ body {
 }
 
 /* End new desktop */
+
+/* Start contact desktop */
+
+.wrap__contact--desktop {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../assest/logobackground/contact/contactbg.jpeg");
+  background-size: cover;
+  background-repeat: none;
+}
+.contact--desktop--bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 222, 93, 0.8);
+}
+.contact--desktop {
+  padding-top: 80px;
+}
+.contact--desktop__form {
+  margin-top: 30px;
+}
+#contact__form__message {
+  height: 152px;
+  resize: none;
+}
+.contact--desktop__form__message {
+  padding-right: 0px !important;
+  padding-left: 10px !important;
+}
+.contact--desktop__form__info {
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+}
+.contact--desktop__form__input {
+  padding-bottom: 20px !important;
+}
+.contact--desktop__form__btnSubmit {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+}
+.btnSubmit {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding-top: 5px !important;
+  transition: all 0.5s ease-in-out !important;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+.btnSubmit:hover {
+  background-color: #548ca8 !important;
+  color: #ffde5d;
+}
+/* End contact desktop */
+/* Start footer desktop */
+.wrap__footer--desktop {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.footer--desktop {
+  padding-top: 30px;
+  border-top: 1px solid silver;
+}
+.footer--desktop__header {
+  padding-bottom: 15px;
+}
+.footer--desktop__links__list {
+  padding-left: 20px !important;
+}
+.footer--desktop__link__item {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease-in-out !important;
+}
+.footer--desktop__link__item:hover {
+  color: #ffde5d;
+}
+/* End footer desktop */
