@@ -35,9 +35,26 @@
   line-height: 12px;
   text-decoration-line: underline !important;
   color: #000000 !important;
+  transition: all 0.5s ease-in-out;
 }
 .link-font:hover {
   color: #ffde5d !important;
+}
+.page-nav-link {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.page-nav-link__active {
+  text-decoration: none;
+  color: #ffde5d;
+  transition: all 0.5s ease-in-out;
+}
+.page-nav-link__active:hover {
+  color: #548ca8 !important;
+}
+.page-nav-link:hover {
+  color: #ffde5d;
 }
 .container--desktop {
   margin: 0px auto;
@@ -495,8 +512,44 @@
   color: #ffde5d;
 }
 /* End footer desktop */
-/* Start news page desktop */
+/* Start page desktop */
 
+.page__banner--desktop {
+  background-image: url(../assest/logobackground/icon-gioi-thieu/bg.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.page__banner__wrap__searchbar--desktop {
+  padding-top: 360px;
+}
 
+/* End page desktop */
 
-/* End news page desktop */
+/* Start page about desktop */
+.about__main {
+  margin-top: 30px;
+}
+.main__link__nav {
+  margin-bottom: 50px;
+}
+.main__content__overview--desktop {
+  margin-bottom: 50px;
+}
+.main__content__overview__p--desktop {
+  margin-top: 10px;
+}
+.main__content__detail__content--desktop {
+  margin-left: 20px;
+}
+.main__content__detail--desktop {
+  margin-top: 70px !important;
+}
+.main__content__detail__col--desktop {
+  height: 150px;
+}
+.main__content__detail__col--desktop:nth-child(2n + 0) {
+  margin-top: 70px;
+  height: 150px;
+}
+/* End page about desktop */
