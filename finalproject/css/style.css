@@ -604,5 +604,9 @@
 /* End page contact desktop */
 
 /* Start page product desktop */
-
+.page__banner--desktop__product {
+  background-image: url(../assest/product/bg.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* End page product desktop */
