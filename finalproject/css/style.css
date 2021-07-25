@@ -5,6 +5,7 @@
   margin: 0px;
   box-sizing: border-box;
 }
+/* Color */
 
 /* Font list */
 
@@ -144,30 +145,47 @@
   line-height: 16px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
+  position: relative;
 }
 .nav__menu__item__hotline {
   text-decoration: none;
   color: black;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #ffde5d 0%, #a1cc66 100%);
 }
 .nav__menu__hotline {
   list-style: none;
+}
+.nav__menu__item__link::after {
+  content: "";
+  height: 5px;
+  width: 0px;
   background: #ffde5d;
-  border-radius: 3px;
+  bottom: -8px;
+  left: 21px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.nav__menu__item__link:hover::after {
+  width: 50%;
 }
 .nav__menu__item__link:hover {
   color: #ffde5d;
 }
 .nav__menu__item__hotline:hover {
-  background-color: #548ca8 !important;
-  color: #ffde5d;
+  background-position: right center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: white;
 }
 .banner {
   background-image: url(../assest/logobackground/background/indexbg1.jpg);
@@ -225,12 +243,23 @@
   margin-left: 9px;
 }
 .btn__searchbar {
-  transition: all 0.5s ease-in-out !important;
-  background-color: #ffde5d !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  background-image: linear-gradient(
+    to right,
+    #fceabb 0%,
+    #f8b500 51%,
+    #fceabb 100%
+  );
+  border: none;
+  border-radius: 3px;
 }
-#banner__searchbar__btn:hover {
-  background-color: #548ca8 !important;
-  color: #ffde5d;
+#banner__searchbar__btn:hover,
+#banner__searchbar__btn:focus,
+#banner__searchbar__btn:active {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-position: right center !important; /* change the direction of the change here */
+  color: white;
+  text-decoration: none;
 }
 
 /* <!-- End Header Desktop --> */
@@ -321,17 +350,23 @@
   text-align: center;
   width: 274px;
   height: 50px;
-  background-color: #ffde5d;
+  background-image: linear-gradient(
+    to right,
+    #fceabb 0%,
+    #f8b500 51%,
+    #fceabb 100%
+  );
   border-radius: 3px;
   padding-top: 14px;
   transition: all 0.5s ease-in-out !important;
   cursor: pointer;
 }
 .product--desktop__btnviewmore:hover {
-  background-color: #548ca8 !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-position: right center !important; /* change the direction of the change here */
 }
 .product--desktop__btnviewmore:hover #product--desktop_btnviewmore_link {
-  color: #ffde5d;
+  color: white;
 }
 #product--desktop_btnviewmore_link {
   text-transform: uppercase;
@@ -484,6 +519,7 @@
   line-height: 24px;
 }
 .btnSubmit:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: #548ca8 !important;
   color: #ffde5d;
 }
@@ -512,8 +548,8 @@
   color: #ffde5d;
 }
 /* End footer desktop */
-/* Start page desktop */
 
+/* Start page about desktop */
 .page__banner--desktop {
   background-image: url(../assest/logobackground/icon-gioi-thieu/bg.jpg);
   background-size: cover;
@@ -524,9 +560,6 @@
   padding-top: 360px;
 }
 
-/* End page desktop */
-
-/* Start page about desktop */
 .about__main {
   margin-top: 30px;
 }
@@ -553,3 +586,11 @@
   height: 150px;
 }
 /* End page about desktop */
+
+/* Start page news desktop */
+
+.page__banner--desktop__new {
+  background-image: url(../assest/news/newbg.jpg) !important;
+}
+
+/* End page news desktop */
