@@ -592,5 +592,8 @@
 .page__banner--desktop__new {
   background-image: url(../assest/news/newbg.jpg) !important;
 }
-
+.news1__img {
+  width: 100%;
+  object-fit: cover;
+}
 /* End page news desktop */
