@@ -5,6 +5,7 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 /* Color */
 
 /* Font list */
@@ -633,5 +634,33 @@
 .pagination a:hover:not(.pagination__active) {
   background-color: #ddd;
   border-radius: 5px;
+}
+.filter__price {
+  border: 1px solid #bbbbbb;
+  margin-bottom: 20px;
+}
+.filter__price__header {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #bbbbbb;
+}
+.ul-nostyle {
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.ul-nostyle li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ul-nostyle a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out !important;
+}
+.ul-nostyle :hover {
+  color: #f8b500 !important;
 }
 /* End page product desktop */
