@@ -77,6 +77,9 @@
 .logo__text a {
   text-decoration: none;
 }
+.logo__branch:hover {
+  color: #f8b500 !important;
+}
 .logo__branch {
   text-transform: uppercase;
   font-style: normal;
@@ -84,6 +87,7 @@
   font-size: 20px;
   line-height: 16px;
   color: #f5f5f5;
+  transition: all 0.5s ease-in-out !important;
 }
 .logo__slogan {
   padding-top: 3px;
@@ -637,7 +641,7 @@
 }
 .filter__price {
   border: 1px solid #bbbbbb;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .filter__price__header {
   padding-left: 20px;
@@ -664,3 +668,101 @@
   color: #f8b500 !important;
 }
 /* End page product desktop */
+/* Start page product item */
+
+.product__item__content {
+  margin-top: 50px;
+}
+/* Star slider */
+.product__item__slider {
+  margin-bottom: 30px;
+}
+.swiper-container {
+  width: 100%;
+  height: 700px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide__full {
+  height: 500px !important;
+}
+.swiper-slide__thumb {
+  margin-top: 10px;
+  height: 150px !important;
+}
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End slider */
+.product__item__detail {
+  margin-top: 50px;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+}
+.product__item__detail__price {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.product__item__metadata {
+  margin-top: 50px !important;
+}
+/* End page product item */
