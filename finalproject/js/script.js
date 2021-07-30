@@ -53,4 +53,10 @@ const swiper2 = new Swiper(".mySwiper2", {
   },
 });
 //-----------------------
-// Swiper slide about
+// Slick slide partner mobile
+$(".partner__list--mobile").slick({
+  dots: false,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
+//----------------------
