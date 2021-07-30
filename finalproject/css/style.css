@@ -110,7 +110,7 @@
 }
 .header--fixMenu {
   background-color: #fff;
-  opacity: 0.9;
+  box-shadow: 2px 2px silver;
 }
 .header--fixMenu a {
   color: black;
@@ -190,7 +190,7 @@
 .nav__menu__item__hotline:hover {
   background-position: right center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  color: white;
+  color: #007aff;
 }
 .banner {
   background-image: url(../assest/logobackground/background/indexbg1.jpg);
@@ -252,8 +252,8 @@
 #banner__searchbar__btn:active {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-position: right center !important; /* change the direction of the change here */
-  color: white;
   text-decoration: none;
+  color: #007aff;
 }
 .btn__searchbar {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
@@ -328,8 +328,7 @@
   transition: al 0.5s ease-in-out;
 }
 .product--desktop__item:hover {
-  border: 1px solid black;
-  border-radius: 3px;
+  box-shadow: 2px 2px silver;
 }
 .product--desktop__item:nth-child(3n + 0) {
   width: 370px;
@@ -376,7 +375,7 @@
   background-position: right center !important; /* change the direction of the change here */
 }
 .product--desktop__btnviewmore:hover #product--desktop_btnviewmore_link {
-  color: white;
+  color: #007aff;
 }
 #product--desktop_btnviewmore_link {
   text-transform: uppercase;
@@ -449,6 +448,9 @@
   height: 420px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.news--desktop__item:hover {
+  box-shadow: 2px 2px silver;
 }
 .news--desktop__item:nth-child(3n + 0) {
   width: 370px;
@@ -790,7 +792,7 @@
 }
 .header--fixMenu--mobile {
   background: #fff;
-  opacity: 0.9;
+  box-shadow: 2px 2px silver;
 }
 .header--fixMenu--mobile a {
   color: black;
