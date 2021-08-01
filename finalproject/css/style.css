@@ -992,3 +992,10 @@
   padding-bottom: 28px;
 }
 /* End mobile page index */
+/* Start page about ver mobile */
+.banner__about--mobile {
+  background-image: url(../assest/logobackground/icon-gioi-thieu/bg.jpg);
+  background-size: cover;
+  height: 360px;
+  width: 100%;
+}
