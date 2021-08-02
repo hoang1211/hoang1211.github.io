@@ -627,6 +627,12 @@
   width: 100%;
   object-fit: cover;
 }
+@media only screen and (max-width: 1024px) {
+  .news--desktop__item__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
 /* End page news desktop */
 /* Start page contact desktop */
 .page__banner--desktop__contact {
@@ -812,6 +818,7 @@
 .header--fixMenu--mobile {
   background: #fff;
   box-shadow: 2px 2px silver;
+  opacity: 1;
 }
 .header--fixMenu--mobile a {
   color: black;
@@ -1006,6 +1013,29 @@
 .banner__about--mobile {
   background-image: url(../assest/logobackground/icon-gioi-thieu/bg.jpg);
   background-size: cover;
-  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
   width: 100%;
 }
+/* ----------------------------- */
+/* Start page contact ver mobile */
+.banner__contact--mobile {
+  background-image: url(../assest/contact/contactbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+  width: 100%;
+}
+/* ----------------------------- */
+/* Start page news ver mobile */
+.banner__news--mobile {
+  background-image: url(../assest/news/newbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+  width: 100%;
+}
+/* ----------------------------- */
