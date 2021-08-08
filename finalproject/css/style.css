@@ -327,7 +327,7 @@ body {
 .wrap__product--desktop {
   background-color: #f6e9d5;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .product--desktop {
   padding-top: 50px;
@@ -441,7 +441,6 @@ body {
 /* Start partner desktop */
 .wrap__partner--desktop {
   height: 600px;
-  margin-bottom: 100px;
   background-image: url(../assest/logobackground/partner/backgroundpartner.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -450,6 +449,15 @@ body {
 
 /* End partner desktop */
 /* Start city desktop */
+.wrap__city--desktop {
+  background-color: #f6e9d5;
+  width: 100%;
+}
+.city--desktop {
+  padding-top: 80px;
+  text-align: center;
+  padding-bottom: 80px;
+}
 .citylist--desktop {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -521,10 +529,6 @@ body {
   background-size: cover;
   background-position: center center;
 }
-.wrap__city--desktop {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
 .city__item--desktop {
   height: 300px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -573,9 +577,9 @@ body {
 .border-r {
   border-right: solid 1px #0000001a;
 }
-.count--desktop {
-  margin-right: -15px;
-  margin-left: -15px;
+.wrap__count--desktop .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 .count__box--desktop {
   overflow: hidden;
@@ -611,7 +615,51 @@ body {
   font-size: 35px;
 }
 /* End count desktop */
-
+/* Start member desktop */
+.wrap__member--desktop {
+  background-color: #f6e9d5;
+}
+.member--desktop {
+  padding-bottom: 80px;
+}
+.member__list--desktop {
+  margin: 0 auto;
+  padding: 40px 25px;
+  text-align: center;
+  perspective: 1000px;
+}
+.member__photo--desktop img {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+  border-radius: 100px;
+  position: relative;
+  font-size: 40px;
+  color: #00204c;
+  line-height: 1em;
+  margin-bottom: 28px;
+  display: inline-block;
+}
+.member__photo__inner--desktop {
+  transition: 0.9s cubic-bezier(0.24, 0.74, 0.58, 1);
+  transform-style: preserve-3d;
+}
+.member__photo--desktop:hover .member__photo__inner--desktop {
+  transform: rotateY(360deg);
+}
+.member__name--desktop {
+  font-size: 20px;
+  font-weight: 500;
+  color: #162b75;
+}
+.member__info--desktop p {
+  font-size: 16px;
+  margin-bottom: 13px;
+  line-height: 26px;
+  color: #535353;
+}
+/* End member desktop */
 /* Start new desktop */
 
 .wrap__news--desktop {
@@ -622,7 +670,7 @@ body {
 }
 .news--desktop__item {
   width: 370px;
-  height: 420px;
+  height: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: white;
@@ -630,7 +678,7 @@ body {
 }
 .news--desktop__item:nth-child(3n + 0) {
   width: 370px;
-  height: 420px;
+  height: 370px;
   margin-right: 0px;
   margin-bottom: 30px;
 }
@@ -638,13 +686,22 @@ body {
   width: 370px;
   height: 280px;
   object-fit: cover;
+  transition: height 1s;
 }
 .news--desktop__item__content {
   text-align: start !important;
   padding-left: 18.5px;
   padding-top: 18px;
+  height: 80px;
 }
 
+.news--desktop__item:hover .news--desktop__item__img {
+  height: 200px;
+}
+.news--desktop__item:hover {
+  background-color: #dca447;
+  color: white;
+}
 /* End new desktop */
 
 /* Start contact desktop */
@@ -653,14 +710,13 @@ body {
   margin-top: 50px;
   width: 100%;
   height: 500px;
-  background-image: url("../assest/logobackground/contact/contactbg.jpeg");
   background-size: cover;
   background-repeat: none;
 }
 .contact--desktop--bg {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 222, 93, 0.8);
+  background-color: #f6e9d5;
 }
 .contact--desktop {
   padding-top: 80px;
