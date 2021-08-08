@@ -390,6 +390,7 @@ body {
   height: 100%;
   background-color: rgba(235, 204, 152, 0.8);
   z-index: 1;
+  color: #000;
 }
 .product--desktop__item__content__scaleX {
   transform: scaleX(0);

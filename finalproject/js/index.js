@@ -1,5 +1,5 @@
 //Demo
-let houses = [
+let product = [
   {
     id: 1,
     houseName: "Căn Hộ Ven Biển",
@@ -19,15 +19,6 @@ let houses = [
     type: 2,
   },
   {
-    id: 4,
-    houseName: "Sun 69 Thụy Khuê",
-    square: 152,
-    bedRom: 3,
-    price: 18.1,
-    region: 1,
-    type: 3,
-  },
-  {
     id: 3,
     houseName: "The Sang Residence Đà Nẵng",
     square: 62,
@@ -35,6 +26,15 @@ let houses = [
     price: 6.5,
     region: 2,
     type: 2,
+  },
+  {
+    id: 4,
+    houseName: "Sun 69 Thụy Khuê",
+    square: 152,
+    bedRom: 3,
+    price: 18.1,
+    region: 1,
+    type: 3,
   },
   {
     id: 5,
@@ -97,16 +97,15 @@ $(".about--desktop__content__wrap").click(function () {
   window.location.href = "about.html";
 });
 // Render index mobile
-let renderProduct = (house) => {
-  for (let i = 1; i < 5; i++) {
-    house((id, houseName, square, bedRoom, price, region, type) => {
-      let deskIndex = `<div class="product--desktop__item">
+let renderProduct = (pd) => {
+  for (let i = 0; i < 6; i++) {
+    let deskIndex = `<div class="product--desktop__item">
                 <img
-                  src="assest/product/${id}/1.jpg"
+                  src="assest/product/${pd[i].id}/1.jpg"
                   alt=""
                   class="product--desktop__item__img"
                 />
-                <a href="productitem.html" class="product--desktop_item_link"
+                <a href="productitem${pd[i].id}.html" class="product--desktop_item_link"
                   ><div
                     class="
                       product--desktop__item__content
@@ -114,19 +113,20 @@ let renderProduct = (house) => {
                     "
                   >
                     <div class="product--desktop__item__content__header">
-                      Mở bán ${houseName}
+                      Mở bán ${pd[i].houseName}
                     </div>
                     <div
                       class="content-font"
                       style="margin-top: 5px !important"
                     >
-                      Diện tích: ${square} m2 - ${bedRoom} Phòng Ngủ
+                      Diện tích: ${pd[i].square} m2 - ${pd[i].bedRom} Phòng Ngủ
                     </div>
                   </div></a
                 >
               </div>`;
-      let indexProductDesk = $("#product--desktop__list__show");
-      indexProductDesk.append(deskIndex);
-    });
+    let indexProductDesk = $("#product_data--desktop");
+    indexProductDesk.append(deskIndex);
   }
 };
+renderProduct(product);
+
