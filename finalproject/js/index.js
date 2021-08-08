@@ -105,7 +105,7 @@ let renderProduct = (pd) => {
                   alt=""
                   class="product--desktop__item__img"
                 />
-                <a href="productitem${pd[i].id}.html" class="product--desktop_item_link"
+                <a href="productitem.html?productId=${pd[i].id}" class="product--desktop_item_link"
                   ><div
                     class="
                       product--desktop__item__content
@@ -129,4 +129,3 @@ let renderProduct = (pd) => {
   }
 };
 renderProduct(product);
-
