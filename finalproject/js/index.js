@@ -35,3 +35,7 @@ $(".partner__list--mobile").slick({
   ],
 });
 //----------------------
+// about onclick
+$(".about--desktop__content__wrap").click(function () {
+  window.location.href = "about.html";
+});

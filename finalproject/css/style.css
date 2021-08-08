@@ -5,42 +5,48 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #f5f1e6 !important;
+}
 /* Color */
 
 /* Font list */
 
 .content-header {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
 }
 .title-section-font {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 54px;
-  color: #1c1c1c;
+  color: #162b75;
   text-align: center;
 }
 .content-font {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
 }
 .link-font {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
   text-decoration-line: underline !important;
-  color: #000000 !important;
+  color: #000000;
   transition: all 0.5s ease-in-out;
 }
 .link-font:hover {
-  color: #ffde5d !important;
+  color: #ffde5d;
 }
 .page-nav-link {
   text-decoration: none;
@@ -182,7 +188,7 @@
   transition: all 0.3s ease-in-out;
 }
 .nav__menu__item__link:hover::after {
-  width: 50%;
+  width: 65%;
 }
 .nav__menu__item__link:hover {
   color: #ffde5d;
@@ -306,11 +312,25 @@
   height: 63px;
   padding-bottom: 10px;
 }
+.about--desktop__content__wrap {
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+.about--desktop__content__wrap:hover {
+  background-color: #dca447;
+  color: white;
+  cursor: pointer;
+}
 
 /* End About Desktop */
 /* Start Product Desktop */
-
+.wrap__product--desktop {
+  background-color: #f6e9d5;
+  width: 100%;
+  padding-bottom: 50px;
+}
 .product--desktop {
+  padding-top: 50px;
   margin-top: 80px;
   text-align: center;
 }
@@ -319,23 +339,24 @@
   padding: 0px;
   margin-left: 0px !important;
   margin-right: 0px !important;
+  position: relative;
 }
 .product--desktop__item {
   width: 370px;
-  height: 300px;
+  height: 270px;
   margin-right: 30px;
   margin-bottom: 30px;
-  transition: al 0.5s ease-in-out;
-}
-.product--desktop__item:hover {
-  box-shadow: 2px 2px silver;
+  transition: color 0.4s linear;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
 }
 .product--desktop__item:nth-child(3n + 0) {
   width: 370px;
-  height: 300px;
+  height: 270px;
   margin-right: 0px;
   margin-bottom: 30px;
-  transition: al 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 @media only screen and (max-width: 1024px) {
   .product--desktop__item:nth-child(3n + 0) {
@@ -343,25 +364,44 @@
     height: 300px;
     margin-right: 30px;
     margin-bottom: 30px;
-    transition: al 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 .product--desktop__item__img {
-  width: 368px;
-  height: 192px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product--desktop__item__content__header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
 }
 .product--desktop__item__content {
-  text-align: start !important;
-  padding-left: 18.5px;
-  padding-top: 18px;
+  text-align: center !important;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 204, 152, 0.8);
+  z-index: 1;
 }
+.product--desktop__item__content__scaleX {
+  transform: scaleX(0);
+}
+.product--desktop__item:hover .product--desktop__item__content__scaleX {
+  transform: scaleX(1);
+}
+
 .product--desktop_item_link {
   text-decoration-line: underline !important;
-  color: #000000 !important;
+  color: white !important;
   transition: all 0.5s ease-in-out !important;
-}
-.product--desktop_item_link:hover {
-  color: #ffde5d !important;
 }
 .product--desktop__btnviewmore {
   margin-top: 20px !important;
@@ -400,49 +440,177 @@
 
 /* Start partner desktop */
 .wrap__partner--desktop {
-  width: 100%;
-  height: 320px;
-  margin-top: 80px;
-  background-image: url("../assest/logobackground/background/product.jpg");
+  height: 600px;
+  margin-bottom: 100px;
+  background-image: url(../assest/logobackground/partner/backgroundpartner.jpg);
+  background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat;
-}
-.wrap__partner--desktop--background {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 222, 93, 0.8);
-}
-.partner--desktop {
-  padding-top: 80px;
-}
-.partner--desktop__list {
-  margin-top: 30px;
-  height: 85px;
-  width: 100%;
-  background-color: white;
-}
-.partner--desktop__list__wrap {
-  padding: 10px 9px;
-}
-.partner--desktop__item:not(:last-child) {
-  border: 0.5px solid #bbbbbb;
-  width: 223px;
-  height: 66px;
-  margin-right: 9px !important;
-}
-.partner--desktop__item:last-child {
-  border: 0.5px solid #bbbbbb;
-  box-shadow: none !important;
-  width: 223px;
-  height: 66px;
-}
-.partner--desktop__item__img {
-  width: 223px;
-  height: 66px;
-  object-fit: cover;
+  background-attachment: fixed;
 }
 
 /* End partner desktop */
+/* Start city desktop */
+.citylist--desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hanoi hanoi danang"
+    "nhatrang hochiminh hochiminh";
+}
+.wrap--hanoi {
+  grid-area: hanoi;
+}
+.wrap--danang {
+  grid-area: danang;
+}
+.wrap--nhatrang {
+  grid-area: nhatrang;
+}
+.wrap--hochiminh {
+  grid-area: hochiminh;
+}
+.city--hover--desktop {
+  transition: color 0.4s linear;
+  position: relative;
+  transition: color 0.5s linear;
+}
+.city__item--desktop:before {
+  content: "";
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 204, 152, 0.8);
+  z-index: 1;
+  transform: scaleX(0);
+}
+.city--hover--desktop:hover .city__item--desktop:before {
+  transform: scaleX(1);
+}
+.hanoi--desktop {
+  background-image: url("../assest/city/hanoi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.danang--desktop {
+  background-image: url("../assest/city/danang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nhatrang--desktop {
+  background-image: url("../assest/city/nhatrang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hochiminh--desktop {
+  background-image: url("../assest/city/hochiminh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.wrap__city--desktop {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.city__item--desktop {
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.city__count--desktop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 0px 1px rgb(255 255 255 / 20%);
+  box-shadow: 0px 0px 0px 1px rgb(255 255 255 / 20%);
+  color: #fff;
+  padding: 7px 14px 6px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.city__name--desktop {
+  transition: 0.4s;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  text-align: start;
+  position: absolute;
+  bottom: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  z-index: 20;
+}
+
+/* End city desktop */
+/* Start count desktop */
+.wrap__count--desktop {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.border-l {
+  border-left: solid 1px #0000001a;
+}
+.border-r {
+  border-right: solid 1px #0000001a;
+}
+.count--desktop {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.count__box--desktop {
+  overflow: hidden;
+  padding: 80px 0;
+  text-align: center;
+  perspective: 1000px;
+}
+.count__icon--desktop {
+  color: #162b75;
+  font-size: 45px;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.count__icon__inner--desktop {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.9s cubic-bezier(0.24, 0.74, 0.58, 1);
+  transform-style: preserve-3d;
+}
+.count__icon--desktop:hover .count__icon__inner--desktop {
+  transform: rotateY(360deg);
+}
+.counter--desktop {
+  color: #162b75;
+  font-weight: 700;
+  margin: 30px 0 5px;
+  font-size: 35px;
+}
+/* End count desktop */
 
 /* Start new desktop */
 
@@ -457,9 +625,8 @@
   height: 420px;
   margin-right: 30px;
   margin-bottom: 30px;
-}
-.news--desktop__item:hover {
-  box-shadow: 2px 2px silver;
+  background-color: white;
+  cursor: pointer;
 }
 .news--desktop__item:nth-child(3n + 0) {
   width: 370px;
@@ -819,12 +986,16 @@
 .container {
   padding: 0px !important;
 }
+.wrap-mobile {
+  width: 100%;
+}
 /* Start header mobile */
 .header--mobile {
   position: fixed;
   z-index: 10000;
   top: 0px;
   left: 0px;
+  right: 0px;
   width: 100%;
   border-bottom: 1px solid white;
   padding: 10px 10px;
