@@ -603,6 +603,7 @@ body {
   font-weight: 700;
   margin: 30px 0 5px;
   font-size: 35px;
+  text-align: center;
 }
 /* End count desktop */
 /* Start member desktop */
@@ -1177,6 +1178,11 @@ body {
 .wrap__section--mobile {
   margin-top: 32px;
 }
+.wrap__section--mobile__margin {
+  margin-top: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
 .about__content--mobile .row {
   padding: 0px;
   margin: 12px;
@@ -1277,6 +1283,64 @@ body {
 }
 
 /* End partner mobile */
+/* Start city mobile */
+.city--mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hanoi__mobile hanoi__mobile"
+    "danang__mobile nhatrang__mobile"
+    "hochiminh__mobile hochiminh__mobile";
+}
+.hanoi__mobile {
+  grid-area: hanoi__mobile;
+  background-image: url("../assest/city/hanoi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.danang__mobile {
+  grid-area: danang__mobile;
+  background-image: url("../assest/city/danang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nhatrang__mobile {
+  grid-area: nhatrang__mobile;
+  background-image: url("../assest/city/nhatrang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hochiminh__mobile {
+  grid-area: hochiminh__mobile;
+  background-image: url("../assest/city/hochiminh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* End city mobile */
+/* Start count and member mobile */
+.container--mobile .row {
+  padding: 0px;
+  margin: 0px;
+}
+.count__box--mobile {
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
+  perspective: 1000px;
+}
+
+/* End count and member mobile */
 /* Start new mobile */
 .new__mobile {
   margin-top: 16px;
@@ -1300,6 +1364,12 @@ body {
   padding-top: 28px;
   padding-bottom: 28px;
 }
+/* Start footer mobile */
+.footer--mobile__fanpage {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+/* End footer mobile */
 /* End mobile page index */
 /* Start page about ver mobile */
 .banner__about--mobile {
