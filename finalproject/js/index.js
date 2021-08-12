@@ -124,8 +124,39 @@ let renderProduct = (pd) => {
                   </div></a
                 >
               </div>`;
+    let mobileIndex = `<div class="col-12">
+              <div class="product--mobile__item">
+                <img
+                  src="assest/product/${pd[i].id}/1.jpg"
+                  alt=""
+                  class="product--mobile__item__img"
+                />
+                <a
+                  href="productitem.html?productId=${pd[i].id}"
+                  class="product--mobile_item_link"
+                  ><div
+                    class="
+                      product--mobile__item__content
+                      product--mobile__item__content__scaleX
+                    "
+                  >
+                    <div class="product--mobile__item__content__header">
+                      Mở bán ${pd[i].houseName}
+                    </div>
+                    <div
+                      class="content-font"
+                      style="margin-top: 5px !important"
+                    >
+                      Diện tích: ${pd[i].square} m2 - ${pd[i].bedRom} Phòng Ngủ
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>`;
     let indexProductDesk = $("#product_data--desktop");
+    let indexMobileDesk = $("#index__product--mobile");
     indexProductDesk.append(deskIndex);
+    indexMobileDesk.append(mobileIndex);
   }
 };
 renderProduct(product);

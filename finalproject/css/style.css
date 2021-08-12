@@ -357,15 +357,6 @@ body {
   margin-bottom: 30px;
   transition: all 0.5s ease-in-out;
 }
-@media only screen and (max-width: 1024px) {
-  .product--desktop__item:nth-child(3n + 0) {
-    width: 370px;
-    height: 300px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    transition: all 0.5s ease-in-out;
-  }
-}
 .product--desktop__item__img {
   width: 100%;
   height: 100%;
@@ -1145,7 +1136,7 @@ body {
   color: black;
 }
 .banner--mobile {
-  background-image: url(../assest/logobackground/background/indexbg1.jpg);
+  background-image: url(../assest/logobackground/background/indexbgMobile.jpg);
   background-size: cover;
   height: 480px;
   width: 100%;
@@ -1186,29 +1177,35 @@ body {
 .wrap__section--mobile {
   margin-top: 32px;
 }
-.wrap__about__content--mobile {
-  margin-top: 16px !important;
+.about__content--mobile .row {
+  padding: 0px;
+  margin: 12px;
+}
+.about__content--mobile .row .col-3 {
+  padding: 0px;
+  margin: 0px;
   text-align: center;
-  margin-left: 8px;
-  margin-right: 8px;
 }
-.about--mobile__content__wrap:not(:first-child) {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
-  height: 150px;
-  display: flex;
-  padding-top: 16px;
+.about__content__item--mobile {
+  background-color: white;
+  border-top: solid 1px #0000001a;
+  border-bottom: solid 1px #0000001a;
 }
-.about--mobile__content__wrap:nth-child(1) {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  display: flex;
-  height: 150px;
-  border: 1px solid #d3d3d3;
-  padding-top: 16px;
+.about__content__item--mobile p {
+  margin-top: 16px;
+}
+.about__content__item--mobile img {
+  margin-top: 8px;
+}
+.about__content--mobile a {
+  text-decoration: none;
+  color: #000;
+}
+.about__content__item--mobile:hover {
+  background-color: #dca447;
+}
+.about__content__item--mobile:hover p {
+  color: white;
 }
 /* End about mobile */
 /* Start product mobile*/
@@ -1218,51 +1215,67 @@ body {
   margin-right: 0px !important;
 }
 .product__item--mobile {
-  margin-bottom: 8px !important;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.product__item--mobile:hover {
-  box-shadow: 2px 2px silver;
+.product--mobile__item {
+  width: 100%;
+  height: 240px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: color 0.4s linear;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
 }
-.product__item--mobile img {
+.product--mobile__item__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.product--mobile__item__content__header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+.product--mobile__item__content {
+  text-align: center !important;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 204, 152, 0.8);
+  z-index: 1;
+}
+.product--mobile__item__content__scaleX {
+  transform: scaleX(0);
+}
+.product--mobile__item:hover .product--mobile__item__content__scaleX {
+  transform: scaleX(1);
+}
+
+.product--mobile_item_link {
+  text-decoration-line: underline !important;
+  color: white !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 /* End product mobile */
 
 /* Start partner mobile */
-.partner--mobile {
-  margin-top: 36px;
-  background-image: url("../assest/logobackground/background/product.jpg");
+.wrap__partner__mobile--background {
+  height: 320px;
+  background-image: url(../assest/logobackground/partner/backgroundpartner.jpg);
+  background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.wrap__partner--mobile--background {
-  background-color: rgba(255, 222, 93, 0.55) !important;
-  width: 100%;
-  height: 100%;
-}
-.partner__content--mobile {
-  padding-top: 24px;
-}
-.partner__list--mobile {
-  margin-top: 16px !important;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-}
-.partner__slide__item img {
-  object-fit: cover;
-  width: 100%;
-  height: 66px;
-  background-color: white;
-  border: 1px solid silver;
-}
-.slick-arrow {
-  display: none !important;
-}
+
 /* End partner mobile */
 /* Start new mobile */
 .new__mobile {
