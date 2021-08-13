@@ -873,7 +873,6 @@ body {
   margin-bottom: 30px;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
-  border: 1px solid #ccc;
   background: #fff;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   padding: 0px !important;
@@ -1123,12 +1122,12 @@ body {
   transition: box-shadow 0.15s ease-in-out;
 }
 .nav__btn__icon--mobile {
-  font-size: 48px;
+  font-size: 20px;
   color: white;
 }
 .nav__btn__icon__search--mobile {
   color: white;
-  font-size: 32px;
+  font-size: 20px;
 }
 .header--fixMenu .nav__btn__icon__search--mobile {
   color: black;
