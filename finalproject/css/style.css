@@ -1345,6 +1345,9 @@ body {
 .new__mobile {
   margin-top: 16px;
 }
+.new__mobile .row {
+  margin: 0px;
+}
 .news--mobile__item {
   width: 100%;
   margin-right: 30px;
