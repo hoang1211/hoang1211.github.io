@@ -1399,6 +1399,10 @@ body {
 /* End footer mobile */
 /* End mobile page index */
 /* Start page about ver mobile */
+.page__about__ver--mobile .row {
+  padding: 0px;
+  margin: 0px;
+}
 .banner__about--mobile {
   background-image: url(../assest/logobackground/icon-gioi-thieu/bg.jpg);
   background-size: cover;
@@ -1407,6 +1411,7 @@ body {
   height: 480px;
   width: 100%;
 }
+
 /* ----------------------------- */
 /* Start page contact ver mobile */
 .banner__contact--mobile {
