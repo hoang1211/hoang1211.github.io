@@ -30,3 +30,25 @@ $(document).ready(function () {
     $(".wrap__search--mobile").slideToggle();
   });
 });
+//Search info
+let searchFunc = () => {
+  $("#banner__searchbar__btn").click(function () {
+    let regionId = $("#select-search-address").val();
+    let typeId = $("#select-search-type").val();
+    let priceId = $("#select-search-price").val();
+    window.location.href = `search.html?region=${regionId}&type=${typeId}&price=${priceId}`;
+    return false;
+  });
+};
+searchFunc();
+let searchFuncMobile = () => {
+  $("#banner__searchbar__btn-mobile").click(function () {
+    let regionId = $("#select-search-address-mobile").val();
+    let typeId = $("#select-search-type-mobile").val();
+    let priceId = $("#select-search-price-mobile").val();
+    window.location.href = `search.html?region=${regionId}&type=${typeId}&price=${priceId}`;
+    return false;
+  });
+};
+searchFuncMobile();
+//Filter search 
