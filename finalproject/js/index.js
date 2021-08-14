@@ -161,3 +161,70 @@ let renderProduct = (pd) => {
 };
 renderProduct(product);
 // valied form
+const validateEmail = (email) => {
+  const reEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return reEmail.test(email);
+};
+const validateName = (nameForm) => {
+  let reName =
+    /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$/;
+  return reName.test(nameForm);
+};
+const validatePhone = (phoneForm) => {
+  let rePhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+  return rePhone.test(phoneForm);
+};
+let isvalid;
+let isvalidName;
+let isvalidPhone;
+const checkValidEmail = () => {
+  const e = document.getElementById("validationEmail").value;
+  if (validateEmail(e) == false) {
+    document.getElementById("em-feedback").style.display = "block";
+    isvalid = false;
+  } else {
+    document.getElementById("em-feedback").style.display = "none";
+    isvalid = true;
+  }
+  return isvalid;
+};
+const checkValidName = () => {
+  const n = document.getElementById("validationName").value;
+  if (validateName(n) == false) {
+    document.getElementById("name-feedback").style.display = "block";
+    isvalidName = false;
+  } else {
+    document.getElementById("name-feedback").style.display = "none";
+    isvalidName = true;
+  }
+  return isvalidName;
+};
+const checkValidPhone = () => {
+  const phone = document.getElementById("validationPhoneNumber").value;
+  if (validatePhone(phone) == false) {
+    document.getElementById("phone-feedback").style.display = "block";
+    isvalidPhone = false;
+  } else {
+    document.getElementById("phone-feedback").style.display = "none";
+    isvalidPhone = true;
+  }
+  return isvalidPhone;
+};
+
+$("#submit").click(function () {
+  if (
+    checkValidEmail() == true &&
+    checkValidName() == true &&
+    checkValidPhone() == true
+  ) {
+    alert("Chúng tôi đã nhận được tin nhắn của bạn");
+    console.log(checkValidEmail());
+    console.log(checkValidName());
+    console.log(checkValidPhone());
+  } else {
+    alert("Sai thông tin xin mời điền lại form");
+    console.log(checkValidEmail());
+    console.log(checkValidName());
+    console.log(checkValidPhone());
+  }
+});
