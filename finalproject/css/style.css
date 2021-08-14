@@ -55,7 +55,7 @@ body {
 }
 .page-nav-link__active {
   text-decoration: none;
-  color: #ffde5d;
+  color: #a447dc;
   transition: all 0.5s ease-in-out;
 }
 .page-nav-link__active:hover {
@@ -116,7 +116,7 @@ body {
 }
 .header--fixMenu {
   background-color: #fff;
-  box-shadow: 2px 2px silver;
+  box-shadow: 2px 2px f1e6f5;
 }
 .header--fixMenu a {
   color: black;
@@ -159,7 +159,7 @@ body {
   position: relative;
 }
 .nav__menu__item__link__active {
-  color: #ffde5d !important;
+  color: #a447dc !important;
 }
 .nav__menu__item__hotline {
   text-decoration: none;
@@ -175,7 +175,12 @@ body {
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
   border-radius: 3px;
-  background-image: linear-gradient(to right, #ffde5d 0%, #a1cc66 100%);
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .nav__menu__hotline {
   list-style: none;
@@ -258,15 +263,15 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-position: right center !important; /* change the direction of the change here */
   text-decoration: none;
-  color: #007aff;
+  color: white;
 }
 .btn__searchbar {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-  background-image: linear-gradient(
-    to right,
-    #fceabb 0%,
-    #f8b500 51%,
-    #fceabb 100%
+  background: rgb(164, 71, 220);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 71, 220, 1) 38%,
+    rgba(148, 187, 233, 1) 100%
   );
   border: none;
   border-radius: 3px;
@@ -316,7 +321,12 @@ body {
   background-color: white;
 }
 .about--desktop__content__wrap:hover {
-  background-color: #dca447;
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
   color: white;
   cursor: pointer;
 }
@@ -378,7 +388,12 @@ body {
   padding-top: 120px;
   width: 100%;
   height: 100%;
-  background-color: rgba(235, 204, 152, 0.8);
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 0.8) 26%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
   z-index: 1;
 }
 .product--desktop__item__content__scaleX {
@@ -399,11 +414,11 @@ body {
   text-align: center;
   width: 274px;
   height: 50px;
-  background-image: linear-gradient(
-    to right,
-    #fceabb 0%,
-    #f8b500 51%,
-    #fceabb 100%
+  background: rgb(164, 71, 220);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 71, 220, 1) 38%,
+    rgba(148, 187, 233, 1) 100%
   );
   border-radius: 3px;
   padding-top: 14px;
@@ -415,7 +430,7 @@ body {
   background-position: right center !important; /* change the direction of the change here */
 }
 .product--desktop__btnviewmore:hover #product--desktop_btnviewmore_link {
-  color: #007aff;
+  color: white;
 }
 #product--desktop_btnviewmore_link {
   text-transform: uppercase;
@@ -690,7 +705,12 @@ body {
   height: 200px;
 }
 .news--desktop__item:hover {
-  background-color: #dca447;
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
   color: white;
 }
 /* End new desktop */
@@ -742,7 +762,12 @@ body {
   text-align: center;
   width: 150px;
   height: 50px;
-  background-color: #fff;
+  background: rgb(164, 71, 220);
+  background: linear-gradient(
+    90deg,
+    rgba(164, 71, 220, 1) 38%,
+    rgba(148, 187, 233, 1) 100%
+  );
   border-radius: 3px;
   border: none;
   padding-top: 5px !important;
@@ -755,8 +780,8 @@ body {
 }
 .btnSubmit:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  background-color: #548ca8 !important;
-  color: #ffde5d;
+
+  color: white;
 }
 /* End contact desktop */
 /* Start footer desktop */
@@ -880,6 +905,13 @@ body {
 }
 .page__product__item--desktop:hover {
   box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: white;
 }
 .page__product__item--desktop img {
   width: 100%;
@@ -911,7 +943,7 @@ body {
 }
 
 .pagination__active {
-  background-color: #ffde5d;
+  background-color: #a447dc;
   color: black !important;
   border-radius: 5px;
 }
@@ -946,7 +978,7 @@ body {
   transition: all 0.5s ease-in-out !important;
 }
 .ul-nostyle :hover {
-  color: #f8b500 !important;
+  color: #47dca4 !important;
 }
 /* End page product desktop */
 /* Start page product item */
@@ -1441,9 +1473,38 @@ body {
   height: 480px;
   width: 100%;
 }
+.wrap__filter__product--mobile .row {
+  margin: 0px;
+}
+.wrap__page__product__ver--mobile .row {
+  margin: 0px;
+}
+#page__product__ver--mobile .col-6 {
+  padding-left: 0px;
+}
+.page__product__mobile__item {
+  background-color: white;
+  margin-bottom: 16px !important;
+  transition: all 0.5 ease-in-out !important;
+}
+.page__product__mobile__item:hover {
+  background: rgb(71, 220, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: white;
+}
+.page__product__mobile__item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 .pagination--mobile {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .pagination--mobile a {
@@ -1467,7 +1528,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-position: right center !important; /* change the direction of the change here */
   text-decoration: none;
-  color: #007aff;
+  color: white;
 }
 
 /* ----------------------------- */

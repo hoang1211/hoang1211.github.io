@@ -82,6 +82,28 @@ let renderProductHtml = (pd) => {
               </div>`;
     let pageProductDesk = $("#page-product-desk-show");
     pageProductDesk.append(deskProduct);
+    let mobileProduct = `<div class="page__product__mobile__item row">
+                <div class="col-6">
+                  <a href="productitem.html?productId=${id}"
+                    ><img src="assest/product/${id}/1.jpg" alt="" class=""
+                  /></a>
+                </div>
+                <div class="page__product__item__content--desktop col-6">
+                  <div class="content-header">Mở bán ${houseName}</div>
+                  <div class="content-font" style="margin-top: 5px !important">
+                    Diện tích: ${square} m2 - ${bedRom} Phòng Ngủ
+                  </div>
+                  <div class="link-font" style="margin-top: 12px !important">
+                    <a
+                      href="productitem.html?productId=${id}"
+                      class="page__product__item__link--desktop"
+                      >Xem thêm</a
+                    >
+                  </div>
+                </div>
+              </div>`;
+    let pageProductMobile = $("#page__product__ver--mobile");
+    pageProductMobile.append(mobileProduct);
   });
 };
 renderProductHtml(product);
