@@ -1463,6 +1463,17 @@ body {
   height: 480px;
   width: 100%;
 }
+.page__news--mobile .news--desktop__item {
+  width: 100%;
+  height: 480px;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-color: white;
+  cursor: pointer;
+}
+.page__news--mobile .col-12 {
+  padding: 0px;
+}
 /* ----------------------------- */
 /* Start page product ,product item ver mobile */
 .banner__product--mobile {
