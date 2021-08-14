@@ -1132,6 +1132,9 @@ body {
   box-shadow: 2px 2px silver;
   opacity: 1;
 }
+.nav__menu--mobile p {
+  color: rgb(71, 220, 164) !important;
+}
 .header--fixMenu--mobile a {
   color: black;
 }
@@ -1237,6 +1240,7 @@ body {
   background-color: white;
   border-top: solid 1px #0000001a;
   border-bottom: solid 1px #0000001a;
+  transition: all 0.5s ease-in-out;
 }
 .about__content__item--mobile p {
   margin-top: 16px;
@@ -1249,7 +1253,11 @@ body {
   color: #000;
 }
 .about__content__item--mobile:hover {
-  background-color: #dca447;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 0.8) 26%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
 }
 .about__content__item--mobile:hover p {
   color: white;
@@ -1296,7 +1304,11 @@ body {
   padding-top: 120px;
   width: 100%;
   height: 100%;
-  background-color: rgba(235, 204, 152, 0.8);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 0.8) 26%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
   z-index: 1;
 }
 .product--mobile__item__content__scaleX {
@@ -1421,7 +1433,11 @@ body {
   width: 70%;
 }
 .news--mobile__item:hover {
-  background-color: #dca447;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 220, 164, 0.8) 26%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
 }
 .news--mobile__item__img {
   width: 100%;
