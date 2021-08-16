@@ -8,6 +8,7 @@ let product = [
     region: 2,
     type: 1,
     priceType: 4,
+    squareType: 2,
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ let product = [
     price: 4.5,
     region: 3,
     type: 2,
-    priceType: 4,
+    priceType: 5,
+    squareType: 2,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ let product = [
     region: 2,
     type: 2,
     priceType: 5,
+    squareType: 3,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ let product = [
     region: 1,
     type: 3,
     priceType: 5,
+    squareType: 5,
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ let product = [
     region: 1,
     type: 3,
     priceType: 5,
+    squareType: 3,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ let product = [
     region: 3,
     type: 1,
     priceType: 3,
+    squareType: 3,
   },
 ];
 const url = new URL(window.location.href);

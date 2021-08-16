@@ -94,6 +94,18 @@ let renderProdcutId = (pdId) => {
                   <div class="swiper-slide">
                     <img src="assest/product/${id}/4.jpg" />
                   </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/8.jpg" />
+                  </div>
                 </div>
                 <div
                   class="swiper-button-next swiper-button-next--desktop"
@@ -118,6 +130,18 @@ let renderProdcutId = (pdId) => {
                   </div>
                   <div class="swiper-slide">
                     <img src="assest/product/${id}/4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assest/product/${id}/8.jpg" />
                   </div>
                 </div>
               </div>
@@ -226,6 +250,18 @@ let renderProdcutId = (pdId) => {
                     <div class="swiper-slide">
                       <img src="assest/product/${id}/4.jpg" />
                     </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/8.jpg" />
+                    </div>
                   </div>
                   <div
                     class="swiper-button-next swiper-button-next--mobile"
@@ -250,6 +286,18 @@ let renderProdcutId = (pdId) => {
                     </div>
                     <div class="swiper-slide">
                       <img src="assest/product/${id}/4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assest/product/${id}/8.jpg" />
                     </div>
                   </div>
                 </div>
@@ -334,7 +382,7 @@ renderProdcutId(productId);
 const swiper = new Swiper(".mySwiper", {
   loop: true,
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 8,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
@@ -354,7 +402,7 @@ const swiper2 = new Swiper(".mySwiper2", {
 const swiperMobile = new Swiper(".mySwiper--mobile", {
   loop: true,
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 8,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,

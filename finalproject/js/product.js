@@ -238,3 +238,25 @@ if (searchPrice != null && searchSquare == null) {
 if (searchSquare != null && searchPrice == null) {
   renderProductHtmlSquare(product, searchSquare);
 }
+
+let filterProducMobile = () => {
+  $("#product--filter--btn").click(function () {
+    let priceId = $("#filter__page__product__price--mobile").val();
+    let squareId = $("#filter__page__product__square--mobile").val();
+    window.location.href = `product.html?price=${priceId}&square=${squareId}`;
+    return false;
+  });
+};
+filterProducMobile();
+let searchPriceM = url.searchParams.get("price");
+let searchSquareM = url.searchParams.get("square");
+console.log(searchSquare);
+console.log(searchSquareM);
+console.log(searchPrice);
+console.log(searchPriceM);
+if (searchPrice == 0 && searchSquare == 0) {
+  renderProductHtml(product);
+}
+if (searchPrice != 0 && searchSquare == 0) {
+  renderProductHtmlPrice(product, searchPriceM);
+}
