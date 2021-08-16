@@ -23,6 +23,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#nav__btnMenu").click(function () {
     $(".wrap__nav--mobile").slideToggle();
+    $(".nav__btn__icon--mobile").toggle();
+    $(".nav__btn__icon--mobile__close").toggle();
   });
 });
 $(document).ready(function () {
@@ -51,4 +53,4 @@ let searchFuncMobile = () => {
   });
 };
 searchFuncMobile();
-//Filter search 
+//Filter search

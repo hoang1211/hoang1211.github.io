@@ -1170,6 +1170,11 @@ body {
   font-size: 20px;
   color: white;
 }
+.nav__btn__icon--mobile__close {
+  font-size: 20px;
+  color: white;
+  display: none;
+}
 .nav__btn__icon__search--mobile {
   color: white;
   font-size: 20px;
