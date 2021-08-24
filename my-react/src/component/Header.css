@@ -1,0 +1,50 @@
+.wrap-header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+}
+.header {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+  width: 100%;
+  transition: all 500ms ease;
+}
+.header-top {
+  position: relative;
+  background: #1a1d1f;
+  color: #999999;
+  padding-left: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.container {
+  position: static;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.header-top .top-right li {
+  border-right: 1px solid #2b3034;
+  padding: 12px 35px;
+  margin-left: 0px;
+}
+.header-top .top-right .icon {
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+.header-top .top-right li a {
+  text-decoration: none;
+  color: white;
+}
+.header-top .top-right .info {
+  margin-left: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

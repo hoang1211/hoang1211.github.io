@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/logo/logonhadatFix.png"
+      type="image/x-icon"
+    />
+    <title>WebDemo</title>
+  </head>
+  <body>
+    <!-- header ver desktop-->
+    <header class="header">
+      <div class="nav-bar container">
+        <div class="container row">
+          <div class="col-lg-3 d-flex flex-row">
+            <div class="logo-header"></div>
+            <div class="text-logo">
+              <div class="branch-logo">Theory</div>
+              <div class="slogan-logo">Nơi hạnh phúc ngập tràn</div>
+            </div>
+          </div>
+          <div class="nav-bar-menu col-lg-9 row">
+            <div
+              class="col-lg-9 row justify-content-end"
+              style="padding-top: 15px; margin-top: 10px"
+            >
+              <div class="col-lg-2">
+                <a class="a-underline-none font-menu" href="http://"
+                  >Giới Thiệu</a
+                >
+              </div>
+              <div class="col-lg-2">
+                <a class="a-underline-none font-menu" href="http://">Nhà Bán</a>
+              </div>
+              <div class="col-lg-2">
+                <a class="a-underline-none font-menu" href="http://">Tin Tức</a>
+              </div>
+              <div class="col-lg-2">
+                <a class="a-underline-none font-menu" href="http://">Liên Hệ</a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="hot-line font-menu">
+                Hot Line: <strong>0374889957</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="background-header">
+        <div class="search-bar d-flex flex-row">
+          <div class="diadiem">
+            <p
+              class="font-title-content"
+              style="margin-bottom: 2px !important; color: #707070 !important"
+            >
+              Địa điểm
+            </p>
+            <select
+              class="form-select-menu font-title-h2"
+              style="border: 0px !important"
+              id="select-search-diadiem"
+            >
+              <option selected>Chọn địa điểm</option>
+              <option value="1">Miền Bắc</option>
+              <option value="2">Miền Trung</option>
+              <option value="3">Miền Nam</option>
+            </select>
+          </div>
+          <div class="loainha">
+            <div class="diadiem">
+              <p
+                class="font-title-content"
+                style="margin-bottom: 2px !important; color: #707070 !important"
+              >
+                Loại nhà
+              </p>
+              <select
+                class="form-select-menu font-title-h2"
+                style="border: 0px !important"
+                id="selec-search-loainha"
+              >
+                <option selected>Chọn loại nhà</option>
+                <option value="1">Nhà bán</option>
+                <option value="2">Nhà cho thuê</option>
+              </select>
+            </div>
+          </div>
+          <div class="chiphi">
+            <div class="diadiem">
+              <p
+                class="font-title-content"
+                style="margin-bottom: 2px !important; color: #707070 !important"
+              >
+                Khoảng chi phí
+              </p>
+              <select
+                class="form-select-menu font-title-h2"
+                style="border: 0px !important"
+                id="selec-search-chiphi"
+              >
+                <option selected>Chọn</option>
+                <option value="1">Dưới 1 tỉ</option>
+                <option value="2">1 tỉ đến 1.5 tỉ</option>
+                <option value="3">1.5 tỉ đến 2 tỉ</option>
+                <option value="4">2 tỉ đến 3 tỉ</option>
+                <option value="5">Trên 3 tỉ</option>
+              </select>
+            </div>
+          </div>
+          <div class="diadiem" style="padding-left: 37px; padding-top: 19px">
+            <button
+              type="button"
+              class="btn-search font-menu"
+              id="btn-search-bar"
+            >
+              Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header desktop -->
+    <!-- main verdesk top -->
+    <main class="main">
+      <div class="gioithieu d-flex justify-content-center">
+        <div class="wrap-gioithieu">
+          <div class="font-title-sec">Giới Thiệu</div>
+          <div class="gioithieu-list row">
+            <div class="col-lg-3 gioithieu-item">
+              <div class="gioithieu-item-content"></div>
+            </div>
+            <div class="col-lg-3 gioithieu-item">
+              <div class="gioithieu-item-content"></div>
+            </div>
+            <div class="col-lg-3 gioithieu-item">
+              <div class="gioithieu-item-content"></div>
+            </div>
+            <div class="col-lg-3 gioithieu-item">
+              <div class="gioithieu-item-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
