@@ -79,7 +79,7 @@ let renderProdcutId = (pdId) => {
                   --swiper-navigation-color: #fff;
                   --swiper-pagination-color: #fff;
                 "
-                class="swiper-container mySwiper2"
+                class="swiper mySwiper2"
               >
                 <div class="swiper-wrapper swiper-slide__full">
                   <div class="swiper-slide">
@@ -116,7 +116,7 @@ let renderProdcutId = (pdId) => {
               </div>
               <div
                 thumbsSlider=""
-                class="swiper-container mySwiper swiper-slide__thumb"
+                class="swiper mySwiper swiper-slide__thumb"
               >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -235,7 +235,7 @@ let renderProdcutId = (pdId) => {
                     --swiper-navigation-color: #fff;
                     --swiper-pagination-color: #fff;
                   "
-                  class="swiper-container mySwiper2--mobile"
+                  class="swiper mySwiper2--mobile"
                 >
                   <div class="swiper-wrapper swiper-slide__full">
                     <div class="swiper-slide">
@@ -272,7 +272,7 @@ let renderProdcutId = (pdId) => {
                 </div>
                 <div
                   thumbsSlider=""
-                  class="swiper-container mySwiper--mobile swiper-slide__thumb"
+                  class="swiper mySwiper--mobile swiper-slide__thumb"
                 >
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
