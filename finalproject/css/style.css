@@ -1185,6 +1185,9 @@ body {
 .header--fixMenu .nav__btn__icon--mobile {
   color: black;
 }
+.header--fixMenu .nav__btn__icon--mobile__close {
+  color: black;
+}
 .banner--mobile {
   background-image: url(../assest/logobackground/background/indexbgMobile.jpg);
   background-size: cover;
