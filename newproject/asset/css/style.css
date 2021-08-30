@@ -15,8 +15,10 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-font-smoothing: antialiased;
+  height: 1000px;
 }
 /* Header */
+
 .header-contact {
   background-color: #1a1d1f;
 }
@@ -78,5 +80,35 @@ body {
 }
 .social-logo {
   font-size: 15px;
+}
+.header-nav {
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.header-nav-fix {
+  top: 0px;
+}
+.header-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  list-style: none;
+  height: 100px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.header-nav ul li {
+  padding: 0px;
+  margin-left: 40px;
+}
+.header-nav ul li a {
+  padding: 36px 5px;
+  font-size: 13px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #3a3a3a;
 }
 /* End Header */
