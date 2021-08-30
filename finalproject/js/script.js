@@ -1,13 +1,15 @@
 // menu fixed desk
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop()) {
-      $("header").addClass("header--fixMenu");
-    } else {
-      $("header").removeClass("header--fixMenu");
-    }
-  });
+let headerScroll = $(".header");
+let scrollTopPost = window.scrollY;
+window.addEventListener("scroll", (ev) => {
+  ev.preventDefault();
+  if (scrollTopPost > 0) {
+    headerScroll.addClass("header--fixMenu");
+  } else {
+    headerScroll.removeClass("header--fixMenu");
+  }
 });
+
 //menu fixed mobile
 $(document).ready(function () {
   $(window).scroll(function () {
