@@ -8,7 +8,17 @@ $(document).ready(function () {
     }
   });
 });
-
+$(document).ready(() => {
+  let scrollCheck = window.scrollY;
+  let headerMobile = $(".header--mobile");
+  if (scrollCheck > 0) {
+    $("header").addClass("header--fixMenu");
+    headerMobile.addClass("header--fixMenu--mobile");
+  } else {
+    $("header").addClass("header--fixMenu");
+    headerMobile.removeClass("header--fixMenu--mobile");
+  }
+});
 //menu fixed mobile
 $(document).ready(function () {
   $(window).scroll(function () {
