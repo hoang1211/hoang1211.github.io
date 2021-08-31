@@ -23,3 +23,12 @@ $(document).ready(() => {
     logoHeader.classList.remove("logo-fix");
   }
 });
+$(".banner-slider").slick({
+  autoplay: true,
+  autoplaySpeed: 1000,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
+  arrows: true,
+});
