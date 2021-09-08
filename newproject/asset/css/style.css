@@ -277,6 +277,9 @@ a {
   position: relative;
   top: 120px;
 }
+.wrap-section .container-fluid {
+  padding: 0px;
+}
 .about {
   padding-top: 70px;
   padding-bottom: 40px;
@@ -469,3 +472,81 @@ a {
   display: none;
 }
 /* End about */
+/* Start product */
+.product {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.product-list {
+  height: 845px;
+  margin-top: 45px;
+}
+.product-list .product-box .product-link .product-info .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-list .product-box {
+  height: 370px;
+}
+.product-list .product-box .product-link {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  color: #50575e;
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  font-style: italic;
+}
+.product-list .product-box .product-link .product-info .product-detail {
+  margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.product-list
+  .product-box
+  .product-link
+  .product-info
+  .product-detail
+  .product-address {
+  text-align: left;
+}
+.product-list
+  .product-box
+  .product-link
+  .product-info
+  .product-detail
+  .product-address
+  .product-name {
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #71b100;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product-list
+  .product-box
+  .product-link
+  .product-info
+  .product-detail
+  .product-price {
+  text-align: right;
+}
+.product-list
+  .product-box
+  .product-link
+  .product-info
+  .product-detail
+  .product-price
+  .price-info {
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b10071;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* End product */
