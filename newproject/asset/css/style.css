@@ -193,7 +193,7 @@ a {
 }
 .wrap-banner .banner .banner-slider .slider-img img {
   width: 100%;
-  height: 80vh;
+  height: 800px;
   object-fit: cover;
 }
 .wrap-banner .banner .banner-slider .slider-img .slider-content {
@@ -266,16 +266,14 @@ a {
   background: white;
   color: #71b100;
 }
-.slick-prev:before,
-.slick-next:before {
-  color: #09529b !important;
-  z-index: 10000 !important;
-}
+
 /* End Banner */
 /* Start about */
+.wrap-section-banner {
+  margin-top: 100px;
+}
 .wrap-section {
-  position: relative;
-  top: 120px;
+  margin-top: 0px;
 }
 .wrap-section .container-fluid {
   padding: 0px;
@@ -286,7 +284,7 @@ a {
 }
 .section-title {
   width: 800px;
-  margin: 0 auto 45px;
+  margin: 0 auto 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -478,14 +476,26 @@ a {
   padding-bottom: 40px;
 }
 .product-list {
-  height: 845px;
   margin-top: 45px;
+  margin-bottom: 10px;
 }
 .product-list .product-box .product-link .product-info .product-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(95%);
+}
+.product-list .product-box .product-link .product-info .product-img {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product-list .product-box .product-link .product-info .product-img img:hover {
+  filter: brightness(110%);
+  transform: scale(3);
 }
 .product-list .product-box {
   height: 370px;
@@ -548,5 +558,54 @@ a {
   color: #b10071;
   font-weight: bold;
   text-transform: uppercase;
+}
+.intro-section {
+  padding: 30px 0px;
+  background: #71b100;
+  color: #ffffff;
+}
+.intro-section .intro-inner {
+  height: 75px;
+  width: 100%;
+}
+.intro-section .intro-inner .intro-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.intro-section .intro-inner .section-sub {
+  color: white;
+  text-align: left;
+}
+.intro-section .intro-inner .row {
+  align-items: center;
+}
+.intro-section .intro-inner .intro-content {
+  border-left: 3px solid white;
+  padding-left: 20px;
+}
+.intro-section .intro-inner .intro-contact .contact-link {
+  color: white;
+  display: block;
+  text-decoration: none;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: none;
+  color: #ffffff;
+  font-size: 11px;
+  border: 2px solid #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  padding: 10px 25px;
+  transition: all 0.5s ease;
+  margin-left: 12px;
+}
+.intro-section .intro-inner .intro-contact .contact-link:hover {
+  background-color: white;
+  color: #71b100;
 }
 /* End product */

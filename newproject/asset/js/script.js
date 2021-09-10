@@ -34,7 +34,7 @@ $(".banner-slider").slick({
   speed: 500,
   fade: true,
   cssEase: "linear",
-  arrows: true,
+  arrows: false,
 });
 
 //Tab about
