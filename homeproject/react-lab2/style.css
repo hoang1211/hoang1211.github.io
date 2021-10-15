@@ -1,0 +1,27 @@
+.poke-detail {
+  border: 1px solid;
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  background-color: grey;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.poke-detail .poke-name {
+  color: blue;
+  font-size: 20px;
+}
+.poke-detail .poke-type {
+  font-weight: bold;
+}
+.wrap-pokedex {
+  width: 700px;
+  margin: auto;
+}
+.title-box {
+  text-align: center;
+  color: grey;
+}
+.row {
+  justify-content: space-evenly;
+}
