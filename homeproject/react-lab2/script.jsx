@@ -39,10 +39,26 @@ const pokemons = [
 class PokeDetail extends React.Component {
   render() {
     return (
-      <div className="poke-detail">
+      <div className="poke-detail col-4">
         <h1 className="poke-name">{this.props.name}</h1>
         <img src={this.props.image} className="poke-img" />
         <p className="poke-type">Type : {this.props.type}</p>
+      </div>
+    );
+  }
+}
+class Pokedex extends React.Component {
+  render() {
+    return (
+      <div className="row ">
+        {this.props.pokemon.map((poke) => (
+          <PokeDetail
+            key={poke.id}
+            name={poke.name}
+            image={poke.image}
+            type={poke.type}
+          />
+        ))}
       </div>
     );
   }
@@ -51,12 +67,9 @@ class PokeDetail extends React.Component {
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <PokeDetail
-          name="Metapod"
-          image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
-          type="bug"
-        />
+      <div className="wrap-pokedex">
+        <h1 className="title-box">POKEDEX</h1>
+        <Pokedex pokemon={pokemons} />
       </div>
     );
   }
