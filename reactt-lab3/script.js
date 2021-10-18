@@ -60,10 +60,10 @@ const TodoForm = ({ submitForm }) => {
     </form>
   );
 };
-const TodoList = ({ formDel, todos }) => (
+const TodoList = ({ formDelete, todos }) => (
   <ul>
     {todos.map((todo) => (
-      <TodoItem key={todo.id} formDelete={formDel} {...todo} />
+      <TodoItem key={todo.id} formDelete={formDelete} {...todo} />
     ))}
   </ul>
 );
