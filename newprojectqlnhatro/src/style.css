@@ -87,3 +87,11 @@
 .housemanager-menu .row {
   justify-content: center;
 }
+.modal-people {
+  text-align: center;
+  background: grey;
+}
+.modal-people h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
