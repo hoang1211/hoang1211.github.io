@@ -23,12 +23,13 @@ class App extends React.Component {
       this.setState({
         todos: newTodos,
       });
-
       todo.value = "";
     }
   };
 
   formDelete = (id) => {
+    console.log(id);
+
     const newTodos = this.state.todos.filter((todo) => todo.id != id);
 
     this.setState({
@@ -47,7 +48,7 @@ class App extends React.Component {
   }
 }
 
-const TodoItem = ({ id, title, formDelete }) => (
+const TodoItem = ({ formDelete, title, id }) => (
   <li onClick={() => formDelete(id)}>{title}</li>
 );
 
@@ -59,12 +60,12 @@ const TodoForm = ({ submitForm }) => {
     </form>
   );
 };
-const TodoList = ({ todos, formDelete }) => {
-    <ul>
-        {todos.map((todo) => {
-            <TodoItem
-        })}
-    </ul>
-}
+const TodoList = ({ formDel, todos }) => (
+  <ul>
+    {todos.map((todo) => (
+      <TodoItem key={todo.id} formDelete={formDel} {...todo} />
+    ))}
+  </ul>
+);
 
 ReactDOM.render(<App />, document.getElementById("App"));
