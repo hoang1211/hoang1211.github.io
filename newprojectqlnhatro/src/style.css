@@ -1,0 +1,89 @@
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+}
+.title-house {
+  text-align: center;
+  margin-bottom: 70px;
+  font-style: italic;
+}
+.list-house .house-item {
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  padding-top: 20px;
+  cursor: pointer;
+  border: 1px solid;
+}
+.list-house .house-item .house-link {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.list-house .house-item:hover {
+  box-shadow: 10px 8px 10px grey;
+  box-shadow: 3px;
+}
+.list-house .house-item .name-house {
+  font-weight: bold;
+  color: blue;
+}
+.list-house .house-item .address-house {
+  color: black;
+}
+.menuhouse .row {
+  justify-content: center;
+}
+.menuhouse-item {
+  border: 1px solid;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menuhouse-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+.menuhouse-link:hover {
+  font-weight: bold;
+}
+.title-room {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.room .room-item {
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  background-color: gray;
+  padding-top: 20px;
+  cursor: pointer;
+  border: 1px solid;
+}
+.room .room-item .room-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.room .room-item .room-link .room-id {
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.room .room-item .room-link .room-people {
+  color: black;
+  font-style: italic;
+}
+.housemanager-menu .row {
+  justify-content: center;
+}
