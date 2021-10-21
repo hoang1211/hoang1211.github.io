@@ -114,7 +114,61 @@
     </div>
     <div class="container">
       <div class="modal-people">
-        <h4>Thêm người thuê trọ</h1>
+        <h4 class="modal-title">Thêm người thuê trọ</h4>
+          <div class="add-people">
+            <form class="row needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="validationName" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Quê quán</label>
+                <input type="text" class="form-control" id="validationAddress" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Số CCCD</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="validationId" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom03" class="form-label">Số Điện Thoại</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+              <div class="col-12" style="padding-top: 30px;">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+            </form>
+          </div>
       </div>
     </div>
     <!-- JavaScript Bundle with Popper -->

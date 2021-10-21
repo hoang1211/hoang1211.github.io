@@ -89,9 +89,16 @@
 }
 .modal-people {
   text-align: center;
-  background: grey;
 }
 .modal-people h4 {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.modal-title{
+  
+  color: blue;
+}
+.add-people{
+  padding: 20px;
+  
 }
