@@ -172,12 +172,7 @@
   line-height: 16px;
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
-  background: rgb(164, 71, 220);
-  background: linear-gradient(
-    90deg,
-    rgba(164, 71, 220, 1) 38%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: #edb841;
   border: none;
   border-radius: 3px;
 }
@@ -266,12 +261,7 @@
 }
 .btn__searchbar {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-  background: rgb(164, 71, 220);
-  background: linear-gradient(
-    90deg,
-    rgba(164, 71, 220, 1) 38%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: #edb841;
   border: none;
   border-radius: 3px;
 }
@@ -320,12 +310,7 @@
   background-color: white;
 }
 .about--desktop__content__wrap:hover {
-  background: rgb(71, 220, 164);
-  background: linear-gradient(
-    90deg,
-    rgba(71, 220, 164, 1) 26%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: #edb841;
   color: white;
   cursor: pointer;
 }
@@ -387,12 +372,7 @@
   padding-top: 120px;
   width: 100%;
   height: 100%;
-  background: rgb(71, 220, 164);
-  background: linear-gradient(
-    90deg,
-    rgba(71, 220, 164, 0.8) 26%,
-    rgba(148, 187, 233, 0.8) 100%
-  );
+  background: #edb841;
   z-index: 1;
 }
 .product--desktop__item__content__scaleX {
@@ -413,12 +393,7 @@
   text-align: center;
   width: 274px;
   height: 50px;
-  background: rgb(164, 71, 220);
-  background: linear-gradient(
-    90deg,
-    rgba(164, 71, 220, 1) 38%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: #edb841;
   border-radius: 3px;
   padding-top: 14px;
   transition: all 0.5s ease-in-out !important;
@@ -503,9 +478,6 @@
   z-index: 1;
   transform: scaleX(0);
 }
-/* .city--hover--desktop:hover .city__item--desktop:before {
-  transform: scaleX(1);
-} */
 .hanoi--desktop {
   background-image: url("../assest/city/hanoi.jpg");
   background-repeat: no-repeat;
@@ -609,9 +581,6 @@
   transition: 0.9s cubic-bezier(0.24, 0.74, 0.58, 1);
   transform-style: preserve-3d;
 }
-.count__icon--desktop:hover .count__icon__inner--desktop {
-  transform: rotateY(360deg);
-}
 .counter--desktop {
   color: #162b75;
   font-weight: 700;
@@ -658,9 +627,6 @@
 .member__photo__inner--desktop {
   transition: 0.9s cubic-bezier(0.24, 0.74, 0.58, 1);
   transform-style: preserve-3d;
-}
-.member__photo--desktop:hover .member__photo__inner--desktop {
-  transform: rotateY(360deg);
 }
 .member__name--desktop {
   font-size: 20px;
@@ -713,12 +679,7 @@
   height: 200px;
 }
 .news--desktop__item:hover {
-  background: rgb(71, 220, 164);
-  background: linear-gradient(
-    90deg,
-    rgba(71, 220, 164, 1) 26%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: #edb841;
   color: white;
 }
 /* End new desktop */
