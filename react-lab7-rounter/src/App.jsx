@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Spinner } from "react-bootstrap";
 import Layout from "../layout/Layout";
 import server from "./Sever";
+import { Row, Col, Container } from "react-bootstrap";
 
 server();
 function App() {
