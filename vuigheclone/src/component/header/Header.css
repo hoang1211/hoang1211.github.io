@@ -1,0 +1,48 @@
+.navbar {
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px 0;
+  background-color: #fff;
+  min-height: 40px;
+  z-index: 1030;
+  -webkit-box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
+  border: 0;
+}
+.navbar-brand.tet {
+  height: 50px;
+  margin-top: -5px;
+}
+.navbar-brand {
+  float: left;
+  height: 40px;
+}
+@media (min-width: 1366px) {
+  .navbar-container {
+    width: 1310px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding: 0;
+  }
+  .navbar-brand {
+    overflow: hidden;
+  }
+}
+.navbar-brand .logo img {
+  height: 40px;
+}
+img {
+  border: 0;
+  height: 50px;
+}
+img {
+  vertical-align: middle;
+}
+.icon {
+  font-size: 25px;
+}
