@@ -23,6 +23,10 @@ input {
     transition: background 0.5s, color 0.5s, border 0.5s;
   }
 }
+.navbar-left {
+  display: flex;
+  width: 80%;
+}
 @media (max-width: 1280px) {
   .navbar-left {
     display: none;
