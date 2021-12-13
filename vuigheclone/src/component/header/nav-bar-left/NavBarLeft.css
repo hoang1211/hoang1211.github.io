@@ -89,7 +89,11 @@ input:focus {
 a {
   text-decoration: none;
 }
-a.active {
+.navbar-menu-item a.active {
+  text-decoration: none;
+  color: red;
+}
+.navbar-menu-item a {
   text-decoration: none;
   color: black;
 }

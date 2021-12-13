@@ -5,19 +5,19 @@ const NavMenu = () => {
   return (
     <div className="navbar-menu">
       <div className="navbar-menu-item">
-        <NavLink to="/">Anime</NavLink>
+        <NavLink to="/anime">Anime</NavLink>
       </div>
       <div className="navbar-menu-item">
-        <NavLink to="/">Video</NavLink>
+        <NavLink to="/video">Video</NavLink>
       </div>
       <div className="navbar-menu-item">
-        <NavLink to="/">Tin Tức</NavLink>
+        <NavLink to="/tintuc">Tin Tức</NavLink>
       </div>
       <div className="navbar-menu-item">
-        <NavLink to="/">Truyện</NavLink>
+        <NavLink to="/truyen">Truyện</NavLink>
       </div>
       <div className="navbar-menu-item">
-        <NavLink to="/">BXH</NavLink>
+        <NavLink to="/bxh">BXH</NavLink>
       </div>
     </div>
   );
