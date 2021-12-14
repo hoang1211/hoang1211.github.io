@@ -1,0 +1,27 @@
+.list-films {
+  overflow: scroll;
+  height: 440px;
+  border-radius: none;
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.films-name {
+  margin-bottom: 5px;
+  max-height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.display-list {
+  display: block;
+}

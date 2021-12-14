@@ -13,7 +13,7 @@ const ViewAnime = () => {
       <Container>
         <Row>
           <Col xs={8}>
-            <ReactPlayer url={films.src} />
+            <ReactPlayer url={films.src} width="100%" height="480px" />
           </Col>
           <Col xs={4}>
             <Sidebar />

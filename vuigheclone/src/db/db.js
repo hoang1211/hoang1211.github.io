@@ -5,7 +5,7 @@ const films = [
     alias: "lupin-3-part-6",
     type: "anime",
     image: "/img/lupin3viendancuoicung.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/61hP7JZwibA",
   },
   {
     id: 2,
@@ -13,23 +13,23 @@ const films = [
     alias: "mieruko-chan",
     type: "anime",
     image: "/img/merukochan.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/Tttpv5NP4dE",
   },
   {
     id: 3,
-    name: "SEKAI SAIKOU NO ANSATSUSHA, ISEKAI KIZOKU NI TENSEI SURU",
+    name: "SEKAI SAIKOU NO ANSATSUSHA",
     alias: "sekai-saikou-no-ansatsusha-isekai-kizoku-ni-tensei-suru",
     type: "anime",
     image: "/img/3.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/i4r0VbB94u0",
   },
   {
     id: 4,
-    name: "Sakura",
+    name: "Sakugan",
     alias: "sakugan",
     type: "anime",
     image: "/img/4.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/v_fCZijSfhw",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const films = [
     alias: "kimetsu-no-yaiba",
     type: "anime",
     image: "/img/5.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/8iwLtxDol7A",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const films = [
     alias: "boruto-naruto-next-generations",
     type: "anime",
     image: "/img/6.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/OwOhNEkOTlg",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const films = [
     alias: "world-trigger",
     type: "anime",
     image: "/img/7.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/bmq8riwRvCE",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const films = [
     alias: "Taishou-Otome-Otogibanashi",
     type: "anime",
     image: "/img/8.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/hE0vyAK6d1A",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const films = [
     alias: "vua-hai-tac",
     type: "anime",
     image: "/img/9.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/YetDQebJTJs",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const films = [
     alias: "shiroi-suna-no-aquatope",
     type: "anime",
     image: "/img/10.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/7iDXptzbNRc",
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ const films = [
     alias: "deji-meets-girl",
     type: "anime",
     image: "/img/11.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/6KflpqtrKSI",
   },
   {
     id: 12,
@@ -93,7 +93,7 @@ const films = [
     alias: "build-divine-code-black",
     type: "anime",
     image: "/img/12.jpg",
-    src: "https://youtu.be/lyxGLKQogfU",
+    src: "https://youtu.be/Kt-x7zTIxwg",
   },
 ];
 const tinAnime = [

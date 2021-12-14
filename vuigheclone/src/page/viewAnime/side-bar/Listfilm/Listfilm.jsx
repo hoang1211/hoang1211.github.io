@@ -1,14 +1,25 @@
 import { getAllFilms } from "../../../../db/db";
-import { ListGroup } from "react-bootstrap";
+import { ListGroup, Col, Row } from "react-bootstrap";
+import "./Listfilm.css";
+import { Link } from "react-router-dom";
 
 const listAnime = getAllFilms();
-const Listfilms = () => {
+const Listfilms = (props) => {
   return (
-    <ListGroup>
+    <ListGroup className={"list-films " + `${props.display}`}>
       {listAnime.map((f) => {
         return (
           <ListGroup.Item key={f.id}>
-            <span>{f.name}</span>
+            <Link to={`/anime/` + f.alias}>
+              <Row>
+                <Col xs={6}>
+                  <img src={f.image} />
+                </Col>
+                <Col xs={6}>
+                  <span className="films-name">{f.name}</span>
+                </Col>
+              </Row>
+            </Link>
           </ListGroup.Item>
         );
       })}
