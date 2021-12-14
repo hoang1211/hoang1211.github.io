@@ -17,14 +17,14 @@ const NavBarLeft = () => {
           ></input>
           <BsSearch className="icon icon-search" />
         </div>
-        <div className="search-result activated" id="search-result">
+        {/* <div className="search-result activated" id="search-result">
           <div
             className="result-body ps-container ps-theme-default"
             data-ps-id="2f49d6c8-498c-e7a0-8415-fe8df2eac42d"
           />
           <div className="result-noitem">Nhập tên anime để tìm kiếm</div>
           <div className="loading hidden" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,0 +1,14 @@
+.side-bar {
+  height: 40px;
+  line-height: 40px;
+  margin: 0 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.list {
+  margin-left: 10px;
+}
+.commend {
+  float: right;
+  margin-right: 10px;
+}
