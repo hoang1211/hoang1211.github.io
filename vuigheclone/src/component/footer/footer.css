@@ -1,0 +1,22 @@
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer-btn {
+  background: #d80f16;
+  border-radius: 2px px;
+  clear: both;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100px;
+}
+.footer-btn:hover {
+  color: #fff;
+}

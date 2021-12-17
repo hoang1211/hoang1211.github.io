@@ -1,0 +1,48 @@
+.film-name {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  margin: 0.67em 0;
+}
+.view {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+.film-type {
+  margin-top: 20px;
+}
+.pf-0 {
+  padding-left: 0px;
+}
+.film-like {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px 0 8px;
+  background: #e5525e;
+  margin-right: 10px;
+  color: #fff;
+  width: auto;
+}
+.film-follow {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px 0 8px;
+  background: #0e6f6a;
+  margin-right: 10px;
+  color: #fff;
+  width: auto;
+}
+.film-react {
+  margin-left: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.film-react-icon {
+  margin-right: 8px;
+}

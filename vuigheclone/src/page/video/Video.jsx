@@ -1,11 +1,11 @@
 import ShowNewFilms from "../../component/newsFilm/ShowNewFilms";
-import "./Anime.css";
-const Anime = () => {
+import "./Video.css";
+const Video = () => {
   return (
     <div className="main-anime">
-      <ShowNewFilms title="Anime mới" />
+      <ShowNewFilms title="Video mới" />
     </div>
   );
 };
 
-export default Anime;
+export default Video;

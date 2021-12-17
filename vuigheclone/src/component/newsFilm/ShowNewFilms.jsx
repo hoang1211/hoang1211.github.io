@@ -3,17 +3,19 @@ import { getAllFilms } from "../../db/db";
 import { Container, Col, Row } from "react-bootstrap";
 import { useState } from "react";
 
-const ShowNewFilms = () => {
+const ShowNewFilms = (props) => {
   const [film, setFilm] = useState(getAllFilms());
   return (
     <Container>
-      <div className="new-epsion">TẬP MỚI NHẤT {">"}</div>
+      <div className="new-epsion">
+        {props.title} {">"}
+      </div>
       <Row>
         {film.map((f) => {
           return (
             <Col xs={3} key={f.id}>
               <NewFilms
-                link={f.type + `/` + f.alias}
+                link={`/` + f.type + `/` + f.alias}
                 name={f.name}
                 image={f.image}
               />

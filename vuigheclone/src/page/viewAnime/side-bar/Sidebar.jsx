@@ -2,6 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import "./Sidebar.css";
 import Listfilms from "./Listfilm/Listfilm";
 import { useState } from "react";
+import Comments from "./Comment/Comments";
 
 const Sidebar = () => {
   const [active, setActive] = useState("listF");
@@ -37,6 +38,7 @@ const Sidebar = () => {
       </Row>
       <div className="show-detail">
         <Listfilms display={`${active == "listF" ? "display-list" : ""}`} />
+        <Comments display={`${active == "comments" ? "display-cmt" : ""}`} />
       </div>
     </div>
   );

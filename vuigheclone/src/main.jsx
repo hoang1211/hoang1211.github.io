@@ -7,6 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./page/Home";
 import Anime from "./page/anime/Anime";
 import ViewAnime from "./page/viewAnime/ViewAnime";
+import Video from "./page/video/Video";
+import Tintuc from "./page/tintuc/Tintuc";
+import Truyen from "./page/truyen/Truyen";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +18,9 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />}></Route>
           <Route path="/anime" element={<Anime />}></Route>
+          <Route path="/video" element={<Video />}></Route>
+          <Route path="/tintuc" element={<Tintuc />}></Route>
+          <Route path="/truyen" element={<Truyen />}></Route>
           <Route path="/anime/:alias" element={<ViewAnime />}></Route>
         </Route>
       </Routes>

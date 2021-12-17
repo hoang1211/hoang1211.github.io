@@ -1,0 +1,19 @@
+.list-cmt {
+  overflow: scroll;
+  height: 440px;
+  border-radius: none;
+  display: none;
+}
+.display-cmt {
+  display: block;
+}
+.cmt-name {
+  color: #0bb586;
+  float: left;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.cmt-content {
+  word-wrap: break-word;
+  clear: both;
+}

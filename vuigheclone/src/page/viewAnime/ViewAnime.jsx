@@ -4,6 +4,9 @@ import "./ViewAnime.css";
 import { useParams } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import Sidebar from "./side-bar/Sidebar";
+import InformationFilm from "./information/InformationFilm";
+import ShowNewFilms from "../../component/newsFilm/ShowNewFilms";
+import { TinAnime } from "../../component/tinAnime/tinAnime";
 
 const ViewAnime = () => {
   const filmPrama = useParams();
@@ -19,7 +22,18 @@ const ViewAnime = () => {
             <Sidebar />
           </Col>
         </Row>
+        <Row>
+          <InformationFilm
+            name={films.name}
+            like={films.like}
+            follow={films.follow}
+          />
+        </Row>
       </Container>
+      <div className="viewmore-area">
+        <ShowNewFilms title="Phim mới" />
+        <TinAnime />
+      </div>
     </div>
   );
 };
