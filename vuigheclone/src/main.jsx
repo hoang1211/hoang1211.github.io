@@ -10,6 +10,8 @@ import ViewAnime from "./page/viewAnime/ViewAnime";
 import Video from "./page/video/Video";
 import Tintuc from "./page/tintuc/Tintuc";
 import Truyen from "./page/truyen/Truyen";
+import ViewMorePage from "./page/viewmorepage/ViewMorePage";
+import Search from "./page/searchResult/Search";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +23,8 @@ ReactDOM.render(
           <Route path="/video" element={<Video />}></Route>
           <Route path="/tintuc" element={<Tintuc />}></Route>
           <Route path="/truyen" element={<Truyen />}></Route>
+          <Route path="/listfilm" element={<ViewMorePage />}></Route>
+          <Route path="/search/:searchChar" element={<Search />}></Route>
           <Route path="/anime/:alias" element={<ViewAnime />}></Route>
         </Route>
       </Routes>

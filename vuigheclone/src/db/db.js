@@ -289,7 +289,10 @@ const comics = [
 
 export const getAllFilms = () => films;
 export const searchFilmsByChar = (char) =>
-  films.filter((f) => toUppercase(f.name).indexOf(toUppercase(char)) > -1);
+  films.filter((f) => {
+    const text = f.name;
+    return text.toUpperCase().indexOf(char.toUpperCase()) > -1;
+  });
 export const getFilmsById = (id) => films.find((f) => f.id == id);
 export const getFilmsByAlias = (alias) => films.find((f) => f.alias == alias);
 export const getAllTinAnime = () => tinAnime;

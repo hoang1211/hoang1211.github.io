@@ -1,8 +1,14 @@
 import "./NavBarLeft.css";
 import { BsSearch } from "react-icons/bs";
 import NavMenu from "./NavMenu";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBarLeft = () => {
+  const [search, setSearch] = useState("");
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
   return (
     <div className="navbar-left">
       <NavMenu />
@@ -14,17 +20,13 @@ const NavBarLeft = () => {
             placeholder="Tìm kiếm anime"
             autoComplete="off"
             className="search-box-text"
+            value={search}
+            onChange={handleSearch}
           ></input>
-          <BsSearch className="icon icon-search" />
+          <Link to={`/search/` + search}>
+            <BsSearch className="icon icon-search" />
+          </Link>
         </div>
-        {/* <div className="search-result activated" id="search-result">
-          <div
-            className="result-body ps-container ps-theme-default"
-            data-ps-id="2f49d6c8-498c-e7a0-8415-fe8df2eac42d"
-          />
-          <div className="result-noitem">Nhập tên anime để tìm kiếm</div>
-          <div className="loading hidden" />
-        </div> */}
       </div>
     </div>
   );

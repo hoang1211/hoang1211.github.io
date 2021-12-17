@@ -2,8 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./information.css";
 import { BsHeartHalf } from "react-icons/bs";
 import { AiOutlineBell } from "react-icons/ai";
+import { useState } from "react";
 
 const InformationFilm = (props) => {
+  const [countLike, setCountLike] = useState(props.like);
+  const [countFollow, setCountFollow] = useState(props.follow);
   return (
     <div className="film-detail">
       <Row>
@@ -14,15 +17,21 @@ const InformationFilm = (props) => {
           </div>
           <Row className="film-react">
             <Col xs={2} className="pf-0">
-              <div className="film-like">
+              <div
+                className="film-like"
+                onClick={() => setCountLike(countLike + 1)}
+              >
                 <BsHeartHalf className="film-react-icon" />
-                Thích {props.like}
+                Thích {countLike}
               </div>
             </Col>
             <Col xs={2} className="pf-0">
-              <div className="film-follow">
+              <div
+                className="film-follow"
+                onClick={() => setCountFollow(countFollow + 1)}
+              >
                 <AiOutlineBell className="film-react-icon" />
-                Follow {props.follow}
+                Follow {countFollow}
               </div>
             </Col>
           </Row>
