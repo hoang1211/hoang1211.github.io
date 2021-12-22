@@ -1,6 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
 import { getAllTinAnime } from "../../db/db";
-import NewAnimeShow from "./NewAnimeShow";
+import NewAnimeShow from "./NewsAnimeShow";
 
 const TinAnimeDb = getAllTinAnime();
 

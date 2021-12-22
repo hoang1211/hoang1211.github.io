@@ -6,7 +6,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Sidebar from "./side-bar/Sidebar";
 import InformationFilm from "./information/InformationFilm";
 import ShowNewFilms from "../../component/newsFilm/ShowNewFilms";
-import { TinAnime } from "../../component/tinAnime/tinAnime";
+import NewsAnime from "../../component/NewsAnime/NewsAnime";
 
 const ViewAnime = () => {
   const filmPrama = useParams();
@@ -32,7 +32,7 @@ const ViewAnime = () => {
       </Container>
       <div className="viewmore-area">
         <ShowNewFilms title="Phim mới" />
-        <TinAnime />
+        <NewsAnime />
       </div>
     </div>
   );

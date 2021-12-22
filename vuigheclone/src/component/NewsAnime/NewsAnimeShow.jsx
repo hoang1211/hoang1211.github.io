@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import "./NewAnime.css";
+import "./NewsAnime.css";
 
 const NewAnimeShow = (props) => {
   return (

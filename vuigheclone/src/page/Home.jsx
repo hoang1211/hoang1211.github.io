@@ -1,7 +1,7 @@
 import Banner from "../component/banner/Banner";
 import "./Home.css";
 import ShowNewFilms from "../component/newsFilm/ShowNewFilms";
-import NewAnime from "../component/NewAnime/NewAnime";
+import NewsAnime from "../component/NewsAnime/NewsAnime";
 import Comics from "../component/comics/Comics";
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <div className="main">
         <Banner />
         <ShowNewFilms title="Tập mới nhất" />
-        <NewAnime />
+        <NewsAnime />
         <Comics />
       </div>
     </>
