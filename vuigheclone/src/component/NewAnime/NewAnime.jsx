@@ -1,10 +1,10 @@
 import { Container, Col, Row } from "react-bootstrap";
 import { getAllTinAnime } from "../../db/db";
-import { TinAnimeComponent } from "./TinAnimeComponent";
+import NewAnimeShow from "./NewAnimeShow";
 
 const TinAnimeDb = getAllTinAnime();
 
-export const TinAnime = () => {
+const NewAnime = () => {
   return (
     <>
       <Container>
@@ -15,11 +15,7 @@ export const TinAnime = () => {
           {TinAnimeDb.map((t) => {
             return (
               <Col xs={3} key={t.id}>
-                <TinAnimeComponent
-                  src={t.src}
-                  image={t.image}
-                  content={t.content}
-                />
+                <NewAnimeShow src={t.src} image={t.image} content={t.content} />
               </Col>
             );
           })}
@@ -28,3 +24,4 @@ export const TinAnime = () => {
     </>
   );
 };
+export default NewAnime;

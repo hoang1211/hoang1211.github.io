@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
-import "./TinAnime.css";
+import "./NewAnime.css";
 
-export const TinAnimeComponent = (props) => {
+const NewAnimeShow = (props) => {
   return (
     <div>
       <a href={props.src} className="tinanime-item">
@@ -15,3 +15,4 @@ export const TinAnimeComponent = (props) => {
     </div>
   );
 };
+export default NewAnimeShow;

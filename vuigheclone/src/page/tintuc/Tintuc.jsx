@@ -1,10 +1,10 @@
-import { TinAnime } from "../../component/tinAnime/tinAnime";
+import NewAnime from "../../component/NewAnime/NewAnime";
 import "./Tintuc.css";
 
 const Tintuc = () => {
   return (
     <div className="main-anime">
-      <TinAnime />
+      <NewAnime />
     </div>
   );
 };
