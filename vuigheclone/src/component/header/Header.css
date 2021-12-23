@@ -24,7 +24,11 @@
     width: 1310px;
   }
 }
-
+@media (max-width: 576px) {
+  .menu-user {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .navbar-container {
     padding: 0;

@@ -3,7 +3,7 @@ import "./NewsAnime.css";
 
 const NewAnimeShow = (props) => {
   return (
-    <div>
+    <div className="items">
       <a href={props.src} className="tinanime-item">
         <Row>
           <Col className="image">

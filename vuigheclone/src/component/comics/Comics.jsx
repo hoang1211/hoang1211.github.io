@@ -14,7 +14,7 @@ const Comics = () => {
         <Row>
           {ComicDb.map((c) => {
             return (
-              <Col xs={4} key={c.id}>
+              <Col sm={4} xs={12} key={c.id}>
                 <Comic
                   src={c.src}
                   name={c.name}

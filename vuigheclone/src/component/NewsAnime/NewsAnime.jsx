@@ -14,7 +14,7 @@ const NewAnime = () => {
         <Row>
           {TinAnimeDb.map((t) => {
             return (
-              <Col xs={3} key={t.id}>
+              <Col sm={3} xs={6} key={t.id}>
                 <NewAnimeShow src={t.src} image={t.image} content={t.content} />
               </Col>
             );

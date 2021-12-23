@@ -7,12 +7,12 @@ const Banner = () => {
   return (
     <Container className="banner">
       <Row>
-        <Col xs={8} className="main-banner">
+        <Col sm={8} xs={12} className="main-banner">
           <Link to={`./${getFilmsById(1).type}/${getFilmsById(1).alias}`}>
             <img src={getFilmsById(1).image} />
           </Link>
         </Col>
-        <Col xs={4} className="sub-banner">
+        <Col sm={4} xs={12} className="sub-banner">
           <Row>
             <Link to={`./${getFilmsById(2).type}/${getFilmsById(2).alias}`}>
               <img src={getFilmsById(2).image} />

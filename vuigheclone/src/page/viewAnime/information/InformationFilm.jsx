@@ -10,13 +10,13 @@ const InformationFilm = (props) => {
   return (
     <div className="film-detail">
       <Row>
-        <Col xs={8}>
+        <Col sm={8} xs={12}>
           <div className="film-name">{props.name}</div>
           <div className="view">
             {Math.floor(Math.random() * 100000) + 10000} lượt xem
           </div>
           <Row className="film-react">
-            <Col xs={2} className="pf-0">
+            <Col sm={2} xs={4} className="pf-0">
               <div
                 className="film-like"
                 onClick={() => setCountLike(countLike + 1)}
@@ -25,7 +25,7 @@ const InformationFilm = (props) => {
                 Thích {countLike}
               </div>
             </Col>
-            <Col xs={2} className="pf-0">
+            <Col xs={4} sm={2} className="pf-0">
               <div
                 className="film-follow"
                 onClick={() => setCountFollow(countFollow + 1)}

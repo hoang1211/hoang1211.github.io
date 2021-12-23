@@ -13,7 +13,7 @@ const ShowNewFilms = (props) => {
       <Row>
         {film.map((f) => {
           return (
-            <Col xs={3} key={f.id}>
+            <Col xs={6} sm={3} key={f.id}>
               <NewFilms
                 link={`/` + f.type + `/` + f.alias}
                 name={f.name}

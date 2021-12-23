@@ -14,7 +14,7 @@ const Search = () => {
           <Row>
             {filmsSearch.map((f) => {
               return (
-                <Col xs={3} key={f.id}>
+                <Col sm={3} xs={12} key={f.id}>
                   <NewFilms
                     link={`/` + f.type + `/` + f.alias}
                     name={f.name}

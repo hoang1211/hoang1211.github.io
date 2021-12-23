@@ -15,10 +15,10 @@ const ViewAnime = () => {
     <div className="player-area">
       <Container>
         <Row>
-          <Col xs={8}>
+          <Col sm={8} xs={12}>
             <ReactPlayer url={films.src} width="100%" height="480px" />
           </Col>
-          <Col xs={4}>
+          <Col sm={4} xs={12}>
             <Sidebar />
           </Col>
         </Row>

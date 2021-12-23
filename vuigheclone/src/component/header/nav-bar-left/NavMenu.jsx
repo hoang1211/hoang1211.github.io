@@ -16,9 +16,6 @@ const NavMenu = () => {
       <div className="navbar-menu-item">
         <NavLink to="/truyen">Truyện</NavLink>
       </div>
-      <div className="navbar-menu-item">
-        <NavLink to="/bxh">BXH</NavLink>
-      </div>
     </div>
   );
 };
