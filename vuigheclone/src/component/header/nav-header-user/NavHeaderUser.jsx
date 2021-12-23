@@ -6,12 +6,12 @@ const NavHeaderUser = () => {
   return (
     <div className="navbar-header-user">
       <Row>
-        <Col xs={6}>
+        <Col sm={6} xs={2}>
           <div className="user-login user-avatar" id="user-avatar">
             <BsPersonCircle className="icon" />
           </div>
         </Col>
-        <Col xs={6}>
+        <Col sm={6} xs={2}>
           <div className="user-theme hidden-320" id="user-theme">
             <MdOutlineWbSunny className="icon" />
           </div>

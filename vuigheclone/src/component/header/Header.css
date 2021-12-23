@@ -50,3 +50,10 @@ img {
 .icon {
   font-size: 25px;
 }
+.navbar .btn-active-menu {
+  border: 1px solid red;
+  color: red;
+}
+.navbar .btn-noactive-menu {
+  border: none;
+}

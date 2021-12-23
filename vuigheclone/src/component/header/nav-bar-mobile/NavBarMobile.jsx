@@ -2,20 +2,20 @@ import { BsSearch } from "react-icons/bs";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./NavBarMobile.css";
-import { Dropdown } from "react-bootstrap";
+import NavHeaderUser from "../nav-header-user/NavHeaderUser";
+import { FaFilm, FaVideo, FaNewspaper, FaBookOpen } from "react-icons/fa";
 
-const NavBarMobile = () => {
+const NavBarMobile = (props) => {
   const [search, setSearch] = useState("");
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
   return (
-    <div className="navbar-mobile">
-      <Dropdown>
-        <Dropdown.Toggle className="btn-menu">Menu</Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.ItemText>
-            <div className="navbar-search">
+    <div className={props.display}>
+      <div className="navbar-mobile">
+        <ul className="menu-mobile">
+          <li>
+            <div className="navbar-search-mobile">
               <div className="search-box">
                 <input
                   type="text"
@@ -31,21 +31,32 @@ const NavBarMobile = () => {
                 </Link>
               </div>
             </div>
-          </Dropdown.ItemText>
-          <Dropdown.Item className="navbar-menu-item">
-            <NavLink to="/anime">Anime</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item className="navbar-menu-item">
-            <NavLink to="/video">Video</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item className="navbar-menu-item">
-            <NavLink to="/tintuc">Tin Tức</NavLink>
-          </Dropdown.Item>
-          <Dropdown.Item className="navbar-menu-item">
-            <NavLink to="/truyen">Truyện</NavLink>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+          </li>
+          <li className="menu-mobile-item">
+            <NavLink to="/anime">
+              <FaFilm /> Anime
+            </NavLink>
+          </li>
+          <li className="menu-mobile-item">
+            <NavLink to="/video">
+              <FaVideo /> Video
+            </NavLink>
+          </li>
+          <li className="menu-mobile-item">
+            <NavLink to="/tintuc">
+              <FaNewspaper /> Tin Tức
+            </NavLink>
+          </li>
+          <li className="menu-mobile-item">
+            <NavLink to="/truyen">
+              <FaBookOpen /> Truyện
+            </NavLink>
+          </li>
+          <li className="menu-mobile-item">
+            <NavHeaderUser />
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
