@@ -57,3 +57,8 @@ img {
 .navbar .btn-noactive-menu {
   border: none;
 }
+@media (min-width: 768px) {
+  .navbar-container button {
+    display: none;
+  }
+}
