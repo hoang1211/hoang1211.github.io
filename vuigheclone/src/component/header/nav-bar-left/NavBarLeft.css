@@ -87,7 +87,9 @@ input:focus {
   border: 1px solid red !important;
 }
 a {
+  display: block;
   text-decoration: none;
+  width: 100%;
 }
 .navbar-menu-item a.active {
   text-decoration: none;

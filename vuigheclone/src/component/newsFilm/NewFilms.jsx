@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BsPlay } from "react-icons/bs";
+import { AiFillPlayCircle } from "react-icons/ai";
 import "./NewFilms.css";
 export const NewFilms = (props) => {
   return (
@@ -14,7 +14,7 @@ export const NewFilms = (props) => {
           </div>
         </div>
         <div className="tray-item-play-button">
-          <BsPlay className="icon-play" />
+          <AiFillPlayCircle className="icon-play" />
         </div>
       </Link>
     </div>

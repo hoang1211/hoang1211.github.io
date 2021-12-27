@@ -1,8 +1,7 @@
 import { Container, Navbar, Row, Col } from "react-bootstrap";
-import Logo from "/logo/logo_v8.png";
+import Logo from "/logo/logo2.png";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import NavHeaderUser from "./nav-header-user/NavHeaderUser";
 import NavBarLeft from "./nav-bar-left/NavBarLeft";
 import NavBarMobile from "./nav-bar-mobile/NavBarMobile";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -25,9 +24,6 @@ const Header = () => {
             </div>
           </div>
           <NavBarLeft />
-          <div className="menu-user">
-            <NavHeaderUser />
-          </div>
           <button
             className={active ? "btn-active-menu" : "btn-noactive-menu"}
             onClick={ToggleActive}

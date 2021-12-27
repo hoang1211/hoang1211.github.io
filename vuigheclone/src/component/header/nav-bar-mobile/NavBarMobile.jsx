@@ -2,7 +2,6 @@ import { BsSearch } from "react-icons/bs";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./NavBarMobile.css";
-import NavHeaderUser from "../nav-header-user/NavHeaderUser";
 import { FaFilm, FaVideo, FaNewspaper, FaBookOpen } from "react-icons/fa";
 
 const NavBarMobile = (props) => {
@@ -51,9 +50,6 @@ const NavBarMobile = (props) => {
             <NavLink to="/truyen">
               <FaBookOpen /> Truyện
             </NavLink>
-          </li>
-          <li className="menu-mobile-item">
-            <NavHeaderUser />
           </li>
         </ul>
       </div>

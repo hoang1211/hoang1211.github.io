@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  background: #fff;
-  color: #333;
+  background: #d1d9ff !important;
+  color: #fff;
   margin: 0 auto;
 }

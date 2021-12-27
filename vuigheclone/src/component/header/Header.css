@@ -4,7 +4,7 @@
   left: 0;
   height: 60px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #9fa8da;
   min-height: 40px;
   z-index: 1030;
   -webkit-box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
@@ -12,6 +12,7 @@
   border: 0;
 }
 .navbar-brand.tet {
+  padding-left: 10px;
   height: 50px;
   margin-top: -5px;
 }
