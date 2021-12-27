@@ -7,29 +7,44 @@ import { useState } from "react";
 const InformationFilm = (props) => {
   const [countLike, setCountLike] = useState(props.like);
   const [countFollow, setCountFollow] = useState(props.follow);
+  const [cLike, setCLike] = useState(0);
+  const [cFollow, setCFollow] = useState(0);
+
+  const handleLike = () => {
+    if (cLike < countLike) {
+      setCLike(countLike + 1);
+      setCountLike(countLike + 1);
+    } else {
+      setCLike(0);
+      setCountLike(countLike - 1);
+    }
+  };
+
+  const handleFollow = () => {
+    if (cFollow < countFollow) {
+      setCFollow(countFollow + 1);
+      setCountFollow(countFollow + 1);
+    } else {
+      setCFollow(0);
+      setCountFollow(countFollow - 1);
+    }
+  };
+
   return (
     <div className="film-detail">
       <Row>
         <Col sm={8} xs={12}>
           <div className="film-name">{props.name}</div>
-          <div className="view">
-            {Math.floor(Math.random() * 100000) + 10000} lượt xem
-          </div>
+          <div className="view">1234 lượt xem</div>
           <Row className="film-react">
             <Col sm={2} xs={4} className="pf-0">
-              <div
-                className="film-like"
-                onClick={() => setCountLike(countLike + 1)}
-              >
+              <div className="film-like" onClick={handleLike}>
                 <BsHeartHalf className="film-react-icon" />
                 Thích {countLike}
               </div>
             </Col>
             <Col xs={4} sm={2} className="pf-0">
-              <div
-                className="film-follow"
-                onClick={() => setCountFollow(countFollow + 1)}
-              >
+              <div className="film-follow" onClick={handleFollow}>
                 <AiOutlineBell className="film-react-icon" />
                 Follow {countFollow}
               </div>

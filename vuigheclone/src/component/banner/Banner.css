@@ -5,7 +5,7 @@
 .main-banner img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  height: 252px;
 }
 .sub-banner img {
   width: 100%;
@@ -22,9 +22,14 @@
     display: none;
   }
   .sub-banner {
-    margin-top: 10px;
+    display: none;
   }
   .main-banner {
     height: 79px;
+  }
+  .main-banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
   }
 }
