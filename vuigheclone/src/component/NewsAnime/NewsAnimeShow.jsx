@@ -6,10 +6,12 @@ const NewAnimeShow = (props) => {
     <div className="items">
       <a href={props.src} className="tinanime-item">
         <Row>
-          <Col className="image">
+          <Col sm={8} xs={8} className="image">
             <img src={props.image} />
           </Col>
-          <Col className="content">{props.content}</Col>
+          <Col sm={4} xs={4} className="content">
+            {props.content}
+          </Col>
         </Row>
       </a>
     </div>
