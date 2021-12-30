@@ -1,6 +1,6 @@
 import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, child, get } from "firebase/database";
+import { getDatabase, ref, child, get, onValue } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDchxLrtWGCfcloTMLt2WknIBCezTy9Puw",
@@ -15,6 +15,16 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getDatabase();
+const db = getDatabase(app);
 
-export { db };
+const getF = (alias) => {
+  let findItem;
+  const dataRef = ref(db, "films");
+  onValue(dataRef, (snapshot) => {
+    const data = snapshot.val();
+    findItem = data.find((item) => item.alias == alias);
+  });
+  return findItem;
+};
+
+export { db, getF };

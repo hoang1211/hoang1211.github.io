@@ -1,10 +1,20 @@
 import { Container, Col, Row } from "react-bootstrap";
-import { getAllTinAnime } from "../../db/db";
 import NewAnimeShow from "./NewsAnimeShow";
-
-const TinAnimeDb = getAllTinAnime();
+import { db } from "../../firebase-config";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 
 const NewAnime = () => {
+  const [tinAnimeDb, setTinAnimeDb] = useState([]);
+
+  useEffect(() => {
+    const dataRef = ref(db, "tinAnime");
+    onValue(dataRef, (snapshot) => {
+      const data = snapshot.val();
+      setTinAnimeDb(data);
+    });
+  }, []);
+
   return (
     <>
       <Container>
@@ -12,9 +22,9 @@ const NewAnime = () => {
       </Container>
       <Container>
         <Row>
-          {TinAnimeDb.map((t) => {
+          {tinAnimeDb.map((t) => {
             return (
-              <Col sm={3} xs={12} key={t.id}>
+              <Col sm={3} xs={12} key={t.tid}>
                 <NewAnimeShow src={t.src} image={t.image} content={t.content} />
               </Col>
             );

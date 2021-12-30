@@ -1,11 +1,8 @@
 import Comic from "./Comic";
-import { getAllComic } from "../../db/db";
 import { Container, Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { dbRef, db } from "../../firebase-config";
+import { db } from "../../firebase-config";
 import { getDatabase, ref, onValue } from "firebase/database";
-
-const ComicDb = getAllComic();
 
 const Comics = () => {
   const [comi, setComi] = useState([]);
@@ -18,7 +15,6 @@ const Comics = () => {
     });
   }, []);
 
-  
   return (
     <>
       <Container>

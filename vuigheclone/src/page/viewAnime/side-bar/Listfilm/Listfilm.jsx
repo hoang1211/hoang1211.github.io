@@ -1,15 +1,24 @@
-import { getAllFilms } from "../../../../db/db";
 import { ListGroup, Col, Row } from "react-bootstrap";
 import "./Listfilm.css";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { db } from "../../../../firebase-config";
 
-const listAnime = getAllFilms();
 const Listfilms = (props) => {
+  const [listAnime, setListAnime] = useState([]);
+  useEffect(() => {
+    const dataRef = ref(db, "films");
+    onValue(dataRef, (snapshot) => {
+      const data = snapshot.val();
+      setListAnime(data);
+    });
+  }, []);
   return (
     <ListGroup className={"list-films " + `${props.display}`}>
       {listAnime.map((f) => {
         return (
-          <ListGroup.Item key={f.id}>
+          <ListGroup.Item key={f.fid}>
             <Link to={`/anime/` + f.alias}>
               <Row>
                 <Col xs={6}>

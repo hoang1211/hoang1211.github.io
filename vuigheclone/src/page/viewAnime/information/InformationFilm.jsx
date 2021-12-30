@@ -9,7 +9,6 @@ const InformationFilm = (props) => {
   const [countFollow, setCountFollow] = useState(props.follow);
   const [cLike, setCLike] = useState(0);
   const [cFollow, setCFollow] = useState(0);
-
   const handleLike = () => {
     if (cLike < countLike) {
       setCLike(countLike + 1);
@@ -19,7 +18,6 @@ const InformationFilm = (props) => {
       setCountLike(countLike - 1);
     }
   };
-
   const handleFollow = () => {
     if (cFollow < countFollow) {
       setCFollow(countFollow + 1);
