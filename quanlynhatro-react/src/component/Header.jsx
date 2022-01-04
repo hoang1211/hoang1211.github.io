@@ -1,15 +1,35 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useTitle } from "../hooks/useTitle";
+import styled from "styled-components";
+import { useLocation } from "react-router-dom";
+import NavMenu from "./navmenu/NavMenu";
 
-export default () => {
-  useTitle("Homepage 1");
-  return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Homepage</h1>
-        </Col>
-      </Row>
-    </Container>
-  );
+const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+`;
+const TitleHouse = styled.h2`
+  text-align: center;
+  margin-bottom: 70px;
+  font-style: italic;
+`;
+const Header = () => {
+  const location = useLocation();
+  if (location.pathname == "/") {
+    return (
+      <Container>
+        <Title>Quản Lý Phòng Trọ</Title>
+      </Container>
+    );
+  } else {
+    return (
+      <Container>
+        <Title>Quản Lý Phòng Trọ</Title>
+        <TitleHouse>Chung cư thảo nguyên</TitleHouse>
+        <NavMenu></NavMenu>
+      </Container>
+    );
+  }
 };
+
+export default Header;

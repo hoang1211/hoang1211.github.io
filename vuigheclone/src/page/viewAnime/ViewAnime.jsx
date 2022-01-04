@@ -7,6 +7,7 @@ import InformationFilm from "./information/InformationFilm";
 import ShowNewFilms from "../../component/newsFilm/ShowNewFilms";
 import NewsAnime from "../../component/NewsAnime/NewsAnime";
 import {
+  get,
   getDatabase,
   ref,
   onValue,
@@ -21,17 +22,23 @@ import { getFilmsByAlias } from "../../db/db";
 const ViewAnime = () => {
   const filmPrama = useParams();
   const films = getFilmsByAlias(filmPrama.alias);
-  // const [f, setF] = useState([]);
-  // useEffect(() => {
-  //   const dataRef = ref(db, "films");
-  //   onValue(dataRef, (snapshot) => {
-  //     const data = snapshot.val();
-  //     const fData = data.find((i) => i.alias == filmPrama.alias);
-  //     setF(fData);
-  //   });
-  // }, []);
-  // console.log(f);
-  // const films = f;
+  const [f, setF] = useState([]);
+  useEffect(() => {
+    const dataQue = query(
+      ref(db, "films"),
+      orderByChild("alias"),
+      equalTo(filmPrama.alias)
+    );
+    get(dataQue).then((snapshot) => {
+      let dataF = [];
+      snapshot.forEach((childSnapshot) => {
+        dataF.push(childSnapshot.val());
+      });
+      setF(dataF);
+    });
+  }, []);
+
+  console.log(films);
   return (
     <div className="player-area">
       <Container>

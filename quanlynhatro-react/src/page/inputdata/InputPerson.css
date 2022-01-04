@@ -1,0 +1,32 @@
+.form-input {
+  text-align: center;
+  margin-top: 10px;
+  max-width: 700px;
+  font-size: 12px;
+}
+.btn-submit {
+  margin-top: 10px;
+}
+.from-input input {
+  width: 100%;
+}
+.input-title {
+  text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  .form-input {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 800px;
+    font-size: 14px;
+  }
+  .lbl {
+    float: left;
+  }
+  .input-text {
+    float: right;
+    width: 200px;
+  }
+}

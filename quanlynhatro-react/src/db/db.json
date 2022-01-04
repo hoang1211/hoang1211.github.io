@@ -1,0 +1,86 @@
+{
+  "person": {
+    "0": {
+      "name": "TRẦN VĂN MẠNH",
+      "namsinh": "11-14-1998",
+      "phone": "0976775253",
+      "quequan": "TRỰC CƯỜNG, TRỰC NINH, NAM ĐỊNH",
+      "CCCD": "036098007143",
+      "nghenghiep": "Điện máy",
+      "bienxe": "",
+      "ngayden": "2021-05-24",
+      "ngaykyhopdong": "2021-01-06",
+      "ngayhethanhopdong": "2021-12-30",
+      "tiencoc": 2800000,
+      "room": "P202"
+    },
+    "1": {
+      "name": "LÊ THỊ KHÁNH NINH",
+      "namsinh": "7-31-1999",
+      "phone": "0978707300",
+      "quequan": "THỌ XUÂN, ĐAN PHƯỢNG, HÀ NỘI",
+      "CCCD": "017511238",
+      "nghenghiep": "P.K ĐÔNH Y TIME CITY",
+      "bienxe": "29X3 384_24",
+      "ngayden": "2021-04-28",
+      "ngaykyhopdong": "2021-01-05",
+      "ngayhethanhopdong": "2021-10-30",
+      "tiencoc": 3000000,
+      "room": "P301"
+    }
+  },
+  "phongchothue": {
+    "P202": {
+      "2021-31-10": {
+        "diensodau": 686,
+        "diensocuoi": 878,
+        "nuocsodau": 27,
+        "nuocsocuoi": 38,
+        "wifi": 100000,
+        "vesinh": 50000,
+        "maygiat": 150000,
+        "thangmay": 50000,
+        "tienphong": 2800000,
+        "tienhotro": 0
+      },
+      "2022-1-1": {
+        "diensodau": 686,
+        "diensocuoi": 878,
+        "nuocsodau": 27,
+        "nuocsocuoi": 38,
+        "wifi": 100000,
+        "vesinh": 50000,
+        "maygiat": 150000,
+        "thangmay": 50000,
+        "tienphong": 2800000,
+        "tienhotro": 0
+      }
+    },
+    "P301": {
+      "2021-31-10": {
+        "diensodau": 686,
+        "diensocuoi": 878,
+        "nuocsodau": 27,
+        "nuocsocuoi": 38,
+        "wifi": 100000,
+        "vesinh": 50000,
+        "maygiat": 150000,
+        "thangmay": 50000,
+        "tienphong": 2800000,
+        "tienhotro": 0
+      },
+      "2022-1-1": {
+        "diensodau": 686,
+        "diensocuoi": 878,
+        "nuocsodau": 27,
+        "nuocsocuoi": 38,
+        "wifi": 100000,
+        "vesinh": 50000,
+        "maygiat": 150000,
+        "thangmay": 50000,
+        "tienphong": 2800000,
+        "tienhotro": 0
+      }
+    }
+  }
+}
