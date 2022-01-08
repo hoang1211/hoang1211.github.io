@@ -13,7 +13,7 @@ import {
   update,
 } from "firebase/database";
 import { db } from "../../firebase-config";
-import ElectricItem from "./ElectricItem";
+import WaterItem from "./WaterItem";
 
 const TitleElectric = styled.h1`
   text-align: center;
@@ -23,11 +23,11 @@ const LableForm = styled.label`
 `;
 const dbRef = ref(db);
 const BtnSubmit = styled.input``;
-const Electric = () => {
+const Water = () => {
   const [r202, setR202] = useState([]);
   const [thang, setThang] = useState();
-  const [diensodau, setDiensodau] = useState();
-  const [diensocuoi, setDiensocuoi] = useState();
+  const [nuocsodau, setDiensodau] = useState();
+  const [nuocsocuoi, setDiensocuoi] = useState();
 
   const handleSubmit = (r) => {
     let temp = l;
@@ -38,8 +38,8 @@ const Electric = () => {
     });
     if (temp === l) {
       set(ref(db, "phongchothue/P202/" + temp), {
-        diensodau: diensodau,
-        diensocuoi: diensocuoi,
+        nuocsodau: nuocsodau,
+        nuocsocuoi: nuocsocuoi,
         thang: thang,
       })
         .then(() => {
@@ -55,13 +55,14 @@ const Electric = () => {
         });
     } else {
       update(ref(db, "phongchothue/P202/" + temp), {
-        diensodau: diensodau,
-        diensocuoi: diensocuoi,
+        nuocsodau: nuocsodau,
+        nuocsocuoi: nuocsocuoi,
       })
         .then(() => {
           alert(
             "Thêm thành công số điện phòng: " + r + " " + "thang: " + thang
           );
+          setThang();
           setDiensocuoi();
           setDiensodau();
         })
@@ -71,6 +72,7 @@ const Electric = () => {
     }
   };
 
+  const [r301, setR301] = useState([]);
   useEffect(() => {
     const dataRef = ref(db, "phongchothue/" + "P202");
     onValue(dataRef, (snapshot) => {
@@ -79,10 +81,18 @@ const Electric = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const dataRef = ref(db, "phongchothue/" + "P301");
+    onValue(dataRef, (snapshot) => {
+      const data = snapshot.val();
+      setR301(data);
+    });
+  }, []);
+
   let l = r202.length;
   return (
     <Container>
-      <TitleElectric>Quản lý điện</TitleElectric>
+      <TitleElectric>Quản lý nước</TitleElectric>
       <div>
         <Container>
           <Table striped bordered hover size="sm">
@@ -102,12 +112,12 @@ const Electric = () => {
             <tbody>
               {r202.map((i, index) => {
                 return (
-                  <ElectricItem
+                  <WaterItem
                     key={index}
                     index={index}
                     thang={i.thang}
-                    diensodau={i.diensodau}
-                    diensocuoi={i.diensocuoi}
+                    nuocsodau={i.nuocsodau}
+                    nuocsocuoi={i.nuocsocuoi}
                     room="P202"
                   />
                 );
@@ -125,18 +135,18 @@ const Electric = () => {
                 ></input>
               </Col>
               <Col xs={3}>
-                <LableForm>Điện số đầu</LableForm>
+                <LableForm>Nước số đầu</LableForm>
                 <input
                   type="text"
-                  value={diensodau}
+                  value={nuocsodau}
                   onChange={(e) => setDiensodau(e.target.value)}
                 ></input>
               </Col>
               <Col xs={3}>
-                <LableForm>Điện số cuối</LableForm>
+                <LableForm>Nước số cuối</LableForm>
                 <input
                   type="text"
-                  value={diensocuoi}
+                  value={nuocsocuoi}
                   onChange={(e) => setDiensocuoi(e.target.value)}
                 ></input>
               </Col>
@@ -151,4 +161,4 @@ const Electric = () => {
   );
 };
 
-export default Electric;
+export default Water;

@@ -1,19 +1,19 @@
 const HouseManagerItem = (props) => {
   return (
     <tr>
-      <th>{props.stt}</th>
-      <th>{props.room}</th>
-      <th>{props.name}</th>
-      <th>{props.namsinh}</th>
-      <th>{props.phone}</th>
-      <th>{props.quequan}</th>
-      <th>{props.cccd}</th>
-      <th>{props.nghenghiep}</th>
-      <th>{props.bienxe}</th>
-      <th>{props.ngayden}</th>
-      <th>{props.ngaykyhopdong}</th>
-      <th>{props.ngayhethanhopdong}</th>
-      <th>{props.tiencoc}</th>
+      <td>{props.stt}</td>
+      <td>{props.room}</td>
+      <td>{props.name}</td>
+      <td>{props.namsinh}</td>
+      <td>{props.phone}</td>
+      <td>{props.quequan}</td>
+      <td>{props.cccd}</td>
+      <td>{props.nghenghiep}</td>
+      <td>{props.bienxe}</td>
+      <td>{props.ngayden}</td>
+      <td>{props.ngaykyhopdong}</td>
+      <td>{props.ngayhetdanhopdong}</td>
+      <td>{props.tiencoc}</td>
     </tr>
   );
 };

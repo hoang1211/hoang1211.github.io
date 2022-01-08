@@ -20,13 +20,13 @@ const House = () => {
 
   return (
     <Container>
-      <h1>Danh sach phong</h1>
+      <h1>Danh sách phòng</h1>
       <ul>
         <li>
           <div>
             <h1>P202</h1>
             <Container>
-              {/* {r202.map((i, index) => {
+              {r202.map((i, index) => {
                 return (
                   <HouseItem
                     key={index}
@@ -44,7 +44,7 @@ const House = () => {
                     maygiat={i.maygiat}
                   />
                 );
-              })} */}
+              })}
             </Container>
           </div>
         </li>

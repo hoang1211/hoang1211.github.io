@@ -18,11 +18,10 @@ const HouseManager = () => {
       setPerson(data);
     });
   }, []);
-
   return (
     <Container>
       <TableWrap>
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover size="sm">
           <thead>
             <tr>
               <th>#</th>
@@ -56,7 +55,7 @@ const HouseManager = () => {
                   bienxe={p.bienxe}
                   ngayden={p.ngayden}
                   ngaykyhopdong={p.ngaykyhopdong}
-                  ngayhethanhopdong={p.ngayhethanhopdong}
+                  ngayhetdanhopdong={p.ngayhethanhopdong}
                   tiencoc={p.tiencoc}
                 />
               );

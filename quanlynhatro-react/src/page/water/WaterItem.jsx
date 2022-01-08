@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { db } from "../../firebase-config";
 import { update, child, ref, set } from "firebase/database";
 
-const ElectricItem = (props) => {
+const WaterItem = (props) => {
   const handlerDelAll = () => {
     console.log(props.index);
     set(ref(db, "phongchothue/" + props.room + "/" + props.index), {
-      diensodau: null,
-      diensocuoi: null,
+      nuocsodau: null,
+      nuocsocuoi: null,
     })
       .then(() => {
         alert("Xóa số điện thành công");
@@ -20,8 +20,8 @@ const ElectricItem = (props) => {
   const handlerDel = () => {
     console.log(props.index);
     update(ref(db, "phongchothue/" + props.room + "/" + props.index), {
-      diensodau: 0,
-      diensocuoi: 0,
+      nuocsodau: 0,
+      nuocsocuoi: 0,
     })
       .then(() => {
         alert("Xóa số điện thành công");
@@ -35,11 +35,11 @@ const ElectricItem = (props) => {
     <tr>
       <td>{props.index}</td>
       <td>{props.thang}</td>
-      <td>{props.diensodau}</td>
-      <td>{props.diensocuoi}</td>
-      <td>{props.diensocuoi - props.diensodau}</td>
+      <td>{props.nuocsodau}</td>
+      <td>{props.nuocsocuoi}</td>
+      <td>{props.nuocsocuoi - props.nuocsodau}</td>
       <td>
-        <Button onClick={handlerDel}>Xóa số điện</Button>
+        <Button onClick={handlerDel}>Xóa số nước</Button>
       </td>
       <td>
         <Button onClick={handlerDelAll}>Xóa cả tháng</Button>
@@ -48,4 +48,4 @@ const ElectricItem = (props) => {
   );
 };
 
-export default ElectricItem;
+export default WaterItem;

@@ -5,18 +5,18 @@ import { db } from "../../firebase-config";
 import "./InputPerson.css";
 
 const InputPerson = () => {
-  const [ten, setTen] = useState();
-  const [namsinh, setNamSinh] = useState();
-  const [phone, setPhone] = useState();
-  const [quequan, setQueQuan] = useState();
-  const [cccd, setCccd] = useState();
-  const [nghenghiep, setNgheNghiep] = useState();
-  const [bienxe, setBienXe] = useState();
-  const [ngayden, setNgayDen] = useState();
-  const [ngaykyhopdong, setNgayKyHopDong] = useState();
-  const [ngayhethanhopdong, setNgayHetHanHopDong] = useState();
-  const [tiencoc, setTienCoc] = useState();
-  const [room, setRoom] = useState();
+  const [ten, setTen] = useState("");
+  const [namsinh, setNamSinh] = useState("");
+  const [phone, setPhone] = useState(0);
+  const [quequan, setQueQuan] = useState("");
+  const [cccd, setCccd] = useState(0);
+  const [nghenghiep, setNgheNghiep] = useState("");
+  const [bienxe, setBienXe] = useState("");
+  const [ngayden, setNgayDen] = useState("");
+  const [ngaykyhopdong, setNgayKyHopDong] = useState("");
+  const [ngayhethanhopdong, setNgayHetHanHopDong] = useState("");
+  const [tiencoc, setTienCoc] = useState(0);
+  const [room, setRoom] = useState("");
   const [person, setPerson] = useState([]);
   useEffect(() => {
     const dataRef = ref(db, "person");

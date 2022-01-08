@@ -13,7 +13,7 @@ const HouseItem = (props) => {
 
   return (
     <div>
-      <Table striped bordered hover variant="dark">
+      <Table striped bordered hover size="sm">
         <thead>
           <tr>
             <th>#</th>

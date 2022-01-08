@@ -9,6 +9,7 @@ import House from "./page/house/House";
 import HouseManager from "./page/housemanager/HouserManager";
 import InputPerson from "./page/inputdata/InputPerson";
 import Electric from "./page/electric/Electric";
+import Water from "./page/water/Water";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
           <Route path="/housemanager" element={<HouseManager />}></Route>
           <Route path="/addperson" element={<InputPerson />}></Route>
           <Route path="/electric" element={<Electric />}></Route>
+          <Route path="/water" element={<Water />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

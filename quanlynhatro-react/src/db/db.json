@@ -31,7 +31,8 @@
   },
   "phongchothue": {
     "P202": {
-      "2021-31-10": {
+      "0": {
+        "thang": "2021-10",
         "diensodau": 686,
         "diensocuoi": 878,
         "nuocsodau": 27,
@@ -43,7 +44,8 @@
         "tienphong": 2800000,
         "tienhotro": 0
       },
-      "2022-1-1": {
+      "1": {
+        "thang": "2022-01",
         "diensodau": 686,
         "diensocuoi": 878,
         "nuocsodau": 27,
@@ -57,7 +59,8 @@
       }
     },
     "P301": {
-      "2021-31-10": {
+      "0": {
+        "thang": "2021-10",
         "diensodau": 686,
         "diensocuoi": 878,
         "nuocsodau": 27,
@@ -69,7 +72,8 @@
         "tienphong": 2800000,
         "tienhotro": 0
       },
-      "2022-1-1": {
+      "1": {
+        "thang": "2022-01",
         "diensodau": 686,
         "diensocuoi": 878,
         "nuocsodau": 27,
