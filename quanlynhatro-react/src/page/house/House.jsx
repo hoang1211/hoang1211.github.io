@@ -16,7 +16,6 @@ const House = () => {
       setR202(data);
     });
   }, []);
-  console.log(r202);
 
   return (
     <Container>

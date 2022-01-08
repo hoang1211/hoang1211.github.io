@@ -37,6 +37,7 @@ const HouseManager = () => {
               <th>Ngày ký hđ</th>
               <th>Ngày hết hđ</th>
               <th>Cọc</th>
+              <th>Chức năng</th>
             </tr>
           </thead>
           <tbody>
@@ -44,7 +45,7 @@ const HouseManager = () => {
               return (
                 <HouseManagerItem
                   key={index}
-                  stt={index}
+                  index={index}
                   room={p.room}
                   name={p.name}
                   namsinh={p.namsinh}

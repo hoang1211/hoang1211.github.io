@@ -1,15 +1,12 @@
 import { Col, Row, Container, Table, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { db } from "../../firebase-config";
-import { update, child, ref, set } from "firebase/database";
+import { update, child, ref, set, remove } from "firebase/database";
 
 const ElectricItem = (props) => {
   const handlerDelAll = () => {
     console.log(props.index);
-    set(ref(db, "phongchothue/" + props.room + "/" + props.index), {
-      diensodau: null,
-      diensocuoi: null,
-    })
+    remove(ref(db, "phongchothue/" + props.room + "/" + props.index))
       .then(() => {
         alert("Xóa số điện thành công");
       })

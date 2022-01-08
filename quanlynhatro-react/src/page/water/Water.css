@@ -1,0 +1,9 @@
+.show-202 {
+  display: block !important;
+}
+.wrap-room .wrap-table {
+  display: none;
+}
+.wrap-table table {
+  margin-top: 12px;
+}

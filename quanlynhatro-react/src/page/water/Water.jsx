@@ -1,19 +1,10 @@
 import { Col, Row, Container, Table, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import {
-  get,
-  getDatabase,
-  ref,
-  onValue,
-  query,
-  equalTo,
-  child,
-  set,
-  update,
-} from "firebase/database";
+import { ref, onValue, set, update } from "firebase/database";
 import { db } from "../../firebase-config";
 import WaterItem from "./WaterItem";
+import "./Water.css";
 
 const TitleElectric = styled.h1`
   text-align: center;
@@ -21,13 +12,23 @@ const TitleElectric = styled.h1`
 const LableForm = styled.label`
   margin-right: 10px;
 `;
-const dbRef = ref(db);
+const TitleRoom = styled.h1``;
+
 const BtnSubmit = styled.input``;
 const Water = () => {
   const [r202, setR202] = useState([]);
   const [thang, setThang] = useState();
   const [nuocsodau, setDiensodau] = useState();
   const [nuocsocuoi, setDiensocuoi] = useState();
+  const [showWater, setShowWater] = useState("");
+
+  const handleShow = (t) => {
+    if (t === "202") {
+      setShowWater("show-" + `${t}`);
+    } else {
+      setShowWater("");
+    }
+  };
 
   const handleSubmit = (r) => {
     let temp = l;
@@ -94,68 +95,80 @@ const Water = () => {
     <Container>
       <TitleElectric>Quản lý nước</TitleElectric>
       <div>
-        <Container>
-          <Table striped bordered hover size="sm">
-            <thead>
-              <tr>
-                <th colSpan={7}>P202</th>
-              </tr>
-              <tr>
-                <th>#</th>
-                <th>Tháng</th>
-                <th>Số Đầu</th>
-                <th>Số cuối</th>
-                <th>Tiêu thụ</th>
-                <th colSpan={2}>Chức năng</th>
-              </tr>
-            </thead>
-            <tbody>
-              {r202.map((i, index) => {
-                return (
-                  <WaterItem
-                    key={index}
-                    index={index}
-                    thang={i.thang}
-                    nuocsodau={i.nuocsodau}
-                    nuocsocuoi={i.nuocsocuoi}
-                    room="P202"
-                  />
-                );
-              })}
-            </tbody>
-          </Table>
-          <form onSubmit={() => handleSubmit("P202")}>
+        <div className="wrap-room">
+          <Container>
             <Row>
-              <Col xs={3}>
-                <LableForm>Tháng</LableForm>
-                <input
-                  type="month"
-                  value={thang}
-                  onChange={(e) => setThang(e.target.value)}
-                ></input>
+              <Col xs="3" sm="12">
+                <TitleRoom>P202</TitleRoom>
               </Col>
-              <Col xs={3}>
-                <LableForm>Nước số đầu</LableForm>
-                <input
-                  type="text"
-                  value={nuocsodau}
-                  onChange={(e) => setDiensodau(e.target.value)}
-                ></input>
+              <Col xs="3" sm="1">
+                <Button onClick={() => handleShow("202")}>Hiển thị</Button>
               </Col>
-              <Col xs={3}>
-                <LableForm>Nước số cuối</LableForm>
-                <input
-                  type="text"
-                  value={nuocsocuoi}
-                  onChange={(e) => setDiensocuoi(e.target.value)}
-                ></input>
-              </Col>
-              <Col xs={3}>
-                <BtnSubmit type="submit" value="Thêm" />
+              <Col xs="2" sm="1">
+                <Button onClick={() => handleShow("n")}>Ẩn </Button>
               </Col>
             </Row>
-          </form>
-        </Container>
+            <div className={`${showWater}` + " wrap-table"}>
+              <Table striped bordered hover size="sm">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tháng</th>
+                    <th>Số Đầu</th>
+                    <th>Số cuối</th>
+                    <th>Tiêu thụ</th>
+                    <th colSpan={2}>Chức năng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {r202.map((i, index) => {
+                    return (
+                      <WaterItem
+                        key={index}
+                        index={index}
+                        thang={i.thang}
+                        nuocsodau={i.nuocsodau}
+                        nuocsocuoi={i.nuocsocuoi}
+                        room="P202"
+                      />
+                    );
+                  })}
+                </tbody>
+              </Table>
+              <form onSubmit={() => handleSubmit("P202")}>
+                <Row>
+                  <Col sm={3}>
+                    <LableForm>Tháng</LableForm>
+                    <input
+                      type="month"
+                      value={thang}
+                      onChange={(e) => setThang(e.target.value)}
+                    ></input>
+                  </Col>
+                  <Col sm={3}>
+                    <LableForm>Nước số đầu</LableForm>
+                    <input
+                      type="text"
+                      value={nuocsodau}
+                      onChange={(e) => setDiensodau(e.target.value)}
+                    ></input>
+                  </Col>
+                  <Col sm={3}>
+                    <LableForm>Nước số cuối</LableForm>
+                    <input
+                      type="text"
+                      value={nuocsocuoi}
+                      onChange={(e) => setDiensocuoi(e.target.value)}
+                    ></input>
+                  </Col>
+                  <Col sm={3}>
+                    <BtnSubmit type="submit" value="Thêm" />
+                  </Col>
+                </Row>
+              </form>
+            </div>
+          </Container>
+        </div>
       </div>
     </Container>
   );
