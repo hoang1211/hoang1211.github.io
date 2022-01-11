@@ -65,6 +65,13 @@ const NavMenu = () => {
             </NavLink>
           </MenuItem>
         </Col>
+        <Col xs={6} sm={2}>
+          <MenuItem>
+            <NavLink to="/nguoitungthue" className="nav-bar-link">
+              Người từng thuê
+            </NavLink>
+          </MenuItem>
+        </Col>
       </Row>
     </Container>
   );

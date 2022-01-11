@@ -1,7 +1,7 @@
 import { Col, Row, Container, Table } from "react-bootstrap";
 import styled from "styled-components";
 import { db } from "../../firebase-config";
-import HouseManagerItem from "./HouseManagerItem";
+import NguoiItem from "./NguoiItem";
 import { useState, useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 
@@ -13,19 +13,26 @@ const TitleElectric = styled.h1`
   text-align: center;
 `;
 
-const HouseManager = () => {
-  const [person, setPerson] = useState([]);
+const NguoiTungThue = () => {
+  const [temp, setTemp] = useState([]);
 
   useEffect(() => {
-    const dataRef = ref(db, "person");
+    const dataRef = ref(db, "nguoitungthue");
     onValue(dataRef, (snapshot) => {
       const data = snapshot.val();
-      setPerson(data);
+      setTemp(data);
     });
   }, []);
+  if (temp === null) {
+    return (
+      <Container>
+        <TitleElectric>Danh sách từng thuê</TitleElectric>
+      </Container>
+    );
+  }
   return (
     <Container>
-      <TitleElectric>Danh sách người thuê</TitleElectric>
+      <TitleElectric>Danh sách từng thuê</TitleElectric>
       <TableWrap>
         <Table striped bordered hover size="sm">
           <thead>
@@ -42,14 +49,13 @@ const HouseManager = () => {
               <th>Ngày đến</th>
               <th>Ngày ký hđ</th>
               <th>Ngày hết hđ</th>
-              <th>Cọc</th>
               <th>Chức năng</th>
             </tr>
           </thead>
           <tbody>
-            {person.map((p, index) => {
+            {temp.map((p, index) => {
               return (
-                <HouseManagerItem
+                <NguoiItem
                   key={index}
                   index={index}
                   room={p.room}
@@ -63,7 +69,6 @@ const HouseManager = () => {
                   ngayden={p.ngayden}
                   ngaykyhopdong={p.ngaykyhopdong}
                   ngayhethopdong={p.ngayhethopdong}
-                  tiencoc={p.tiencoc}
                 />
               );
             })}
@@ -73,4 +78,4 @@ const HouseManager = () => {
     </Container>
   );
 };
-export default HouseManager;
+export default NguoiTungThue;

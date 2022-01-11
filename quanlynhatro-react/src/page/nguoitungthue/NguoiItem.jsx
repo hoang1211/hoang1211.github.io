@@ -4,44 +4,16 @@ import { db } from "../../firebase-config";
 import { remove, ref, set, onValue } from "firebase/database";
 import { useState, useEffect } from "react";
 
-const HouseManagerItem = (props) => {
-  const [nguoitungthue, setNguoitungthue] = useState({});
-  useEffect(() => {
-    const dataRef = ref(db, "nguoitungthue");
-    onValue(dataRef, (snapshot) => {
-      const data = snapshot.val();
-      setNguoitungthue(data);
-    });
-  }, []);
-  let l = 0;
-  if (nguoitungthue === null) {
-    l = 0;
-  } else {
-    l = nguoitungthue.length;
-  }
+const NguoiItem = (props) => {
   const handlerDelete = () => {
-    set(ref(db, "nguoitungthue/" + l), {
-      name: props.name,
-      namsinh: props.namsinh,
-      phone: props.phone,
-      quequan: props.quequan,
-      CCCD: props.cccd,
-      nghenghiep: props.nghenghiep,
-      bienxe: props.bienxe,
-      room: props.room,
-      ngayden: props.ngayden,
-      ngaykyhopdong: props.ngaykyhopdong,
-      ngayhethopdong: props.ngayhethopdong,
-    })
+    remove(ref(db, "nguoitungthue/" + props.index))
       .then(() => {
         alert("Xóa người thuê thành công");
       })
       .catch((err) => {
         alert("Xóa người thuê thất bại");
       });
-    remove(ref(db, "person/" + props.index));
   };
-
   return (
     <tr>
       <td>{props.index}</td>
@@ -56,7 +28,6 @@ const HouseManagerItem = (props) => {
       <td>{props.ngayden}</td>
       <td>{props.ngaykyhopdong}</td>
       <td>{props.ngayhethopdong}</td>
-      <td>{props.tiencoc}</td>
       <td>
         <Button onClick={handlerDelete}>Xóa</Button>
       </td>
@@ -64,4 +35,4 @@ const HouseManagerItem = (props) => {
   );
 };
 
-export default HouseManagerItem;
+export default NguoiItem;

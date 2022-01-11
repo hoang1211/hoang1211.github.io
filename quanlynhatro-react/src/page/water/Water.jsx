@@ -18,8 +18,8 @@ const BtnSubmit = styled.input``;
 const Water = () => {
   const [r202, setR202] = useState([]);
   const [thang, setThang] = useState();
-  const [nuocsodau, setDiensodau] = useState();
-  const [nuocsocuoi, setDiensocuoi] = useState();
+  const [nuocsodau, setNuocsodau] = useState();
+  const [nuocsocuoi, setNuocsocuoi] = useState();
   const [showWater, setShowWater] = useState("");
 
   const handleShow = (t) => {
@@ -45,11 +45,11 @@ const Water = () => {
       })
         .then(() => {
           alert(
-            "Thêm thành công số điện phòng: " + r + " " + "thang: " + thang
+            "Thêm thành công số nước phòng: " + r + " " + "thang: " + thang
           );
           setThang();
-          setDiensocuoi();
-          setDiensodau();
+          setNuocsocuoi();
+          setNuocsodau();
         })
         .catch((err) => {
           alert("Gặp lỗi " + err + " , chưa thêm thành công");
@@ -61,11 +61,11 @@ const Water = () => {
       })
         .then(() => {
           alert(
-            "Thêm thành công số điện phòng: " + r + " " + "thang: " + thang
+            "Thêm thành công số nước phòng: " + r + " " + "thang: " + thang
           );
           setThang();
-          setDiensocuoi();
-          setDiensodau();
+          setNuocsocuoi();
+          setNuocsodau();
         })
         .catch((err) => {
           alert("Gặp lỗi " + err + " , chưa thêm thành công");
@@ -150,7 +150,7 @@ const Water = () => {
                     <input
                       type="text"
                       value={nuocsodau}
-                      onChange={(e) => setDiensodau(e.target.value)}
+                      onChange={(e) => setNuocsodau(e.target.value)}
                     ></input>
                   </Col>
                   <Col sm={3}>
@@ -158,7 +158,7 @@ const Water = () => {
                     <input
                       type="text"
                       value={nuocsocuoi}
-                      onChange={(e) => setDiensocuoi(e.target.value)}
+                      onChange={(e) => setNuocsocuoi(e.target.value)}
                     ></input>
                   </Col>
                   <Col sm={3}>

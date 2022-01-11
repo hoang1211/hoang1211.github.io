@@ -11,10 +11,10 @@ const WaterItem = (props) => {
       nuocsocuoi: null,
     })
       .then(() => {
-        alert("Xóa số điện thành công");
+        alert("Xóa số nước thành công");
       })
       .catch((err) => {
-        alert("Xóa số điện thất bại");
+        alert("Xóa số nước thất bại");
       });
   };
   const handlerDel = () => {
@@ -24,10 +24,10 @@ const WaterItem = (props) => {
       nuocsocuoi: 0,
     })
       .then(() => {
-        alert("Xóa số điện thành công");
+        alert("Xóa số nước thành công");
       })
       .catch((err) => {
-        alert("Xóa số điện thất bại");
+        alert("Xóa số nước thất bại");
       });
   };
 

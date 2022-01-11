@@ -14,7 +14,7 @@ const InputPerson = () => {
   const [bienxe, setBienXe] = useState("");
   const [ngayden, setNgayDen] = useState("");
   const [ngaykyhopdong, setNgayKyHopDong] = useState("");
-  const [ngayhethanhopdong, setNgayHetHanHopDong] = useState("");
+  const [ngayhethopdong, setNgayhethopdong] = useState("");
   const [tiencoc, setTienCoc] = useState(0);
   const [room, setRoom] = useState("");
   const [person, setPerson] = useState([]);
@@ -39,7 +39,7 @@ const InputPerson = () => {
       bienxe: bienxe,
       ngayden: ngayden,
       ngaykyhopdong: ngaykyhopdong,
-      ngayhethanhopdong: ngayhethanhopdong,
+      ngayhethopdong: ngayhethopdong,
       tiencoc: tiencoc,
       room: room,
     });
@@ -53,7 +53,7 @@ const InputPerson = () => {
     setBienXe("");
     setNgayDen("");
     setNgayKyHopDong("");
-    setNgayHetHanHopDong("");
+    setNgayhethopdong("");
     setTienCoc("");
     setRoom("");
   };
@@ -157,8 +157,8 @@ const InputPerson = () => {
             <input
               className="input-text"
               type="date"
-              value={ngayhethanhopdong}
-              onChange={(e) => setNgayHetHanHopDong(e.target.value)}
+              value={ngayhethopdong}
+              onChange={(e) => setNgayhethopdong(e.target.value)}
             />
           </Col>
         </Row>
