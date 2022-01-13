@@ -38,7 +38,7 @@ const NavMenu = () => {
         <Col xs={6} sm={2}>
           <MenuItem>
             <NavLink to="/income" className="nav-bar-link">
-              Quản lý thu chi
+              Quản lý dịch vụ
             </NavLink>
           </MenuItem>
         </Col>

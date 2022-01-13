@@ -5,20 +5,18 @@ import { update, child, ref, set } from "firebase/database";
 
 const WaterItem = (props) => {
   const handlerDelAll = () => {
-    console.log(props.index);
     set(ref(db, "phongchothue/" + props.room + "/" + props.index), {
       nuocsodau: null,
       nuocsocuoi: null,
     })
       .then(() => {
-        alert("Xóa số nước thành công");
+        alert("Xóa tháng thành công");
       })
       .catch((err) => {
         alert("Xóa số nước thất bại");
       });
   };
   const handlerDel = () => {
-    console.log(props.index);
     update(ref(db, "phongchothue/" + props.room + "/" + props.index), {
       nuocsodau: 0,
       nuocsocuoi: 0,

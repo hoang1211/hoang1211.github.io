@@ -5,26 +5,25 @@ import { update, child, ref, set, remove } from "firebase/database";
 
 const ElectricItem = (props) => {
   const handlerDelAll = () => {
-    console.log(props.index);
     remove(ref(db, "phongchothue/" + props.room + "/" + props.index))
       .then(() => {
-        alert("Xóa tháng thành công");
+        alert("Xóa cả tháng thành công");
       })
       .catch((err) => {
-        alert("Xóa số điện thất bại");
+        alert("Xóa dịch vụ thất bại");
       });
   };
   const handlerDel = () => {
-    console.log(props.index);
     update(ref(db, "phongchothue/" + props.room + "/" + props.index), {
-      diensodau: 0,
-      diensocuoi: 0,
+      maygiat: 0,
+      tienhotro: 0,
+      tienphong: 0,
     })
       .then(() => {
-        alert("Xóa số điện thành công");
+        alert("Xóa dịch vụ thành công");
       })
       .catch((err) => {
-        alert("Xóa số điện thất bại");
+        alert("Xóa dịch vụ thất bại");
       });
   };
 
@@ -32,11 +31,14 @@ const ElectricItem = (props) => {
     <tr>
       <td>{props.index}</td>
       <td>{props.thang}</td>
-      <td>{props.diensodau}</td>
-      <td>{props.diensocuoi}</td>
-      <td>{props.diensocuoi - props.diensodau}</td>
+      <td>{props.wifi}</td>
+      <td>{props.vesinh}</td>
+      <td>{props.maygiat}</td>
+      <td>{props.thangmay}</td>
+      <td>{props.tienhotro}</td>
+      <td>{props.tienphong}</td>
       <td>
-        <Button onClick={handlerDel}>Xóa số điện</Button>
+        <Button onClick={handlerDel}>Xóa dịch vụ</Button>
       </td>
       <td>
         <Button onClick={handlerDelAll}>Xóa cả tháng</Button>

@@ -4,12 +4,12 @@ const HouseItem = (props) => {
   const soDien = props.diensocuoi - props.diensodau;
   const soNuoc = props.nuocsocuoi - props.nuocsodau;
   const tong =
-    props.wifi +
-    props.vesinh +
-    props.maygiat +
-    props.thangmay +
-    props.tienphong +
-    props.tienhotro;
+    Number(props.wifi) +
+    Number(props.vesinh) +
+    Number(props.maygiat) +
+    Number(props.thangmay) +
+    Number(props.tienphong) -
+    Number(props.tienhotro);
 
   return (
     <div>

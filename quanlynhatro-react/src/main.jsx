@@ -11,6 +11,7 @@ import InputPerson from "./page/inputdata/InputPerson";
 import Electric from "./page/electric/Electric";
 import Water from "./page/water/Water";
 import NguoiTungThue from "./page/nguoitungthue/NguoiTungThue";
+import Dichvu from "./page/dichvu/Dichvu";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.render(
           <Route path="/electric" element={<Electric />}></Route>
           <Route path="/water" element={<Water />}></Route>
           <Route path="/nguoitungthue" element={<NguoiTungThue />}></Route>
+          <Route path="/income" element={<Dichvu />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
