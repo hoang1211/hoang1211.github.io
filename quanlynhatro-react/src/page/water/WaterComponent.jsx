@@ -17,7 +17,7 @@ const TitleRoom = styled.h1``;
 const BtnSubmit = styled.input``;
 
 const WaterComponent = (props) => {
-  const [r202, setR202] = useState([]);
+  const [rWater202, setWater202] = useState([]);
   const [thang, setThang] = useState();
   const [nuocsodau, setNuocsodau] = useState();
   const [nuocsocuoi, setNuocsocuoi] = useState();
@@ -32,14 +32,14 @@ const WaterComponent = (props) => {
   };
 
   const handleSubmit = (r) => {
-    let temp = l;
-    r202.map((i, index) => {
+    let temp = t;
+    rWater202.map((i, index) => {
       if (i.thang === thang) {
         temp = index;
       }
     });
-    if (temp === l) {
-      set(ref(db, "phongchothue/" + `${props.room}` + temp), {
+    if (temp === t) {
+      set(ref(db, "phongchothue/" + `${props.room}` + "/" + temp), {
         nuocsodau: nuocsodau,
         nuocsocuoi: nuocsocuoi,
         thang: thang,
@@ -56,7 +56,7 @@ const WaterComponent = (props) => {
           alert("Gặp lỗi " + err + " , chưa thêm thành công");
         });
     } else {
-      update(ref(db, "phongchothue/" + `${props.room}` + temp), {
+      update(ref(db, "phongchothue/" + `${props.room}` + "/" + temp), {
         nuocsodau: nuocsodau,
         nuocsocuoi: nuocsocuoi,
       })
@@ -78,11 +78,11 @@ const WaterComponent = (props) => {
     const dataRef = ref(db, "phongchothue/" + `${props.room}`);
     onValue(dataRef, (snapshot) => {
       const data = snapshot.val();
-      setR202(data);
+      setWater202(data);
     });
   }, []);
 
-  let l = r202.length;
+  let t = rWater202.length;
   return (
     <Container>
       <div>
@@ -108,11 +108,12 @@ const WaterComponent = (props) => {
                     <th>Số Đầu</th>
                     <th>Số cuối</th>
                     <th>Tiêu thụ</th>
+                    <th>Thành tiền</th>
                     <th colSpan={2}>Chức năng</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {r202.map((i, index) => {
+                  {rWater202.map((i, index) => {
                     return (
                       <WaterItem
                         key={index}
@@ -141,7 +142,9 @@ const WaterComponent = (props) => {
                     <input
                       type="text"
                       value={nuocsodau}
-                      onChange={(e) => setNuocsodau(e.target.value)}
+                      onChange={(e) =>
+                        setNuocsodau(parseInt(e.target.value, 10))
+                      }
                     ></input>
                   </Col>
                   <Col sm={3}>
@@ -149,7 +152,9 @@ const WaterComponent = (props) => {
                     <input
                       type="text"
                       value={nuocsocuoi}
-                      onChange={(e) => setNuocsocuoi(e.target.value)}
+                      onChange={(e) =>
+                        setNuocsocuoi(parseInt(e.target.value, 10))
+                      }
                     ></input>
                   </Col>
                   <Col sm={3}>

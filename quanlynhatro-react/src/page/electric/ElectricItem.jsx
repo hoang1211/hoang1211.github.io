@@ -35,6 +35,7 @@ const ElectricItem = (props) => {
       <td>{props.diensodau}</td>
       <td>{props.diensocuoi}</td>
       <td>{props.diensocuoi - props.diensodau}</td>
+      <th>{Number(props.diensocuoi - props.diensodau) * 3200}</th>
       <td>
         <Button onClick={handlerDel}>Xóa số điện</Button>
       </td>

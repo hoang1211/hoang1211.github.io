@@ -1,23 +1,21 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
 import styled from "styled-components";
 import HouseComponent from "./HouseComponent";
-
-const TitleRoom = styled.h1`
-  text-align: center;
-`;
+import { useParams } from "react-router-dom";
 
 const House = () => {
+  const roomParam = useParams();
+  const roomName = roomParam.housename;
   return (
-    <Container>
-      <TitleRoom>Danh sách phòng</TitleRoom>
-      <ul>
-        <li>
-          <HouseComponent room="P202" />
-        </li>
-        <li>
-          <HouseComponent room="P301" />
-        </li>
-      </ul>
+    <Container fluid>
+      <Row>
+        <Col xs={12}>
+          <div className="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 className="font-size-18">Phòng : {roomName}</h4>
+          </div>
+          <HouseComponent room={roomName} />
+        </Col>
+      </Row>
     </Container>
   );
 };

@@ -4,6 +4,7 @@ import { db } from "../../firebase-config";
 import HouseManagerItem from "./HouseManagerItem";
 import { useState, useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
+import { NavLink } from "react-router-dom";
 
 const TableWrap = styled.div`
   padding-top: 10px;
@@ -25,6 +26,18 @@ const HouseManager = () => {
   }, []);
   return (
     <Container>
+      <Row className="line-2">
+        <Col xs={6} sm={2}>
+          <NavLink to="/addperson" className="nav-bar-link">
+            Thêm người thuê
+          </NavLink>
+        </Col>
+        <Col xs={6} sm={2}>
+          <NavLink to="/nguoitungthue" className="nav-bar-link">
+            Người từng thuê
+          </NavLink>
+        </Col>
+      </Row>
       <TitleElectric>Danh sách người thuê</TitleElectric>
       <TableWrap>
         <Table striped bordered hover size="sm">

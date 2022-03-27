@@ -36,6 +36,7 @@ const WaterItem = (props) => {
       <td>{props.nuocsodau}</td>
       <td>{props.nuocsocuoi}</td>
       <td>{props.nuocsocuoi - props.nuocsodau}</td>
+      <th>{Number(props.nuocsocuoi - props.nuocsodau) * 25000}</th>
       <td>
         <Button onClick={handlerDel}>Xóa số nước</Button>
       </td>

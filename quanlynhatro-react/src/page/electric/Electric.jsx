@@ -21,6 +21,15 @@ const Electric = () => {
       <TitleElectric>Quản lý điện</TitleElectric>
       <ElectricComponent room="P202" />
       <ElectricComponent room="P301" />
+      <ElectricComponent room="P302" />
+      <ElectricComponent room="P401" />
+      <ElectricComponent room="P402" />
+      <ElectricComponent room="P501" />
+      <ElectricComponent room="P502" />
+      <ElectricComponent room="P601" />
+      <ElectricComponent room="P602" />
+      <ElectricComponent room="P701" />
+      <ElectricComponent room="P702" />
     </Container>
   );
 };

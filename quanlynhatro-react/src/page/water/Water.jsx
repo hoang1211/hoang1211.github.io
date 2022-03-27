@@ -21,6 +21,15 @@ const Water = (props) => {
       <TitleElectric>Quản lý nước</TitleElectric>
       <WaterComponent room="P202" />
       <WaterComponent room="P301" />
+      <WaterComponent room="P302" />
+      <WaterComponent room="P401" />
+      <WaterComponent room="P402" />
+      <WaterComponent room="P501" />
+      <WaterComponent room="P502" />
+      <WaterComponent room="P601" />
+      <WaterComponent room="P602" />
+      <WaterComponent room="P701" />
+      <WaterComponent room="P702" />
     </Container>
   );
 };

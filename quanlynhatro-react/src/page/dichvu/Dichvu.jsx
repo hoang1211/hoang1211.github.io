@@ -13,6 +13,15 @@ const Dichvu = () => {
       <TitleElectric>Quản lý dịch vụ</TitleElectric>
       <DichvuComponent room="P202" />
       <DichvuComponent room="P301" />
+      <DichvuComponent room="P302" />
+      <DichvuComponent room="P401" />
+      <DichvuComponent room="P402" />
+      <DichvuComponent room="P501" />
+      <DichvuComponent room="P502" />
+      <DichvuComponent room="P601" />
+      <DichvuComponent room="P602" />
+      <DichvuComponent room="P701" />
+      <DichvuComponent room="P702" />
     </Container>
   );
 };

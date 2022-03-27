@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import NavMenu from "./navmenu/NavMenu";
 
 const Title = styled.h1`
   text-align: center;
@@ -26,7 +25,6 @@ const Header = () => {
       <Container>
         <Title>Quản Lý Phòng Trọ</Title>
         <TitleHouse>Chung cư thảo nguyên</TitleHouse>
-        <NavMenu></NavMenu>
       </Container>
     );
   }

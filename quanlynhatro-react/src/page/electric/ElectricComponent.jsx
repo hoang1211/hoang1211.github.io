@@ -109,6 +109,7 @@ const ElectricComponent = (props) => {
                     <th>Số Đầu</th>
                     <th>Số cuối</th>
                     <th>Tiêu thụ</th>
+                    <th>Thành Tiền</th>
                     <th colSpan={2}>Chức năng</th>
                   </tr>
                 </thead>

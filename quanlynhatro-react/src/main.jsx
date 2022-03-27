@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,7 +18,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}></Route>
-          <Route path="/house" element={<House />}></Route>
+          <Route path="/house/:housename" element={<House />}></Route>
           <Route path="/housemanager" element={<HouseManager />}></Route>
           <Route path="/addperson" element={<InputPerson />}></Route>
           <Route path="/electric" element={<Electric />}></Route>

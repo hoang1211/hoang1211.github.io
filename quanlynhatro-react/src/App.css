@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+.main-content {
+  margin-left: 250px;
+  overflow: hidden;
+}
+.page-content {
+  padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
+}

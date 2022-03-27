@@ -4,6 +4,33 @@
 .show-P301 {
   display: block !important;
 }
+.show-P302 {
+  display: block !important;
+}
+.show-P401 {
+  display: block !important;
+}
+.show-P402 {
+  display: block !important;
+}
+.show-P501 {
+  display: block !important;
+}
+.show-P502 {
+  display: block !important;
+}
+.show-P601 {
+  display: block !important;
+}
+.show-P602 {
+  display: block !important;
+}
+.show-P701 {
+  display: block !important;
+}
+.show-P702 {
+  display: block !important;
+}
 .wrap-room .wrap-table {
   display: none;
 }
